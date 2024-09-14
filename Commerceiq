@@ -1,0 +1,63 @@
+Preparing for a full-stack developer interview at CommerceIQ involves mastering a range of topics in JavaScript and related technologies. Here are some targeted interview questions you might encounter, along with explanations to help you prepare:
+
+### JavaScript Basics
+1. **Explain event delegation in JavaScript.**
+   - Event delegation involves leveraging the event propagation (bubbling) to handle events at a higher level in the DOM rather than at the specific level where the event originated.
+
+2. **What is the difference between `==` and `===`?**
+   - `==` checks for equality with type coercion, whereas `===` checks for strict equality without type coercion.
+
+3. **What is a closure in JavaScript?**
+   - A closure is a function that retains access to its lexical scope, even when the function is executed outside that scope.
+
+4. **How does `this` keyword work in JavaScript?**
+   - `this` refers to the object that is currently calling the function. It can vary depending on the function context (global, object method, constructor, etc.).
+
+### Advanced JavaScript
+5. **Explain the concept of promises and how they work.**
+   - Promises represent an asynchronous operation that can be in one of three states: pending, fulfilled, or rejected. They allow for handling async operations more cleanly than callbacks.
+
+6. **What are async/await, and how do they improve asynchronous code?**
+   - `async` and `await` are syntactic sugar over promises, allowing for asynchronous code to be written in a synchronous-like manner, improving readability and maintainability.
+
+7. **What is the event loop in JavaScript?**
+   - The event loop is a mechanism that handles the execution of multiple chunks of your program over time, allowing JavaScript to perform non-blocking operations despite being single-threaded.
+
+### Front-end Development
+8. **Explain the concept of a virtual DOM in React.**
+   - The virtual DOM is a lightweight representation of the real DOM. React uses it to efficiently update the real DOM by only re-rendering nodes that have changed.
+
+9. **What are hooks in React, and why are they useful?**
+   - Hooks are functions that let you use state and other React features in functional components. They allow you to use lifecycle methods and state management without writing class components.
+
+10. **How do you optimize performance in a React application?**
+    - Techniques include memoizing components with `React.memo`, using `useCallback` and `useMemo` hooks, code-splitting, lazy loading components, and optimizing the component's rendering logic.
+
+### Back-end Development
+11. **What are RESTful services, and how do you create a RESTful API using Node.js and Express?**
+    - RESTful services are web services that follow the REST architectural style, using HTTP methods (GET, POST, PUT, DELETE) for CRUD operations. In Node.js, you can use Express to set up routes and handle requests and responses.
+
+12. **How do you handle asynchronous operations in Node.js?**
+    - Using callbacks, promises, and async/await. Node.js also uses non-blocking I/O and the event loop to handle async operations.
+
+13. **What is middleware in Express, and how is it used?**
+    - Middleware functions are functions that have access to the request object (req), the response object (res), and the next middleware function in the application’s request-response cycle. They can perform operations on the request, response, or call the next middleware.
+
+### Databases
+14. **How do you interact with a database in a Node.js application?**
+    - Using libraries and ORMs (Object Relational Mappers) like Sequelize for SQL databases or Mongoose for MongoDB. These libraries provide an abstraction over the database operations.
+
+15. **What is the difference between SQL and NoSQL databases?**
+    - SQL databases are relational and use structured query language (SQL) for defining and manipulating data. NoSQL databases are non-relational, designed for distributed data stores with flexible schemas.
+
+### Miscellaneous
+16. **Explain how JWT (JSON Web Token) works and its use in authentication.**
+    - JWT is a compact, URL-safe means of representing claims to be transferred between two parties. It is often used for authentication by encoding user data and ensuring secure transmission via tokens.
+
+17. **How would you set up a basic CI/CD pipeline for a Node.js application?**
+    - Using tools like Jenkins, Travis CI, or GitHub Actions, set up automated testing, building, and deployment steps. Each push to the repository triggers the pipeline to ensure the code is tested and deployed to production seamlessly.
+
+18. **Describe a scenario where you used WebSockets in your application.**
+    - WebSockets are used for real-time communication between the client and the server. An example could be implementing a chat application where messages need to be instantly transmitted between users.
+
+Preparing for these questions will help you demonstrate your proficiency as a full-stack developer and your ability to handle complex technical challenges at CommerceIQ.

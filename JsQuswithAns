@@ -1,0 +1,589 @@
+** DFFRNCE BETWEEN FETCH VS AXIOS**
+
+fetch is built in browser api and axios is third party api 
+fetch is to FOLLOWS CORS policy  but axios automaticaly handle CORS policy 
+fetch does not support INTRERCEPTOR BUT axios support INTERSEPTOR
+Axios provides higher level  API FOR HTTP REQUEST
+
+2.** DOM **
+its stands for DOCUMENT OBJECT MODAL . programmers to access and manipulate strucure and content of web page using script languages like javascripit
+
+
+3 Explain Hoisting in javascript.
+Hoisting is default behavior of javascript where all the variable and function declaration are move to top of the current scope during compilation phase 
+
+
+JS IS ASYNCRONUS :
+js is a non-blocking aynchronus operation which means excution of one task does not depend on anther function .its multi theread which means code run parallel
+
+
+SYNCHRONUS :
+only one operation can at a time .its blocking
+
+
+SQL VS NO SQL :
+
+SQL database are relational databse and its structure qury language and have fixed schema .No-SQL Database are non-relational database and often scema less 
+
+
+**this KEY WORD IN JS 
+
+its allowes to access the property and methods within the context of the object
+
+
+4. Difference between “ == “ and “ === “ operators.
+both are comparison operator. == is used to compare values whereas,=== is used compare both values and type 
+
+
+5.7. Is javascript a statically typed or a dynamically typed language?
+JavaScript is a dynamically typed language, meaning the type of a variable is checked at runtime, 
+	
+
+
+NULL VS UNDEFINED
+
+Null is a object its reperensets absence of value asigned meanwhile undefined variable  declare but value not asign
+
+
+
+6.8. What is NaN property in JavaScript?
+NAN its represents is a NOT A NUMBER . its indicates the not a legel number .
+typeOf of NaN it return number
+
+
+
+7.PIMITIVE NON PRIMITIVE 
+
+PRIMITIVE IS string , number ,boolon, undeifned ,null
+ NON PRIMITIVE such as object,array,function,date
+ 
+ 
+ 
+ 
+8. Explain passed by value and passed by reference. 
+
+When a primitive data type is passed as an argument to a function, it does not affect the original value; this is called passing by value. Meanwhile, when a non-primitive data type (like an object or array) is passed as an argument to a function, changes to the parameter can affect the original value because the reference to the object is passed; this is often referred to as passing by reference.
+
+
+
+
+12. EXPLAIN HIGHER ORDER FUNCTIONS IN JAVASCRIPT.
+
+higher order function can take the other function as arguments or return function as their resutls .
+ 
+// Higher-order function that takes a callback function as argument
+
+function greet(name, callback) {
+    return callback(name);
+}
+
+// Callback function
+function sayHello(name) {
+    return "Hello, " + name + "!";
+}
+		
+// Using the higher-order function with the callback
+console.log(greet("John", sayHello)); // Output: Hello, John!
+	
+
+
+
+13 ES6 VS ES 5
+
+Es6 is introduce the let , const variable 
+ES6 is introduce arrow function 
+ES5 have string concatination but ES6 have introduce template litrals 
+ES5 do not allowed default params but ES6 have default params example const temp=(a,b=1)=>a+b 
+
+ES6 has introduces array destructuring 
+ const person={name:"abi",age:54}
+ const {name , age }=person
+ 
+ES6 have intro spreed operator 
+ES6 intro new method findIndex, find(),includes(),
+
+ES6 intro Promiss for handling better async operation
+
+const GetData=()=>new Promise  ((resolve)=>{
+setTimeout(()=>resolve('data'),1000)})	
+GetData.then(data=>console.log(data))
+
+
+
+
+
+3. What Is The Difference Between Addeventlistener And Onclick?
+addEventListener  allowes to add multiple event listener to a single element for the same time event type .
+meanwhile onclick can only handle the one event listener for the click event
+
+
+const button = document.getElementById('myButton');
+
+// Using addEventListener
+button.addEventListener('click', function() {
+    console.log('First listener');
+});
+button.addEventListener('click', function() {
+    console.log('Second listener');
+});
+
+// Using onclick
+button.onclick = function() {
+    console.log('This will overwrite any previous onclick event handlers');
+};
+
+
+
+4.WHY USED FOR THIS KEYWORD IN REACT JS 
+
+this keyword commenly used for to refrence current instance of the componant  .
+
+
+5.EVENT BUBLING UP 
+
+Event bubbling, also known as event propagation, occurs when changes to inner child elements affect the parent element.
+
+stop propagation method is used to stop the stoppropagation  from bubbling up the event chain .
+
+
+
+<p>Click DIV1 Element</p>
+<div onclick="secondFunc()">DIV 2
+  <div onclick="firstFunc(event)">DIV 1</div>
+</div>
+
+<script>
+function firstFunc(event) {
+  alert("DIV 1");
+  event.stopPropagation();
+}
+
+function secondFunc() {
+  alert("DIV 2");
+}
+</script>
+
+
+
+**WHAT IS CLOSURES IN JS 
+
+closure is a function in js where inner function to access the property outer function even outer function excuting finished
+
+
+
+**WHAT IS EVENT LOOP IN JS 
+The event loop is a core mechanism in JavaScript that allows asynchronous operations to be executed. It manages the execution of code, handling the task queue where asynchronous callbacks are queued, and ensures that these tasks are processed in a non-blocking manner.
+
+
+
+
+BUILD FUNCTION IN JAVASCRIPT 
+
+
+1. MAP    its returning new array with transforming each elements
+
+const numbers = [1, 2, 3, 4, 5];
+const doubledNumbers = numbers.map(num => num * 2);
+console.log(doubledNumbers); // Output: [2, 4, 6, 8, 10]
+
+2. FILTER   filter is returning new array with element only condtion is satidfied
+
+const numbers = [1, 2, 3, 4, 5];
+const evenNumbers = numbers.filter(num => num % 2 === 0);
+console.log(evenNumbers); // Output: [2, 4]
+
+
+WHAT IS ARRAY SLICE
+
+the array slice method is used to create new array with passsing arguments for start and end is a optional
+
+WHAT IS SpLICE METHOD
+
+splice method is used to remove or replace arrys elements  when passing arguments with start and end with replace elements
+
+
+
+Arrow Functions
+
+arrow function to provide a shorter and more concise syntex.and its support implict return that means you can omit the return keyword .its support rest parameter.and perticularly used for inline functions
+
+
+
+const logArguments = (...args) => {
+  console.log(args);
+};
+
+
+
+logArguments(1, 2, 3); // [1, 2, 3]
+
+
+
+WHAT ARE THE WAYS TO CREATE OBJECT
+1.with help of object constructor
+
+let name=new Object()
+
+2.with help of object create method
+let name =new Object.create(null)
+
+3. object syntex
+
+let name ={}
+4. function constructor
+
+ function Name(name){
+ this.name=name
+ 
+}
+
+
+
+let obg=new Person("abinesh")	
+
+
+WHAT IS APPLY AND BIND ,CALL IN JS
+
+
+1.call
+
+method call functions with this value and arguments provided individually
+
+const Person={
+getname:function(){
+
+
+}
+
+
+}
+
+Shallow copy 
+
+Shallow copy is the copy of an object where the top level of properties are copied , but nested object or arrays are still refrence to the orginal orrays . when changes in copied object's in nested properties 
+will affect the orgial object
+
+
+Deep copy
+
+Deep Copy is the copy of an object where all  level of properties are copied ,including nested properties arrays and objects are fully copied . changes in copied objects, including nested properties do not affect the orginal object
+
+
+STACK  MEMORY :
+
+Stack memory is used for memory allocations ,Where the size of variable and function calll is compile time . stack memory primarily used to store premitive data types such as numbers ,string , boolen 
+ 
+
+REACT JS 
+.............................................................................................................................................................................................................................................................................................
+react js is javascript library which used to building user interface .it alowes to create reusable componants 
+, particularly single-page applications where data updates dynamically
+
+
+WHAT ARE THE FEATURES OF REACT JS 
+one way data flow , componant based architacture, jsx extrensions, virtual DOM
+ 
+
+
+WHAT IS JSX 
+jsx is a javascript extenstion its allow to write html structure in react componants 
+
+
+
+SIGNIFICANTS OF VIRUTUAL DOM
+
+virual dom is light weight of copy of original dom , when change occur in local states to update the perticular Real dom ,the updating process involve is compare to current virutual dom with previos virutual dom
+
+
+CLASS COMPONANTS VS FUNCTIONAL COMPONANTS 
+class componants have es6 class syntax and additional feature have state , life cycle method and this keyword used to access the property
+
+
+
+STATE AND PROPS 
+
+state is local data stores,it can be changed over time . props are immutable  it can be passed from parrent componants we canot change the properites
+
+
+	
+CALL BACK 
+
+callback function take another function as a arguments to return as their results 
+
+
+PROMISS
+promise is represents the future results of asynchronus operations ,whether succesed or fails 
+	
+
+ASYNC AWAIT 
+
+asyunc and await is syntatic sugar build top of the promise function . async function to return the promise and await to pause the excution of function until promise is resolve 
+
+
+
+REACT ROUTER DOM
+
+react router is library which is used to navigate one componants to another componants with help of browse router
+	
+
+USE REDUCER
+
+the usereducer used to handel complex state logic in react applications
+ 	
+
+
+USE REF
+use ref used to utilize to create a refrence of dom element , enabling to access and manipulations
+
+
+COMPONANT DID MOUNT
+componant didmount is invoked immediatly after componant is mounted	
+
+REACT FRAGMENT
+
+react fragments used to allowing to add multiple child element without adding extra nodes
+
+
+
+import axios from 'axios'
+let api = axios.get("https://denigma.app/#demo")
+console.log(api);
+
+
+
+LAZZY LOADING 
+
+is the technique for waiting to load certaing page
+
+
+componentWillUnmount()*************
+
+THIS method in class componants in react and its invoked immediatly in before componants is unmounted and this method used for cleanup
+
+input
+SSR
+ssr is technique to render in server side and send to the client side as a html
+
+
+LIFE CYCLE METHODS
+there are three phases life cycle in class componants 1 mountiing,updating,unmounting 
+
+MOUNT inthis phase initialse the constructor after immideitly invoked componant didmount
+UPDATING inthis phase immidiatly invoked after the updating dom
+UNMOUNT inthis phase immidiatlly invoked before the componant remove from dom
+
+
+
+USECALLBACK FUNCTION 
+usecallback hook in react which is used to memoize the function , which helps in optimze the performence of componants to prevent the unwanted re-creation of function 
+
+
+USEMEMO
+usememo hooks in react which is used to memoize the value, which helps in optimize the componants performence to preventing unwanted re-calculation
+
+USEREF
+useref used to create a refrence of a dom element ,to direct access the dom element
+
+
+
+FLEX VS GRID
+
+flex is a one dimenstional layout method to arrange the items coulm or row .
+
+Grid is a two dimenstional layout method to arrange the items column or row
+
+
+
+
+
+FUNCTION
+
+function is doesnt need any object its independant
+we can call directly call the function name
+function is a independant functionality 
+in function we dont need declare any class 
+
+
+METHOD
+
+the method is a function which is linked with any object
+the method is called by object name
+while the method lied under OOPS .
+while we need to declare the class
+
+
+
+
+
+
+WHAT IS DEBOUNCE IN REACT JS 
+
+debounce isa technique ists used to optimize the performence and prevent unnecessary function calls. user experince by limiting number of time function calles within specific time frame
+its leading to UI smother experince 
+
+
+VIRTUAL DOM 
+
+virtual dom is light weight of copy of orgianl dom .and react  containes two virtual dom one is updated virtual dom and another pre-updated virtual dom . now its compare with pre-updated and updated dom and figure out which part is exactly updated to update the orginal dom
+
+
+controled componants and uncontroled componants 
+
+controled componants :
+form data controled by react componants
+the state of the form element is kept in the state property
+
+Uncontrolled Components: Form data is handled by the DOM.
+
+
+
+Optimization techniq	
+
+use react.memo to optimzation memoze functional componants preventing unnecssery re-render
+
+
+PURE COMPONANTS 
+
+pure componants using for optimzation of application. pure componantes implemented in React.memo its provide unneccssary re renders
+
+
+STATEFULL COMPONANTS AND STATESLESS COMPONANTS 
+
+
+STATEFULL :
+They also called as a Class componants ,are Those that manages their own state 
+Statefull componants are responsible for Keeping track of changing data that affects the render output of the componants .
+
+STATELESS :
+Also referd as a Functional componants do not manage the own state or local state . They are simply accespt by the props and render the UI 
+
+
+REDUX ?
+
+Redux Middleware  ?
+
+
+CUSTOM Hookn ?
+
+
+
+USE MEMO AND USE CALLBACK
+
+
+
+CYPRESSS ****************************************************************************************************************************************************
+
+
+ASSERTIONS 
+asssertions is used to verify the expected behavior
+
+
+WHY VITE BETTER THAN CREATE REACT APP
+
+vite uses the ES BUILD bundler so faster than CRA . ES build written in  GO language while webpack written in javascript .
+
+vite is better than CRA(create react app) because its used ES BUILD, written in GO language and making it signficently faster .Vite suppport native ES module, and Offerse efficent Hot Module Replcement 
+
+
+
+// CLASS COMPONANTS VS FUNCTIONAL COMPONANTS
+
+CLASS COMPONANTS 
+
+IS traditional way of defining componants in react and this key word used to specify the values and require render method to RETURN jsx 
+
+FUNCTIONAL COMPONANTS 	
+
+
+
+
+CSS *********************************************************************************************************************************************************************************************************************************************************************
+
+POSITION RELATIVE AND ABSOLUTE
+
+positioning allows to control the exact position of elements on the page
+
+
+WHAT IS CSS
+
+css is stands for case cade style sheet and its used to describe the presentation of document written in html file.if you define rule by sepecic group or element of element that should applied to specific eleement or group of elemenets  
+
+
+
+HTML 
+>***********************************************************************************************************************************************************************************************************************************************************************************
+
+
+WHAT ARE THE ATRIBUTES AND TAGS 
+
+tags are primary componants of html that defines how the content will be formated and structured . whereas attributes are used along with the HTML tags  to defined as the charectristics of the element  .
+
+<p align='center' />   inthis line p is an html tag and align is an attributes
+
+
+
+WHAT IS VOID ELEMENT OF HTML
+
+in HTML, elements do not have closing tags, do not need to be closed are void elements  .example <br/>, <img />, <hr/>
+
+
+function interleaveStrings(str1, str2) {
+
+let result =''
+let i =0;
+
+while(i<str1.length && i<str2.length){
+  result +=str1[i]+str2[i]
+  
+  i++
+}
+
+if(i<str1.length){
+  result +=str1.slice(i)
+}else {
+    result +=str2.slice(i)
+
+}
+
+return result
+}
+
+const str1 = "abcd";
+const str2 = "123456";
+const interleavedString = interleaveStrings(str1, str2);
+console.log(interleavedString); // Output: a1b2c3456
+
+	
+
+React js 
+that allows to you build user interface and reusable  UI componants . React uses server-side rendering to provide a flexible and performance based solutions .light weight and virtual dom and jsx 
+
+
+Angualr js 
+is a Open source its developed by google .angualr is  most popular cient side rendering framework for developing .its offerce two way data binding and MVC architecture
+
+
+How do you optimize the performance of a React application?
+React can be achived techniq like code spliting ,lazy loading , memoizations usememo avloid unnecery re-calculations and optize state managment .usecallback to prevent unneceery re-creataion of functions
+
+
+
+
+Redux
+
+"Redux is a global state management tool. There are four main pillars in Redux: the store, reducers, actions, and dispatch. The store is used to store all the data, acting like a container. Reducers contain functions that specify how the state changes in response to actions. Actions are functions that define the data to be sent to the store and how it should be modified. Finally, dispatch is used to call or trigger these actions."
+
+
+
+
+FORM
+
+FORM in react which is used to  manage user input,handlesubmit ,and validate data . they allow for controlld componants 	
+
+
+PURE COMPONANTS 
+
+Pure components in React are components that render the same output given the same props and state. They perform a shallow comparison of props and state to prevent unnecessary re-renders, optimizing performance
+
+
+

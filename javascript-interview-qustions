@@ -1,0 +1,234 @@
+Of course! Here are some additional JavaScript interview questions covering events, the DOM (Document Object Model), and hoisting:
+
+Event Handling:
+1. How do you add an event listener to a DOM element in JavaScript?
+2. What are event bubbling and event capturing in JavaScript? How do they differ?
+3. How can you prevent the default behavior of an event in JavaScript?
+4. Explain the difference between `event.target` and `event.currentTarget`.
+5. What is event delegation, and why is it useful?
+
+DOM Manipulation:
+6. How do you access and modify DOM elements using JavaScript?
+7. What is the difference between `innerHTML` and `textContent` properties in JavaScript?
+8. How can you create new HTML elements dynamically using JavaScript?
+9. Explain the concept of node traversal in the DOM. How do you navigate between parent, child, and sibling nodes?
+10. How do you handle CSS classes and styles of DOM elements using JavaScript?
+
+Hoisting:
+11. What is hoisting in JavaScript? Provide an example to demonstrate hoisting behavior.
+12. Explain the difference between function declaration and function expression hoisting.
+13. How does variable hoisting differ between `var`, `let`, and `const` declarations?
+14. Describe the behavior of hoisting within different scopes in JavaScript, such as global scope, function scope, and block scope.
+15. How can you avoid unexpected behavior caused by hoisting in your JavaScript code?
+
+
+What is JavaScript and what are its key features?
+Explain the difference between null and undefined in JavaScript.
+How do you declare variables in JavaScript? What are the differences between var, let, and const?
+What is the purpose of the === operator in JavaScript?
+Describe the concept of hoisting in JavaScript.
+What are primitive data types in JavaScript? Can you provide examples?
+How do you define functions in JavaScript? What are arrow functions?
+Explain the difference between synchronous and asynchronous JavaScript code execution.
+What is the purpose of the this keyword in JavaScript? How does its value change based on the context?
+How do you handle errors in JavaScript? What are try, catch, and finally blocks used for?
+What are JavaScript closures? Provide an example of how they can be used.
+How do you iterate over elements in an array in JavaScript?
+Describe the concept of event delegation in JavaScript.
+What is the difference between == and === operators in JavaScript?
+
+
+### Basic JavaScript Questions
+1. **What is JavaScript, and how is it different from Java?**
+2. **What are the different data types in JavaScript?**
+3. **What is the difference between `let`, `const`, and `var`?**
+4. **Explain hoisting in JavaScript.**
+5. **What are closures in JavaScript?**
+6. **What is the difference between `==` and `===`?**
+7. **What are JavaScript Promises?**
+8. **What is the purpose of the `this` keyword?**
+9. **Explain the concept of prototypal inheritance.**
+10. **What are the different ways to create objects in JavaScript?**
+
+### Advanced JavaScript Questions
+1. **What are arrow functions, and how do they differ from regular functions?**
+2. **What is the event loop, and how does it work?**
+3. **What are async/await, and how do they relate to Promises?**
+4. **Explain the concept of a JavaScript module.**
+5. **What are higher-order functions in JavaScript?**
+6. **What is the difference between `null` and `undefined`?**
+7. **How does JavaScript handle asynchronous operations?**
+8. **What are the different types of scopes in JavaScript?**
+9. **What are template literals, and how do they differ from regular strings?**
+10. **Explain debouncing and throttling in JavaScript.**
+
+### DOM and BOM Questions
+1. **What is the DOM (Document Object Model)?**
+2. **How do you select an element by its ID in JavaScript?**
+3. **What is event delegation?**
+4. **What are the different ways to handle events in JavaScript?**
+5. **What is the difference between `addEventListener` and inline event handlers?**
+6. **What is the BOM (Browser Object Model)?**
+7. **How do you manipulate the DOM using JavaScript?**
+8. **What is the difference between `innerHTML`, `innerText`, and `textContent`?**
+9. **Explain the concept of event bubbling and event capturing.**
+10. **How do you make an HTTP request in JavaScript?**
+
+### ES6 and Beyond
+1. **What are the new features introduced in ES6 (ECMAScript 2015)?**
+2. **What is destructuring assignment, and how does it work?**
+3. **Explain the `spread` operator and its uses.**
+4. **What are classes in JavaScript, and how do they work?**
+5. **What are `Set` and `Map`, and how do they differ from arrays and objects?**
+6. **What is the purpose of the `Symbol` type?**
+7. **What are generators in JavaScript?**
+8. **Explain the concept of `Promises.all` and `Promises.race`.**
+9. **What is the `Reflect` API?**
+10. **How do you use modules in JavaScript (import/export)?**
+
+
+
+### Miscellaneous Questions
+1. **What are Web Workers, and how do they work?**
+2. **What is CORS (Cross-Origin Resource Sharing)?**
+3. **Explain the concept of service workers in JavaScript.**
+4. **What is the difference between synchronous and asynchronous code?**
+5. **What is a single-page application (SPA)?**
+6. **How does garbage collection work in JavaScript?**
+7. **What is the difference between localStorage, sessionStorage, and cookies?**
+8. **What is the purpose of `use strict`?**
+9. **Explain the concept of memoization in JavaScript.**
+10. **What are the different ways to handle errors in JavaScript?**
+
+
+
+### Practical Coding Questions
+1. **Write a function to reverse a string.**
+2. **Write a function to check if a string is a palindrome.**
+3. **Implement a function to find the factorial of a number.**
+4. **Write a function to merge two sorted arrays.**
+5. **Write a function to find the largest number in an array.**
+6. **Implement a function to check if two arrays are equal.**
+7. **Write a function to flatten a nested array.**
+8. **Implement a debounce function.**
+9. **Write a function to deep clone an object.**
+10. **Write a function to find the nth Fibonacci number.**
+
+
+
+
+
+Certainly! Here are some coding questions you can use in a JavaScript interview:
+
+1. **Reverse a String:**
+   Write a function that takes a string as input and returns the string reversed.
+
+2. **Palindrome Checker:**
+   Write a function that takes a string as input and returns `true` if the string is a palindrome, and `false` otherwise.
+
+3. **FizzBuzz:**
+   Write a function that prints the numbers from 1 to n, but for multiples of 3, print "Fizz" instead of the number, and for multiples of 5, print "Buzz". For numbers which are multiples of both 3 and 5, print "FizzBuzz".
+
+4. **Factorial Calculation:**
+   Write a function that calculates the factorial of a given number. The factorial of a number is the product of all positive integers less than or equal to the number.
+
+5. **Find the Longest Word:**
+   Write a function that takes a string as input and returns the length of the longest word in the string.
+
+6. **Sum of Array Elements:**
+   Write a function that takes an array of numbers as input and returns the sum of all the numbers in the array.
+
+7. **Count Vowels:**
+   Write a function that takes a string as input and returns the number of vowels (a, e, i, o, u) in the string.
+
+8. **Find the Largest Number:**
+   Write a function that takes an array of numbers as input and returns the largest number in the array.
+
+9. **Remove Duplicates:**
+   Write a function that takes an array as input and returns a new array with duplicate elements removed.
+
+10. **Check for Prime Number:**
+    Write a function that takes a number as input and returns `true` if the number is prime, and `false` otherwise.
+
+These coding questions cover a range of difficulty levels and can be used to assess a candidate's problem-solving skills, knowledge of JavaScript syntax, and understanding of fundamental algorithms and data structures. Feel free to modify them or create variations based on your specific requirements.
+
+
+
+
+
+
+ARRAY BASED QUSTIONS
+
+1. **Find the Second Largest Number:**
+   Write a function that takes an array of numbers as input and returns the second largest number in the array.
+
+2. **Rotate Array:**
+   Write a function that rotates an array to the right by a given number of steps. For example, if the input array is `[1, 2, 3, 4, 5]` and the number of steps is `2`, the output should be `[4, 5, 1, 2, 3]`.
+
+3. **Merge Sorted Arrays:**
+   Write a function that takes two sorted arrays as input and merges them into a single sorted array.
+
+4. **Find Missing Number:**
+   Write a function that takes an array of integers from 1 to n with one number missing and returns the missing number.
+
+5. **Remove Duplicates from Sorted Array:**
+   Write a function that takes a sorted array as input and removes the duplicates in-place, returning the new length of the array.
+
+6. **Product of Array Except Self:**
+   Write a function that takes an array of integers and returns an array where each element at index `i` is the product of all the numbers in the original array except the one at index `i`.
+
+7. **Find Maximum Subarray Sum:**
+   Write a function that finds the contiguous subarray within an array that has the largest sum and returns the sum.
+
+8. **Array Partition I:**
+   Write a function that takes an array of 2n integers, where n is a positive integer, and partitions it into n pairs such that the sum of each pair is maximized.
+
+9. **Intersection of Two Arrays:**
+   Write a function that takes two arrays as input and returns an array containing all the elements that are common to both arrays.
+
+10. **Kth Largest Element in an Array:**
+    Write a function that takes an array of integers and an integer k and returns the kth largest element in the array.
+
+These array-based interview questions cover various concepts such as sorting, searching, and manipulation of array elements. They can help assess a candidate's understanding of array operations and algorithms. Feel free to adjust the complexity of the questions based on the level of the candidate's experience.
+
+
+
+
+STRING BASED QUSTIONS
+
+
+Certainly! Here are some string-based interview questions:
+
+1. **Reverse a String:**
+   Write a function that takes a string as input and returns the string reversed.
+
+2. **Palindrome Checker:**
+   Write a function that takes a string as input and returns `true` if the string is a palindrome, and `false` otherwise.
+
+3. **Count Vowels and Consonants:**
+   Write a function that takes a string as input and returns the count of vowels and consonants in the string separately.
+
+4. **String Compression:**
+   Write a function that performs basic string compression using the counts of repeated characters. For example, the string `"aabcccccaaa"` would become `"a2b1c5a3"`.
+
+5. **Anagram Checker:**
+   Write a function that takes two strings as input and returns `true` if they are anagrams of each other, and `false` otherwise.
+
+6. **Longest Substring Without Repeating Characters:**
+   Write a function that takes a string as input and returns the length of the longest substring without repeating characters.
+
+7. **Reverse Words in a String:**
+   Write a function that takes a string as input and returns the string with the order of words reversed. For example, `"hello world"` becomes `"world hello"`.
+
+8. **First Unique Character in a String:**
+   Write a function that takes a string as input and returns the index of the first non-repeating character in the string. If all characters are repeating, return -1.
+
+9. **String Rotation:**
+   Write a function that checks if one string is a rotation of another. For example, `"waterbottle"` is a rotation of `"erbottlewat"`.
+
+10. **Most Common Word in a Paragraph:**
+    Write a function that takes a paragraph of text as input and returns the most common word. Ignore punctuation and capitalization.
+
+
+
+

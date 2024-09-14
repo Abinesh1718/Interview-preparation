@@ -1,0 +1,261 @@
+How do you deal with conflicts?
+
+What role(s) do you take in a team?
+
+Strengths/weaknesses (in some form)
+
+Tell me about a stressful situation you experienced, what did you learn from it?
+
+React questions (junior to senior):
+
+Describe how to use useState.
+
+What happens with a component when it receives new props?
+
+How can you share a state between multiple components?
+
+Do you have to use React with JSX?
+
+What is the difference between a controlled and uncontrolled component/input/element/form?
+
+What is the VDOM (Virtual DOM)?
+
+What are some common pitfalls when doing data fetching?
+
+Describe the usage and pitfalls of useEffect (open discussion).
+
+JS Questions (junior to senior):
+
+What is the difference between let and const?
+
+What is a callback, when would you use one?
+
+What is the difference between == and ===?
+
+What is hoisting?
+
+What is a closure?
+
+What is the event loop?
+
+When is it a good idea to use a class (open discussion).
+
+what's the virtual dom
+
+how do you update a component
+explain react hooks useMemo, useState, useContext, useRef
+
+what is the difference between useMemo and useCallback?
+
+what is the difference between wrapping the components by the:
+
+<div>...</div>
+
+<React.Fragment>...</React.Fragment>
+
+<>...</>
+
+what are the potential options for using useRef?
+
+how to pass any info to props.children?
+
+what is the render props? How to use it?
+how to use React.cloneElement?
+
+how to use Hight order components?
+Can you explain the component lifecycle in React?
+
+How do you manage state in React?
+
+What are the differences between class components and functional components?
+
+How do you handle events in React?
+
+Can you describe the concept of JSX?
+
+What is the virtual DOM, and how does React use it?
+
+Have you worked with React Router? Can you explain its use?
+
+How do you optimize performance in React applications?
+
+Can you explain the purpose of keys in React lists?
+
+Have you used Redux or Context API for state management? Can you explain their differences?
+Sure, here are some interview questions related to React.js:
+
+1. What is React.js and what are its main features?
+2. Explain the difference between state and props in React.
+3. How does React handle component communication?
+4. What is JSX in React? How does it differ from HTML?
+5. Describe the component lifecycle in React.
+6. What are the key differences between class components and functional components in React?
+7. How does React Router work? Explain its key components.
+8. What is virtual DOM in React and how does it improve performance?
+9. Explain the concept of "lifting state up" in React.
+10. How does React handle forms? Discuss controlled vs. uncontrolled components.
+11. What are Higher Order Components (HOCs) in React? Provide an example.
+12. How does React handle event handling?
+13. What are React Hooks? Explain some commonly used hooks and their purposes.
+14. What is the significance of keys in React lists?
+15. Describe the Flux architecture and its relationship with React.
+
+
+
+
+
+Certainly! Here are some interview questions tailored for experienced React.js developers:
+
+1. Can you describe a complex React project you've worked on? What were some challenges you faced and how did you overcome them?
+2. How do you handle state management in large-scale React applications? Have you used any state management libraries like Redux or MobX?
+3. Explain the concept of code splitting in React. When and why would you use it?
+4. Have you implemented server-side rendering (SSR) or static site generation (SSG) in React projects? Can you discuss the benefits and challenges of using SSR/SSG?
+5. How do you ensure accessibility (a11y) in React applications? What tools or techniques do you use to test for accessibility?
+6. Describe your experience with performance optimization in React applications. What strategies or tools do you use to improve performance?
+7. Have you integrated React with other libraries or frameworks, such as D3.js or Three.js? If so, can you discuss the integration process and any challenges faced?
+8. What are your thoughts on using TypeScript with React? Have you worked on any projects using TypeScript? What benefits did you observe?
+9. How do you approach testing React components and applications? Which testing libraries or frameworks do you prefer, and why?
+10. Can you discuss your experience with internationalization (i18n) in React applications? How do you handle localization and language switching?
+11. Describe a time when you had to troubleshoot a production issue in a React application. How did you identify the root cause and implement a solution?
+12. Have you worked in a team using Agile or Scrum methodologies? How do you collaborate with other team members and ensure code quality in a React project?
+13. Can you explain the concept of context in React and when you would use it? Have you used React context API in any of your projects?
+14. What are some best practices for structuring a React project directory? How do you organize components, styles, and other files for maintainability and scalability?
+15. Discuss your experience with serverless architecture and React. Have you built serverless applications using AWS Lambda, Azure Functions, or similar services?
+
+These questions are designed to assess the depth of a candidate's experience with React.js and their ability to tackle challenges commonly encountered in real-world projects. Feel free to customize them further based on your specific requirements and the skills you're looking for in a candidate.
+
+
+
+
+• What is React and how can you best describe it?
+What is JSX?
+• What is the virtual DOM and how is it used by React?
+• What are some of the advantages of doing it this way?
+• What are some of the disadvantages?
+• What is the difference between controlled and uncontrolled inputs?
+• What are some of the hooks commonly used in React? 
+• When it comes to performance in React, what do you need to look out
+• What is useMemo and how does it work?
+What is useCallback and how does it work?
+What is useRef and how does it work?
+• How does it differ from useState?
+• What is Context and how does it work?
+• What is state management and when is it useful?
+• What are some examples of state management libraries?
+• What is the recommended way to structure your React code?
+• What are some best practices for writing React code?
+What are the React dev tools and what can you use them for?
+• What is a good way to test your React applications?
+
+REDUX BASED INTERBIEW QUSTIONS
+
+Here are some Redux-based interview questions:
+
+1. **What is Redux, and why would you use it in a React application?**
+   - Discuss the purpose of Redux and its benefits in managing application state, especially in large and complex applications.
+
+2. **Explain the core principles of Redux.**
+   - Discuss concepts such as single source of truth, state immutability, and pure functions in the context of Redux.
+
+3. **What are the three main components of a Redux application?**
+   - Discuss the role of actions, reducers, and the store in a Redux application and how they interact with each other.
+
+4. **Describe the flow of data in a Redux application when an action is dispatched.**
+   - Explain how an action flows through the Redux architecture, triggers a state change, and updates the UI.
+
+5. **What is an action creator in Redux?**
+   - Discuss the purpose of action creators in Redux and how they are used to create actions that represent state changes.
+
+6. **Explain the concept of reducers in Redux.**
+   - Discuss how reducers are responsible for handling state changes based on dispatched actions and returning a new state.
+
+7. **What is the Redux store, and what does it contain?**
+   - Describe the role of the Redux store in storing the application state and providing methods to access and update the state.
+
+8. **What is the difference between mapStateToProps and mapDispatchToProps?**
+   - Discuss the purpose of mapStateToProps and mapDispatchToProps in connecting Redux state and actions to React components.
+
+9. **What is middleware in Redux, and why would you use it?**
+   - Discuss the role of middleware in Redux, such as logging, asynchronous actions, and how it enhances the capabilities of Redux.
+
+10. **How do you handle asynchronous actions in Redux?**
+    - Discuss various approaches to handle asynchronous actions in Redux, such as using middleware like Redux Thunk or Redux Saga.
+
+11. **What are the benefits of using Redux DevTools?**
+    - Discuss how Redux DevTools enhance the debugging experience by providing insights into state changes and action dispatches.
+
+12. **How do you structure Redux code in a large-scale application?**
+    - Discuss best practices for organizing Redux code, such as modularizing reducers, actions, and selectors, and using feature-based folder structures.
+
+These questions cover a range of topics related to Redux, including its core principles, architecture, usage with React, and best practices. They can help assess a candidate's understanding of Redux and their ability to implement state management solutions in React applications.
+
+
+
+
+LIFE CYCLE BASED QUSTIONS
+
+
+Certainly! Here are some interview questions related to React component lifecycle methods:
+
+1. **Can you explain the purpose of the `componentDidMount` lifecycle method? When would you use it in a React component?**
+   
+2. **What is the key difference between `componentDidMount` and `componentDidUpdate` lifecycle methods?**
+
+3. **Why might you use the `shouldComponentUpdate` method? Can you provide an example scenario where it would be beneficial?**
+
+4. **How would you handle cleanup tasks, such as removing event listeners, in a React component? Which lifecycle method would you use for this purpose?**
+
+5. **What is the purpose of the `componentWillUnmount` lifecycle method? Can you provide an example of when you might use it?**
+
+6. **Can you explain the significance of the `constructor` method in a React component? What tasks are typically performed inside the constructor?**
+
+7. **What happens if you call `setState` inside the `render` method of a React component?**
+
+8. **How would you optimize a React component to avoid unnecessary re-renders?**
+
+9. **Can you describe the role of the `getDerivedStateFromProps` lifecycle method? When is it invoked, and how is it different from other lifecycle methods?**
+
+10. **What are the lifecycle methods that were deprecated or replaced with hooks in React 16? Can you name a few and explain their replacements?**
+
+These questions cover various aspects of React component lifecycle methods and can help gauge a candidate's understanding of how to manage component behavior throughout its lifecycle. Feel free to adjust the complexity of the questions based on the level of expertise you're looking for in a candidate.
+
+
+
+
+
+HOOK BASED INTERVIEW QUSTIONS
+
+
+Absolutely! Here are some interview questions related to React Hooks:
+
+1. **What are React Hooks, and why were they introduced in React?**
+
+2. **Can you explain the difference between class components and functional components in React, especially in the context of using Hooks?**
+
+3. **Describe the useState Hook in React. How do you use it, and what does it return?**
+
+4. **What is the purpose of the useEffect Hook in React? How does it differ from componentDidMount and componentDidUpdate lifecycle methods?**
+
+5. **Explain the dependency array in the useEffect Hook. Why is it important, and what happens if it's omitted?**
+
+6. **What is the useContext Hook used for in React? Can you provide an example of how you would use it?**
+
+7. **How do you create a custom Hook in React? Can you explain the conventions for naming custom Hooks?**
+
+8. **Describe the useRef Hook in React. What are some common use cases for useRef?**
+
+9. **What is the useCallback Hook used for in React? How does it differ from useMemo?**
+
+10. **Explain the useReducer Hook in React. When would you choose to use useReducer over useState?**
+
+11. **What are the rules of using Hooks in React? Are there any limitations or things to be aware of when using Hooks?**
+
+12. **How do you handle asynchronous operations with Hooks in React? Can you provide an example using useEffect and async/await?**
+
+13. **What is the useState Hook equivalent of this.state in class components?**
+
+14. **Can you explain the concept of "lifting state up" in React Hooks?**
+
+15. **How do you test components that use Hooks in React? Are there any specific testing libraries or techniques you would use?**
+
+These questions should help assess a candidate's knowledge and understanding of React Hooks, their usage, and best practices. Feel free to adjust the complexity of the questions based on the level of expertise you're looking for in a candidate.

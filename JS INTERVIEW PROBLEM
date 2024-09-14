@@ -1,0 +1,174 @@
+
+// 1.REDUX THUNK
+// 2.REDUX , ACTIONS , SLICE 
+// 3.JS ASYNC PROBLEM,USING ARRAYS OBJECTS MAPS .
+// 4.STRING AND REGEX OPERATIONS 
+// 5.DOM MANIPULATION 
+// 6. REACT HOOKS 
+// 7.BASIC OF HICHARTS FOR VISUALIZATION 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// redux react-redux @reduxjs/toolkit
+
+
+
+
+
+
+
+
+
+
+
+// 1. REVERSE STRING CONCADINATION
+// const  reverse=(string)=>{
+  
+//   return string.split('').reverse().join('')
+  
+// }
+
+
+// console.log(reverse("abinesh")) ======> output(hseniba)
+
+// 2.FIND DUPLICATE ARRAY
+// function (arr){
+// let duplicate=[]
+// const set=new Set();
+// for (let data of arr){
+
+// if(set.has(data)){
+// duplicate.push(data)
+// }else{
+
+// set.add(add)
+// }
+
+// 3.FACTORIAL NUMBER 
+
+// function factorial (n){
+// if(n===0)return 1;
+// return n*factorial(n-1)
+// }		
+
+// 4.BINARY SEARCH 
+// function (arr,target){
+// const left =0;
+// const right=arr.length -1;
+
+
+// while(left <=right){
+
+// left mid=Math.floor((left+right)/2)
+
+// if (target === arr[mid]){
+// return mid;
+// }
+
+// if(target <arr[mid]){
+// right=mid -1
+
+// }else{
+// left=mid+1
+// }
+// return -1 
+// }
+
+// WHAT IS HOSTING IN JS 
+
+// JAVASCRIPTI DEFAULT BEHAVIOR OF MOVING ALL DECLARATION  TO THE TOP OF THE CURRENT SCOPE 
+
+
+ 
+
+// VAR IS FUNCTIONAL SCOPE AND LET IS BLOCK SCOPE 
+
+// WHAT IS EVENT LOOP
+// 		whice responsible for excuting the code collecting and processing events and excuting queud sub task
+		
+		
+// 		SET TIMEOUT
+// 		this function alloes to excute the function are code blocks for specifed time 
+// 		SET INTERVALS
+// 		THIS QUITE SAME FOR SET TIMOUT BUT REPETEDLY EXCUTE FOR SPECIFIED INTERVALS
+		
+		
+		
+		
+		
+// FIND DUPLICATE ARRRAYS 
+	
+// 	function findDuplicates(arr) {
+//   const duplicates = [];
+  
+//   for (let i = 0; i < arr.length; i++) {
+//     for (let j = i + 1; j < arr.length; j++) {
+//       if (arr[i] === arr[j] && !duplicates.includes(arr[i])) {
+//         duplicates.push(arr[i]);
+//       }
+//     }
+//   }
+  
+//   return duplicates;
+// }
+
+// const myArray = [1, 2, 3, 2, 4, 5, 3];
+// const duplicateValues = findDuplicates(myArray);
+// console.log(duplicateValues); // [2, 3]
+
+
+
+
+// REMOVE DUPLICATE 
+// function remove(arr){
+// const uniq=[];
+// for(i=0;i<arr.length;i++){
+// if(uniq.indexOf(arr[i])===-1){
+// uniq.push(arr[i])	
+// }
+// }
+// return uniq
+// }
+
+
+// 	REVERSE STRING 
+	
+// 	function reverse (str){
+// return str.split('').reverse().join('')
+// }
+
+
+
+		
+// function twoSum(nums, target) {
+//     // Loop through each element in the array
+//     for (let i = 0; i < nums.length; i++) {
+//         // For each element, loop through the remaining elements
+//         for (let j = i + 1; j < nums.length; j++) {
+//             // Check if the sum of the two elements equals the target
+//             if (nums[i] + nums[j] === target) {
+//                 // If they do, return their indices
+//                 return [i, j];
+//             }
+//         }
+//     }
+//     // If no such elements are found, return an empty array
+//     return [];
+// }
+
+// // Example usage:
+// console.log(twoSum([2, 7, 11, 15], 9));  // Output: [0, 1]
+// console.log(twoSum([3, 2, 4], 6));       // Output: [1, 2]
+// console.log(twoSum([3, 3], 6));          // Output: [0, 1]

@@ -1,0 +1,22 @@
+FOR SELECTING TABLE
+
+SELECT * FROM test;
+
+FOR INSERT RECORDS
+
+INSERT INTO test (id,name,age,address)VALUES
+	(7,'renu',12,'theni'),
+(8,'priya',12,'cdm'),
+(9,'magesh',12,'chennai');
+
+
+
+FOR UPDATE RECORDS 
+UPDATE test SET name='bala' where id=1;
+
+FOR DELETE QURRY 
+DELETE FROM test WHERE id=1;
+
+
+FOR ASENDING ORDER 
+SELECT * FROM test ORDER BY id ASC;

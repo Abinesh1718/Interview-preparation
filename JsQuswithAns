@@ -10,7 +10,7 @@ its stands for DOCUMENT OBJECT MODAL . programmers to access and manipulate stru
 
 
 3 Explain Hoisting in javascript.
-Hoisting is default behavior of javascript where all the variable and function declaration are move to top of the current scope during compilation phase 
+Hoisting is default behavior of javascript var all the variable and function declaration are move to top of the current scope during compilation phase 
 
 
 JS IS ASYNCRONUS :
@@ -62,7 +62,8 @@ PRIMITIVE IS string , number ,boolon, undeifned ,null
  
 8. Explain passed by value and passed by reference. 
 
-When a primitive data type is passed as an argument to a function, it does not affect the original value; this is called passing by value. Meanwhile, when a non-primitive data type (like an object or array) is passed as an argument to a function, changes to the parameter can affect the original value because the reference to the object is passed; this is often referred to as passing by reference.
+When a primitive data type is passed as an argument to a function, it does not affect the original value; this is called passing by value. Meanwhile,
+   when a non-primitive data type (like an object or array) is passed as an argument to a function, changes to the parameter can affect the original value because the reference to the object is passed; this is often referred to as passing by reference.
 
 
 
@@ -83,11 +84,11 @@ function sayHello(name) {
 }
 		
 // Using the higher-order function with the callback
-console.log(greet("John", sayHello)); // Output: Hello, John!
+console.log(greet(John, sayHello)); // Output: Hello, John!
 	
 
 
-
+ 
 13 ES6 VS ES 5
 
 Es6 is introduce the let , const variable 
@@ -110,7 +111,7 @@ GetData.then(data=>console.log(data))
 
 
 
-
+ 
 
 3. What Is The Difference Between Addeventlistener And Onclick?
 addEventListener  allowes to add multiple event listener to a single element for the same time event type .
@@ -172,9 +173,8 @@ closure is a function in js where inner function to access the property outer fu
 
 
 **WHAT IS EVENT LOOP IN JS 
-The event loop is a core mechanism in JavaScript that allows asynchronous operations to be executed. It manages the execution of code, handling the task queue where asynchronous callbacks are queued, and ensures that these tasks are processed in a non-blocking manner.
-
-
+The event loop is a core mechanism in JavaScript that allows asynchronous operations to be executed. It manages the execution of code,
+ handling the task queue where asynchronous callbacks are queued, and ensures that these tasks are processed in a non-blocking manner.
 
 
 BUILD FUNCTION IN JAVASCRIPT 
@@ -205,7 +205,8 @@ splice method is used to remove or replace arrys elements  when passing argument
 
 Arrow Functions
 
-arrow function to provide a shorter and more concise syntex.and its support implict return that means you can omit the return keyword .its support rest parameter.and perticularly used for inline functions
+Arrow function to provide a shorter and more concise syntex.and its support implict return that means you can omit the return keyword .
+its support rest parameter.and perticularly used for inline functions
 
 
 
@@ -320,7 +321,6 @@ ASYNC AWAIT
 asyunc and await is syntatic sugar build top of the promise function . async function to return the promise and await to pause the excution of function until promise is resolve 
 
 
-
 REACT ROUTER DOM
 
 react router is library which is used to navigate one componants to another componants with help of browse router
@@ -356,7 +356,7 @@ LAZZY LOADING
 is the technique for waiting to load certaing page
 
 
-componentWillUnmount()*************
+componentWillUnmount()************* 
 
 THIS method in class componants in react and its invoked immediatly in before componants is unmounted and this method used for cleanup
 
@@ -418,7 +418,8 @@ while we need to declare the class
 
 WHAT IS DEBOUNCE IN REACT JS 
 
-debounce isa technique ists used to optimize the performence and prevent unnecessary function calls. user experince by limiting number of time function calles within specific time frame
+debounce isa technique ists used to optimize the performence and prevent unnecessary function calls. 
+user experince by limiting number of time function calles within specific time frame
 its leading to UI smother experince 
 
 
@@ -446,7 +447,7 @@ PURE COMPONANTS
 
 pure componants using for optimzation of application. pure componantes implemented in React.memo its provide unneccssary re renders
 
-
+                                                                                                                                  
 STATEFULL COMPONANTS AND STATESLESS COMPONANTS 
 
 

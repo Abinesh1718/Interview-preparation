@@ -70,6 +70,29 @@ function duplicatess(arr) {
 }
 
 
+function firstNonRepeating(str) {
+
+    let result = {}
+
+    for (let chr of str) {
+        result[chr] = (result[chr] || 0) + 1
+    }
+
+    for (let chr of str) {
+
+        if (result[chr] == 1) {
+            return chr
+
+        }
+
+    }
+    return null
+
+
+}
+
+console.log(firstNonRepeating([2, 3, 2, 4, 5, 6, 7, 3]))
+
 // console.log(duplicatess([5,98,3,8,6,3,5,98,4]))
 function uniqvalues(arr) {
     let uniq = [];

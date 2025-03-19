@@ -11,6 +11,7 @@ function duplicates(arr) {
     return dupli
 }
 
+
 // console.log(duplicates([4, 8, 2, 4, 8,1,7]));
 
 

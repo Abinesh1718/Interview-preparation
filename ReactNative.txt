@@ -1,0 +1,92 @@
+1. What is React Native, and how is it different from React.js?
+React Native is a framework that allows developers to build mobile applications using React and JavaScript. Unlike React.js,
+ which is used for web applications, React Native compiles to native components, enabling cross-platform mobile development for iOS and Android.
+
+ 3. What are the core components of React Native?
+ View : view is similer to div in html its uses for layout 
+ Text : its uses for display text content
+ Image : its used for display in Image
+ Scrollview :Enable scrolling content
+ flatList : Optimise rendering for long list
+ TouchableOpacity : its uses for Touch intraction like button,links
+
+ 5. How do you handle navigation in a React Native app?
+
+import {NavigationContainer} from '@react-navigation/native'
+import {createStackNavigator} from 'react-navigation/stack'
+
+const stack=createStackNavigator()
+
+export default funtion App(){
+
+    return(
+        <NavigationContainer>
+        <stack.screen  name='home'  component={<Home/>}
+          </NavigationContainer>
+
+    )
+
+}
+
+
+7. How does styling work in React Native compared to React.js?
+React native  does not support traditional css styling instead of its support js bassed style 
+
+import {Stylesheet} from 'react-native'
+
+const style=Stylesheet.create({
+    container:{
+        display:flex,
+        padding:1
+    }
+})
+
+
+13. How do you optimize performance in React Native applications?
+use Flatlist for large file list
+use callback and usememo for memoization
+avoid unwantedd console.log
+optimize image using react-native-fast-image
+
+
+14. What is the React Native bridge?
+
+its communication layor for js to react native code 
+
+
+15. What is the difference between React Native CLI and Expo?
+Expo : its easy to setup but less module support
+React native CLI : more support and control but require xcode / android studio
+
+20. How do you prevent memory leaks in React Native?
+always cleanup event liseners in useeffect
+avoid storing large data 
+
+Explain the React Native architecture and how it communicates with native modules.
+JavaScript Thread	 : Runs react code and UI Logic in js v8 engine
+bridge : its communication layer between js and native code
+Native threads : Managing UI rendering
+
+3. What is the React Native Bridge, and How Does It Impact Performance?
+bridge cause delays becaouse message pass between js and native code 
+lare amount of data can slow down performenve of applications
+
+What are some common performance bottlenecks in React Native?
+
+large re-renders due to improper state management
+large JSON Parsing on the UI
+heavy use of animations in js thread
+
+
+How does React Native handle reconciliation and rendering?
+Use virtual DOM to Update only neccesory parts
+
+What is the difference between Animated API and react-native-reanimated?
+Animates api : its runs on JS Thread ,
+reanimated : Its Runs on UI Thread 
+
+
+ System Design & Architecture ?
+ Seprate UI and Busines Logic
+ Implement lazy loading for componants
+ 

@@ -1,0 +1,529 @@
+How to indentify Html and Html5 ?
+DOCTYPE Declaration at  very begining of Html . article , section, nav, header these elements are new in Html5 .
+check if the webage uses the localstorage features like localstorage , sessionstorage these features in html 5 .
+
+Q2: What is the difference between block-level and inline elements?
+ Block level elements are take up the full width of the parent element like example : div,section
+ Inline elements are take up the as much width of the parent element like example (span )
+ 
+ Q3: What is the difference between id and class in HTML?
+id is the unique indentifier its used only one per page
+class which is used for grouping elements we can be used multiple times in page
+
+
+What is the difference between localStorage, sessionStorage, and cookies
+localStorage : stores data with no expirations time . data remains even  after closing the browser
+sessionStorage : stores only for current session (clears when tabs close) 
+cookies : small data stores with expiration time
+
+
+What is viewport ?
+viewport is user visible area of web page 
+ 
+ 
+What is the Meta Tag ?
+Meta Tag provides the MetaData about the web page   
+
+What are the Attributs in html ?
+id,class,type,onlick,allt,href,src,value,disables,width,
+
+
+What is the difference between <noscript> and <script>
+
+script : Which is used use js code  
+noscript : content only visible when javascript is disable 
+
+
+What are the Diffrent ways to achive csss in html ?
+
+Inline css : its applied inside the element , 
+
+internal : Its written inside the Style Tag 
+
+External Css :written in seprate .css file 
+
+
+What is the difference between relative, absolute, fixed, and sticky positioning in CSS
+relative : Position an element relative to its normal positionin
+absolute : Position an element relative to the nearest positioned anchestor
+fixed : Positions an element relative to the    viewport ,
+sticky : sticky to a defined position when scrolling
+
+
+What is Flexbox ?
+Flexbox is a layout model that arrange elements effectivly
+
+
+What are pseudo-classes and pseudo-elements in CSS
+
+Pseudo-classes : select elemenet based on condition
+ ex: button:hover{
+    background-color: blue;
+}
+
+Pseudo-elements : style specific part of element 
+
+What is the difference between visibility: hidden; and display: none; ?
+
+visibility: hidden : hides the element but keep the space 
+display: none : remove the element completly 
+
+
+What is z-index in CSS ?
+z-index the controles stacking of elements that overlap .
+which element closer to the users apearson on top of the others
+ex : element with higher z-index value will be positioned in front of the others
+
+
+
+universell selector ?
+univerl selector matches name of any element instead of select perticular element 
+
+ex :  *{
+    color :red
+}
+
+
+CSSS BOX Model ?
+
+box model defines   layout and design of css element .
+the elements are content , border , paddding , margin .
+
+Flex vs Grid ?
+
+Flex is one dimentional layout 
+
+grid is a two dimentional layout 
+
+
+
+
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++==============================================================================================================================================================++++++++++++++++++++++++++==
+
+
+
+
+
+Javascript
+
+Data types in js 
+
+Primitive datatypes : string , num , boolen, bigint , undefind, null
+Non-Primitive : Object , arrays , date
+
+
+
+Hoisting in js ?
+Hoisting is default behavior of javascript var all the variable and function declaration are move to top of the current scope during compilation phase 
+
+Event Loop in js ?
+Js is single thread  it can only excute one by one task at a time .
+event loop manages the excution of multiple task by periotizing and sheduling them efficintly 
+
+
+This KEY WORD IN JS 
+
+ its allowes to access the property and methods within the context of the object
+ 
+
+WHAT IS CLOSURES IN JS 
+
+ closure is a function in js where inner function to access the property outer function even outer function excuting finished
+
+ Arrow Functions
+
+ Arrow function to provide a shorter and more concise syntex.and its support implict return that means you can omit the return keyword .
+ its support rest parameter.and perticularly used for inline functions
+
+
+ Shallow copy 
+
+ Shallow copy is the copy of an object where the top level of properties are copied , but nested object or arrays are still refrence to the orginal orrays . when changes in copied object's in nested properties 
+ will affect the orgial object
+ 
+ 
+ Deep copy
+ 
+ Deep Copy is the copy of an object where all  level of properties are copied ,including nested properties arrays and objects are fully copied . changes in copied objects, including nested properties do not affect the orginal object
+
+	
+ CALL BACK 
+
+ callback function take another function as a arguments to return as their results 
+ 
+ 
+ PROMISS
+ promise is represents the future results of asynchronus operations ,whether succesed or fails 
+     
+ 
+ ASYNC AWAIT 
+ 
+ asyunc and await is syntatic sugar build top of the promise function . async function to return the promise and await to pause the excution of function until promise is resolve 
+ 
+
+ARRAYS *********************************************************************************************
+
+ 
+array.push () used to add elements to the end 
+array.pop() remove the last ekement
+array.unshift() add elements in the begining
+array.shift () remove the first element
+
+array.indexOf() find the index of the elemenet
+array.includes() check the element exist 
+
+array.find() to find the matchig element
+array.findIndex() to find index of first matching element
+array.fillter() return all matching records 
+
+
+array.map() transform eachelement
+array.reduce()  reduce an array to a single value
+array.sort () is used to sort an array  assending or desending on orginal arrays 
+array.reverse() is used to revers the orginal array
+
+array.slice () returns the postions of the array
+
+ex :  
+let arr = [1, 2, 3, 4, 5];
+let sliced = arr.slice(1, 4);  // [2, 3, 4] (Doesn't modify original array)
+
+
+array.splice ()  Adds / Remove the elements 
+
+arr.splice(2, 1, 99); // passing index and new value 
+console.log(arr); // [1, 2, 99, 4, 5] (Removes 1 element at index 2, adds 99)
+
+
+array.join() is used to converts array to string
+
+let words = ["Hello", "World"];
+console.log(words.join(" ")); // "Hello World"
+
+
+
+concat() used to merge two arrays
+
+let arr1 = [1, 2];
+let arr2 = [3, 4];
+let merged = arr1.concat(arr2);
+console.log(merged); // [1, 2, 3, 4]
+
+
+array.flat() used to flattens nested arrays 
+
+
+let nested = [1, [2, [3, 4]]];
+console.log(nested.flat(2)); // [1, 2, 3, 4]
+
+
+
+8. New Array Methods (ES2023)
+
+array.toSorted() used to sorts without modify the origianl arrays 
+
+let nums = [3, 1, 4, 2];
+let sortedNums = nums.toSorted((a, b) => a - b);
+console.log(sortedNums); // [1, 2, 3, 4]
+console.log(nums); // [3, 1, 4, 2] (Original remains unchanged)
+
+
+
+array.toReversed() used to reverse the arrays without modify the origianl arrays 
+
+let reversedNums = nums.toReversed();
+console.log(reversedNums); // [2, 4, 1, 3]
+
+
+array.toSpliced() used to splice without modify the origanl arrays 
+let newArr = nums.toSpliced(1, 2, 99, 100);
+console.log(newArr); // [3, 99, 100, 2]
+
+
+arrray.flatMap() used to maps and flattens
+
+let nums = [1, 2, 3];
+let doubled = nums.flatMap(num => [num, num * 2]);
+console.log(doubled); // [1, 2, 2, 4, 3, 6]
+
+
+
+array.every() used to checks the all elements to the matching conditions
+
+
+array.some() check atleast one elemenet to matche
+
+arrat.with() returns copy with changed element
+
+let arr = [10, 20, 30];
+let newArr = arr.with(1, 99);
+console.log(newArr); // [10, 99, 30]
+
+
+
+New JavaScript Functions (ES2020 - ES2024)
+
+
+1 . Promise.any() → First resolved promise
+
+Promise.any([
+  Promise.reject("Error"),
+  Promise.resolve("Success"),
+]).then(console.log); // "Success"
+
+
+2. Promise.allSettled() → Waits for all promises to settle
+
+
+
+Promise.allSettled([
+  Promise.resolve("Done"),
+  Promise.reject("Failed"),
+]).then(console.log);
+/* Output:
+[
+  { status: "fulfilled", value: "Done" },
+  { status: "rejected", reason: "Failed" }
+]
+*/
+
+3.String.prototype.replaceAll() → Replace all occurrences
+
+console.log("apple, banana, apple".replaceAll("apple", "orange"));
+// "orange, banana, orange"
+
+
+
+
+OBJECTS *********************************************************************************************
+
+
+
+
+Object.keys() get all keys 
+
+const user = { name: "Alice", age: 25, city: "New York" };
+console.log(Object.keys(user)); 
+// ["name", "age", "city"]
+
+Object.values() Get all values
+
+
+
+Object.entries() get all key and values
+
+Object.fromEntries()  convert  arrays to objects 
+
+const arr = [["name", "Alice"], ["age", 25], ["city", "New York"]];
+const obj = Object.fromEntries(arr);
+
+console.log(obj);// { name: "Alice", age: 25, city: "New York" }
+
+
+
+
+Object.assign() used to merge multiple objects
+
+
+const obj1 = { a: 1, b: 2 };
+const obj2 = { c: 3, d: 4 };
+const merged = Object.assign({}, obj1, obj2);
+console.log(merged);// { a: 1, b: 2, c: 3, d: 4 }
+
+
+const merged2 = { ...obj1, ...obj2 };
+console.log(merged2);Using the spread operator (...) (modern approach):
+
+
+Object.hasOwn() to check propertiy exist or not , get boolen value
+
+const person = { name: "Bob", age: 30 };
+console.log(Object.hasOwn(person, "name")); // true
+console.log(Object.hasOwn(person, "salary")); // false
+
+
+Object.freeze() // used to prevent modification ,makes objects immutable 
+
+const obj = { name: "Alice", age: 25 };
+Object.freeze(obj);
+obj.age = 30; // ❌ Won't change
+delete obj.name; // ❌ Won't delete
+console.log(obj); // { name: "Alice", age: 25 }
+
+
+
+Object.seal() its used to allow modifiing existing properties but its wont allow adding new one or remove
+
+
+const obj = { name: "Alice", age: 25 };
+Object.seal(obj);
+obj.age = 30; // ✅ Allowed
+obj.city = "New York"; // ❌ Not allowed
+delete obj.name; // ❌ Not allowed
+console.log(obj); // { name: "Alice", age: 30 }
+
+
+Object.getOwnPropertyDescriptors() which is used to returns details information about values
+
+
+
+const obj = { name: "Alice", age: 25 };
+console.log(Object.getOwnPropertyDescriptors(obj));
+/* Output:
+{
+  name: { value: "Alice", writable: true, enumerable: true, configurable: true },
+  age: { value: 25, writable: true, enumerable: true, configurable: true }
+}
+*/
+
+
+
+
+Object.create()  used to create new object inherting from another object
+const parent = { greet: () => "Hello!" };
+const child = Object.create(parent);
+console.log(child.greet()); // "Hello!"
+
+
+
+Object.is() its used strict equality check
+
+console.log(Object.is(25, 25)); // true
+
+
+
+
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++==============================================================================================================================================================++++++++++++++++++++++++++==
+
+Redux
+
+
+what is redux ?
+redux is which is used to centralize the state entire aplication its gloabal state management
+
+
+Main Componants in redux ?
+
+Store : its holds applications states,
+Actions  : Javascript object its describe changes in state
+Reducers : Pure functions that take current state and action to return new states
+Dispatch : sends an actions to the store 
+Selector : function retrive specific state value 
+ 
+
+
+redux vs Context 
+
+resux is a centrlized store 
+context is a componant based 
+
+
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++==============================================================================================================================================================++++++++++++++++++++++++++==
+
+SQL Joins
+
+✅ INNER JOIN - Returns matching records in both tables
+✅ LEFT JOIN - Returns all records from the left table + matching records from the right
+✅ RIGHT JOIN - Returns all records from the right table + matching records from the left
+✅ FULL JOIN - Returns all records from both tables
+✅ SELF JOIN - Joins a table with itself
+✅ CROSS JOIN - Returns a Cartesian product
+
+
+. INNER JOIN (Only Matching Records)
+
+SELECT Customers.CustomerID, Customers.CustomerName, Orders.OrderID, Orders.Product
+FROM Customers
+INNER JOIN Orders ON Customers.CustomerID = Orders.CustomerID;
+
+
+LEFT JOIN (All Customers, Even Without Orders)
+
+SELECT Customers.CustomerID, Customers.CustomerName, Orders.OrderID, Orders.Product
+FROM Customers
+LEFT JOIN Orders ON Customers.CustomerID = Orders.CustomerID;
+
+
+RIGHT JOIN (All Orders, Even Without Customers)
+
+SELECT Customers.CustomerID, Customers.CustomerName, Orders.OrderID, Orders.Product
+FROM Customers
+RIGHT JOIN Orders ON Customers.CustomerID = Orders.CustomerID;
+
+
+REACT
+
+
+PACKAGE .JSON
+
+package.json: A configuration file in a Node.js project that stores metadata, dependencies, scripts, and project settings.
+ It helps manage installed packages and project details.
+
+
+ Node Modules :
+
+ node_modules: A folder where all installed dependencies (from package.json) are stored. It contains the actual code of installed npm packages.
+
+
+State Management Hooks 
+useState → Manages state in functional components. Returns a state variable and a function to update it.
+
+2. Side Effect & Lifecycle Hooks
+useEffect → Runs side effects (e.g., API calls, event listeners) after render. Can run on mount, update, or unmount.
+
+useLayoutEffect → Similar to useEffect, but runs synchronously before browser painting, useful for layout adjustments.
+
+3. Performance Optimization Hooks
+useMemo → Memoizes values to avoid unnecessary recalculations during re-renders.
+useCallback → Memoizes functions to prevent unnecessary re-creations in child components.
+
+4. Context & Ref Hooks
+useContext → Provides a way to access context values without prop drilling.
+useRef → Creates a mutable reference that persists across renders, often used for DOM manipulation.
+useImperativeHandle → Customizes the ref object when using forwardRef, allowing parent components to control child components' functions.
+
+5. Reducer Hook
+useReducer → Alternative to useState for complex state logic, useful when state transitions depend on previous state values.
+
+6. Custom Hooks
+Custom Hooks → Created using built-in hooks to encapsulate and reuse logic across multiple components.
+These hooks help mana
+
+
+LIFE CYCLE METHODS
+there are three phases life cycle in class componants 1 mountiing,updating,unmounting 
+
+MOUNT inthis phase initialse the constructor after immideitly invoked componant didmount
+UPDATING inthis phase immidiatly invoked after the updating dom
+UNMOUNT inthis phase immidiatlly invoked before the componant remove from dom
+
+
+
+REACT FRAGMENT
+
+react fragments used to allowing to add multiple child element without adding extra nodes
+
+
+USE REF
+use ref used to utilize to create a refrence of dom element , enabling to access and manipulations
+
+
+
+controled componants and uncontroled componants 
+
+controled componants :
+form data controled by react componants 
+the state of the form element is kept in the state property
+
+Uncontrolled Components: Form data is handled by the DOM.
+
+
+How does reconciliation work in React, and how does it impact performance?
+Reconciliation is the process where React updates the UI efficiently using the Virtual DOM.
+

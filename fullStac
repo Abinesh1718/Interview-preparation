@@ -407,9 +407,9 @@ redux is which is used to centralize the state entire aplication its gloabal sta
 
 Main Componants in redux ?
 
-Store : its holds applications states,
 Actions  : Javascript object its describe changes in state
 Reducers : Pure functions that take current state and action to return new states
+Store : its holds applications states,
 Dispatch : sends an actions to the store 
 Selector : function retrive specific state value 
  

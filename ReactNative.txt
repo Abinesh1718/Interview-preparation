@@ -18,14 +18,14 @@ import {createStackNavigator} from 'react-navigation/stack'
 const stack=createStackNavigator()
 
 export default funtion App(){
-
     return(
-        <NavigationContainer>
-        <stack.screen  name='home'  component={<Home/>}
-          </NavigationContainer>
-
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="Profile" component={ProfileScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
     )
-
 }
 
 
@@ -52,7 +52,6 @@ optimize image using react-native-fast-image
 14. What is the React Native bridge?
 
 its communication layor for js to react native code 
-
 
 15. What is the difference between React Native CLI and Expo?
 Expo : its easy to setup but less module support
@@ -90,3 +89,55 @@ reanimated : Its Runs on UI Thread
  Seprate UI and Busines Logic
  Implement lazy loading for componants
  
+
+ Flatlist
+
+ <Flatlist 
+keyExtracter={(item)=>item.id}
+data={Data}
+renderItem={(item)=>(
+    <div>{item.name}</div> a
+)}
+
+
+
+ />
+
+  What is Deep Linking in React Native ?
+  Deeplinking is techniq is allows to open yore mobile with specific screen and data using URL Schema 
+  ex : tessall://dashboard
+
+
+  What is OneSignal  ?
+  One signal is a pushnotification service for sending mobile and web notifications
+
+  import OneSignal from "react-native-onesignal";
+
+  useeffect(()=>{
+    OneSignal.setAppid("ONE SIGNAL APP ID")
+    OneSignal.setNotificationHandler((data)=>{
+        console.log(data)
+    })
+
+  },[])
+
+
+  What is Socket.IO in React Native?
+
+Socket.io enable bidirectional communication between client and server
+use cases :
+live chat,realtime notifications , 
+
+import io from 'socket.io-client'
+
+const socket=io("http:ajcajk")
+
+  useeffect(()=>{
+
+    socket.io('message',(data)=>{
+        setData(data)
+    })
+
+    return ()=>socket.disconnect()
+
+  },[])

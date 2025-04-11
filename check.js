@@ -201,7 +201,6 @@ let promise2 = new Promise((resolve, reject) => {
 // Promise.all([promise1, promise2]).then((data) => console.log(data)).catch(err => console.log(err))
 
 function repeatingString(str) {
-
     let flag;
 
     for (let i = 0; i < str.length; i++) {
@@ -221,7 +220,7 @@ function repeatingString(str) {
     }
 }
 
-// console.log(repeatingString("aabbcc"));
+console.log(repeatingString("aabbcc"));
 
 let arrgg = [
     function () {

@@ -4,6 +4,21 @@ function palindrom(num) {
     return num === 0 ? false : num === +num.toString().split("").reverse().join("")
 }
 
+function palindrom(str) {
+    const length = str.length
+
+    for (let i = 0; i < str.length / 2; i++) {
+
+        if (str[i] !== str[length - 1 - i]) {
+            return false
+        }
+    }
+    return true
+}
+
+console.log(palindrom("MOMS"))
+
+
 
 // console.log(palindrom(5445))
 function febinociseries(num) {
@@ -94,6 +109,8 @@ function firstNonRepeating(str) {
 console.log(firstNonRepeating([2, 3, 2, 4, 5, 6, 7, 3]))
 
 // console.log(duplicatess([5,98,3,8,6,3,5,98,4]))
+
+
 function uniqvalues(arr) {
     let uniq = [];
     for (let i = 0; i < arr.length; i++) {
@@ -103,6 +120,9 @@ function uniqvalues(arr) {
     }
     return uniq
 }
+
+
+
 // console.log(uniqvalues([5,98,3,8,6,3,5,98,4]))
 function maxvalue(arr) {
     let max = arr[0];
@@ -473,3 +493,53 @@ function AnogramCheck(str1, str2) {
 }
 
 console.log(AnogramCheck("listen", "silont"));
+
+
+
+function elementAccess(arr){
+    let result=[]
+    for(let i=0; i<arr.length; i++){
+        if(arr.indexOf(arr[i]) === 0 ){
+            result.push(-1,arr[i])
+        }else[
+              result.push(arr[i])
+        ]
+    
+    }
+    return result
+
+
+// ANOTHER METHOD
+//     for(let i = arr.length; i >= 0; i--){
+//     arr[i] = arr[i-1]; 
+//     // undeifned, 0, 1, 2, 3, 4
+//     // 0, 1, 2, 3, 4, 5
+// }
+// arr[0] = -1;
+// return arr;
+
+
+
+
+}
+
+//[ -1, 0, 1, 2, 3, 4 ]
+
+
+
+function elementAccess(arr){
+
+    let result=[]
+    for(let i=0; i<=arr.length; i++){
+    if(i === arr.length){
+        result.push(5);
+    }else{ 
+        result.push(arr[i]);
+    }
+}
+    return result
+}
+
+
+//to add Last element 
+//[0, 1, 2, 3, 4, 5];

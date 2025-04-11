@@ -46,7 +46,7 @@ External Css :written in seprate .css file
 What is the difference between relative, absolute, fixed, and sticky positioning in CSS
 relative : Position an element relative to its normal positionin
 absolute : Position an element relative to the nearest positioned anchestor
-fixed : Positions an element relative to the    viewport ,
+fixed : Positions an element relative to the  viewport ,
 sticky : sticky to a defined position when scrolling
 
 
@@ -526,4 +526,61 @@ Uncontrolled Components: Form data is handled by the DOM.
 
 How does reconciliation work in React, and how does it impact performance?
 Reconciliation is the process where React updates the UI efficiently using the Virtual DOM.
+
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+NODE JS 
+
+WHat is normalization ?
+normalization is the process of organizing to reduce redudancy to improve data integrity 
+
+Sharding in Mongodb ?
+sharding is the process of spliting data across multiple machine 
+
+What is node js ?
+node js is open source ,cross platform js runtime environment that allows to run js in server side , its non=-blocking operations
+
+node js is a single threaded event loop  its managing for multiple request
+
+
+5. What is the difference between process.nextTick(), setImmediate(), and setTimeout()?
+process.nextTick : its excute after current task end
+setImmediate : its excute in check phase
+setTimeout : its excutes in after some specified time
+
+
+ What is the difference between require and import in Node.js?
+
+require is support in common js
+import is support in modern js and es 6 syntex
+
+🟢 9. What is middleware in Express.js?
+Midleware is a functions its access req,res,next() . they are used for task like logging,authendication and validations
+
+what is cluster in node js ?
+its create a multiple instence of our application that  share the same server port
+
+What is an Event Emitter in Node.js?
+the event emiter class allows to create custom event handler
+
+
+What is Cors ?
+CORS is a browser security feature  that controls access to resorucess from diffrent domain
+its prevent un-authorized cross-orgin request 
+
+What is Passport js
+posport js a node js middleware authedication used to handle login , register .
+
+JWT Token ?
+JWT token  is a compact  secure way to transmit our data clints and server  
+
+
+LEFT JOIN QUERY 
+
+SELECT * FROM customer LEFT JOIN order ON customer.id = order.customer_id
+
+RIGHT JOIN
+
+SELECT * FROM customer RIGHT JOIN order ON customer.id = order.customer_id
 

@@ -1,0 +1,45 @@
+/* Make sure the body and html take full width with no margin */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: hsl(0, 0%, 0%);
+  background-image: url('../src/assets/download.png'); /* adjust path as needed */
+  background-size: cover;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+}
+
+/* Navbar spans full width and height as needed */
+.navbar {
+  /* background-color: #1976d2;  */
+  display: flex;
+  padding: 1rem 2rem;
+  width: 100%;
+  /* box-sizing: border-box; */
+  justify-content: flex-end;
+
+}
+
+/* Center nav links horizontally */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style each link */
+.nav-link a {
+  color: rgb(143, 19, 122);
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.nav-link a:hover {
+  color: #0ecca3;
+}

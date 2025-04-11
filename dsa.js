@@ -193,3 +193,5 @@ function longest_palindrome(str1) {
 // Log the result of calling longest_palindrome with the input "abracadabra" to the console
 console.log(longest_palindrome("babad"));
 
+
+

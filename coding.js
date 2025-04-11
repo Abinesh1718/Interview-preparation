@@ -107,6 +107,7 @@ function sorted(arr) {
 
 }
 
+
 function insert(array1) {
 
     return [...new Set(array1)];

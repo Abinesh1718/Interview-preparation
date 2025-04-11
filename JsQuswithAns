@@ -45,7 +45,6 @@ NULL VS UNDEFINED
 Null is a object its reperensets absence of value asigned meanwhile undefined variable  declare but value not asign
 
 
-
 6.8. What is NaN property in JavaScript?
 NAN its represents is a NOT A NUMBER . its indicates the not a legel number .
 typeOf of NaN it return number
@@ -63,7 +62,8 @@ PRIMITIVE IS string , number ,boolon, undeifned ,null
 8. Explain passed by value and passed by reference. 
 
 When a primitive data type is passed as an argument to a function, it does not affect the original value; this is called passing by value. Meanwhile,
-   when a non-primitive data type (like an object or array) is passed as an argument to a function, changes to the parameter can affect the original value because the reference to the object is passed; this is often referred to as passing by reference.
+   when a non-primitive data type (like an object or array) is passed as an argument to a function, changes to the parameter can affect the original value because the reference to the object is passed; 
+  this is often referred to as passing by reference.
 
 
 
@@ -303,7 +303,7 @@ class componants have es6 class syntax and additional feature have state , life 
 
 STATE AND PROPS 
 
-state is local data stores,it can be changed over time . props are immutable  it can be passed from parrent componants we canot change the properites
+state is local data stores,it can be changed over time  . props are immutable  it can be passed from parrent componants we canot change the properites
 
 
 	
@@ -397,10 +397,12 @@ Grid is a two dimenstional layout method to arrange the items column or row
 
 
 FUNCTION
+-- A function is a block of code designed to perform a task
 
 function is doesnt need any object its independant
 we can call directly call the function name
 function is a independant functionality 
+  
 in function we dont need declare any class 
 
 
@@ -572,8 +574,9 @@ React can be achived techniq like code spliting ,lazy loading , memoizations use
 
 Redux
 
-"Redux is a global state management tool. There are four main pillars in Redux: the store, reducers, actions, and dispatch. The store is used to store all the data, acting like a container. Reducers contain functions that specify how the state changes in response to actions. Actions are functions that define the data to be sent to the store and how it should be modified. Finally, dispatch is used to call or trigger these actions."
-
+Redux is a global state management tool. There are four main pillars in Redux: the store,
+ reducers, actions, and dispatch. The store is used to store all the data, acting like a container. Reducers contain functions that specify how the state changes in response to actions. Actions are functions that define the data to be sent to the store and how it should be modified. 
+Finally, dispatch is used to call or trigger these actions."
 
 
 
@@ -586,5 +589,5 @@ PURE COMPONANTS
 
 Pure components in React are components that render the same output given the same props and state. They perform a shallow comparison of props and state to prevent unnecessary re-renders, optimizing performance
 
-
+.
 

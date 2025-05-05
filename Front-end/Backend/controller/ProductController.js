@@ -48,7 +48,7 @@ exports.getSearchProduct = async (req, res) => {
 
         res.status(200).json({ success: true, msg: "Product listed", data });
     } catch (error) {
-        console.error("Search Error:", error);
+        console.error("Search Error:", error);  
         res.status(500).json({ success: false, msg: "Server error" });
     }
 };

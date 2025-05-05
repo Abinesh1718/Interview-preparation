@@ -1,29 +1,26 @@
 import React from 'react';
-import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import Header from './components/Header';
+import Home from './pages/Home';
+import Cart from './pages/Cart';
+import Payment from './pages/Payment';
+import { useSelector } from 'react-redux';
+import Table from './pages/Table';
 
-function App() {
+const App = () => {
+
   return (
-    <div className="app">
-      <header className="header">
-        <div className="logo">My Dashboard</div>
-        <ul className="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Careers</a></li>
-        </ul>
-      </header>
-
-      <main className="content">
-        <h1>Welcome to the Dashboard</h1>
-        <p>This is your main content area.</p>
-      </main>
-
-      <footer className="footer">
-        &copy; {new Date().getFullYear()} Abinesh. All rights reserved.
-      </footer>
-    </div>
+    <>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/cart" element={<Cart  />} />
+        <Route path="/payment" element={<Payment />} />
+        <Route path="/table" element={<Table />} />
+        
+      </Routes>
+    </>
   );
-}
+};
 
 export default App;

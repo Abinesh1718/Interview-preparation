@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(117, 112, 112);
+    padding: 40px 80px;
+
+}
+
+.logo-img {
+    display: flex;
+    align-items: center;
+
+
+}
+
+.nav-container {
+    display: flex;
+}
+
+.hidden-links {
+    display: none;
+}
+
+.nav-container a {
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+
+    padding: 5px 10px;
+    color: #ffff;
+
+}
+
+.menu-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    display: none;
+    /* Hide by default on big screens */
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .nav-container {
+        display: none;
+        /* Hide nav links on small screens */
+    }
+
+    .menu-button {
+        display: block;
+        /* Show hamburger on small screens */
+    }
+}
+
+/* .logo-img .open {
+    padding-left: 0px;
+} */
+
+/* Hide hidden-links by default */
+.hidden-links {
+    display: none;
+}
+
+/* Show the hidden-links when open is true */
+.logo-img.open .hidden-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Optional: Style logo differently when 'closed' */
+.logo-img.close img {
+    opacity: 1;
+}
+
+.header-container {
+    /* display: flex; */
+    padding: 0px;
+    font-size: larger;
+    color: black;
+}
+
+.header-container button {
+    background-color: wheat;
+    color: black;
+    margin-bottom: 30px;
+}

@@ -496,27 +496,27 @@ console.log(AnogramCheck("listen", "silont"));
 
 
 
-function elementAccess(arr){
-    let result=[]
-    for(let i=0; i<arr.length; i++){
-        if(arr.indexOf(arr[i]) === 0 ){
-            result.push(-1,arr[i])
-        }else[
-              result.push(arr[i])
+function elementAccess(arr) {
+    let result = []
+    for (let i = 0; i < arr.length; i++) {
+        if (arr.indexOf(arr[i]) === 0) {
+            result.push(-1, arr[i])
+        } else[
+            result.push(arr[i])
         ]
-    
+
     }
     return result
 
 
-// ANOTHER METHOD
-//     for(let i = arr.length; i >= 0; i--){
-//     arr[i] = arr[i-1]; 
-//     // undeifned, 0, 1, 2, 3, 4
-//     // 0, 1, 2, 3, 4, 5
-// }
-// arr[0] = -1;
-// return arr;
+    // ANOTHER METHOD
+    //     for(let i = arr.length; i >= 0; i--){
+    //     arr[i] = arr[i-1]; 
+    //     // undeifned, 0, 1, 2, 3, 4
+    //     // 0, 1, 2, 3, 4, 5
+    // }
+    // arr[0] = -1;
+    // return arr;
 
 
 
@@ -527,19 +527,43 @@ function elementAccess(arr){
 
 
 
-function elementAccess(arr){
+function elementAccess(arr) {
 
-    let result=[]
-    for(let i=0; i<=arr.length; i++){
-    if(i === arr.length){
-        result.push(5);
-    }else{ 
-        result.push(arr[i]);
+    let result = []
+    for (let i = 0; i <= arr.length; i++) {
+        if (i === arr.length) {
+            result.push(5);
+        } else {
+            result.push(arr[i]);
+        }
     }
-}
     return result
 }
 
 
 //to add Last element 
 //[0, 1, 2, 3, 4, 5];
+
+
+function repeatedvalue(str) {
+
+    let result = {}
+    for (let value of str) {
+        result[value] = (result[value] || 0) + 1
+    }
+
+    let count = 0
+    let value = ""
+
+    for (let data in result) {
+
+        if (result[data] > count) {
+            count = result[data]
+            value = data
+        }
+    }
+
+    return { value: value, count: count }
+}
+
+//   console.log(repeatedvalue("javascript"))

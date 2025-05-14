@@ -9,7 +9,7 @@ const ProductList = () => {
   const cart = useSelector(state => state.cart);
 
   const getQuantity = (productId) => {
-    const item = cart.find(item => item.id === productId);
+    const item = cart?.find(item => item.id === productId);
     return item ? item.quantity : 0;
   };
 
@@ -17,6 +17,7 @@ const ProductList = () => {
     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '1rem', padding: '2rem' }}>
       {products?.map(product => (
         <div key={product.id} style={{ border: '1px solid #ccc', padding: '1rem', borderRadius: '10px' }}>
+
           <img src={product.image} alt={product.name} style={{ width: '100%', height: '150px', objectFit: 'cover' }} />
           <h3>{product.name}</h3>
           <p>₹{product.price}</p>

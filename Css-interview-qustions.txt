@@ -1,0 +1,86 @@
+🔹 1. How would you center a div horizontally and vertically on the page?
+
+
+// option :1
+.parent{
+    display:flex,
+    justify-content:center
+    alignItems:center
+    width:100%
+    height:100vh
+}
+// option :2
+.parent{
+    position:absolute, 
+    left:50%
+    transform:translate(-50%,-50%)
+}
+
+// option :3
+.parent{
+    display:grid,
+    justify-content:center
+    alignItems:center
+    width:100%
+    height:100vh
+}
+
+
+🔹 2. How do you make a responsive layout that changes from 3 columns to 1 column on mobile?
+we can achice using grid method
+
+.parent{
+    display:grid,
+    grid-template-column:repeat(3,1fr)
+    
+}
+@media (max-width:768px){
+    .parent{
+        grid-template-column:1fr
+    }
+}
+
+🔹 4. How do you create a sticky header that stays at the top while scrolling?
+
+.header{
+    position:sticky
+    top:0,
+    z-index:1000
+}
+
+
+🔹 7. How do you create a responsive image that fits the container?
+.img{
+    width:100%,
+    height:auto
+}
+
+
+🔹 9. How can you prevent a flex item from shrinking?
+
+.flex-item{
+    flex-shrink:0   
+}
+
+What’s the difference between em, rem, and px units ?
+px:is the Pizel units
+em:relative to the parent element font size
+rem : relative to the root element font size .
+
+What is the difference between visibility: hidden and display: none ?
+    visibility : hidden element hides and keep space,
+    display : none , its completly remove element from layout ;
+
+
+    What are the media query?
+    They allow to apply style based on screen size 
+    @media (max-with:768px)
+
+
+What is z-index ?
+z-index to controls the stack 
+
+What are the new features in HTML5 ?
+new sematice tags, multimedia support ,audio,vide .
+form enhancement <input type="email" />
+APIs : Localstorage,

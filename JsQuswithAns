@@ -47,9 +47,62 @@ Null is a object its reperensets absence of value asigned meanwhile undefined va
 
 6.8. What is NaN property in JavaScript?
 NAN its represents is a NOT A NUMBER . its indicates the not a legel number .
-typeOf of NaN it return number
+typeOf of NaN it return numbe
 
 
+
+CALL,BIND,APPLY ?
+
+CALL: Calls a function specific this value passed arguments individually (" calls function with arguments immediatly")
+
+const obj={
+  name:"abi",
+  display:function (thing){
+    console.log(this.name+" "+thing)
+  }
+}
+
+const obj1={
+  name:"Bala"
+}
+
+obj.display.call(obj1,"How are you")
+
+
+
+APPLY :function specific this value passed argfments individually with arry ("its same call but argumants arrays")
+
+const obj={
+  name:"abi",
+  display:function (thing){
+    console.log(this.name+" "+thing)
+  }
+}
+
+const obj1={
+  name:"Bala"
+}
+
+obj.display.apply(obj1,["How are you"])
+
+
+
+BIND : its create new function with bound context 
+
+const obj={
+  name:"abi",
+  display:function (thing){
+    console.log(this.name+" "+thing)
+  }
+}
+
+const obj1={
+  name:"Bala"
+}
+
+const resultData=obj.display.bind(obj1)
+
+resultData("How are you")
 
 7.PIMITIVE NON PRIMITIVE 
 
@@ -72,7 +125,7 @@ When a primitive data type is passed as an argument to a function, it does not a
 
 higher order function can take the other function as arguments or return function as their resutls .
  
-// Higher-order function that takes a callback function as argument
+// Higher-order function that takes a callback function as  argument
 
 function greet(name, callback) {
     return callback(name);
@@ -381,7 +434,7 @@ usecallback hook in react which is used to memoize the function , which helps in
 USEMEMO
 usememo hooks in react which is used to memoize the value, which helps in optimize the componants performence to preventing unwanted re-calculation
 
-USEREF
+USEREF 
 useref used to create a refrence of a dom element ,to direct access the dom element
 
 

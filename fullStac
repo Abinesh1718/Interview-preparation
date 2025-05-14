@@ -288,7 +288,7 @@ console.log(newArr); // [3, 99, 100, 2]
 arrray.flatMap() used to maps and flattens
 
 let nums = [1, 2, 3];
-let doubled = nums.flatMap(num => [num, num * 2]);
+let doubled = nums. (num => [num, num * 2]);
 console.log(doubled); // [1, 2, 2, 4, 3, 6]
 
 
@@ -361,8 +361,6 @@ const arr = [["name", "Alice"], ["age", 25], ["city", "New York"]];
 const obj = Object.fromEntries(arr);
 
 console.log(obj);// { name: "Alice", age: 25, city: "New York" }
-
-
 
 
 Object.assign() used to merge multiple objects
@@ -571,6 +569,10 @@ Reconciliation is the process where React updates the UI efficiently using the V
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 NODE JS 
 
+Diffrence bw Node js and Javascript ?
+JS : Js used to make website is intractive and used in browser
+NODE JS : which allows js to be used in server . its non-blocking 
+
 WHat is normalization ?
 normalization is the process of organizing to reduce redudancy to improve data integrity 
 
@@ -595,6 +597,7 @@ require is support in common js
 import is support in modern js and es 6 syntex
 
 🟢 9. What is middleware in Express.js?
+
 Midleware is a functions its access req,res,next() . they are used for task like logging,authendication and validations
 
 what is cluster in node js ?
@@ -603,6 +606,8 @@ its create a multiple instence of our application that  share the same server po
 What is an Event Emitter in Node.js?
 the event emiter class allows to create custom event handler
 
+ What is the Event Loop in Node.js?
+ event loop handling asynchronus operation in nodejs . it keep checking the callback queue and process tasks 
 
 What is Cors ?
 CORS is a browser security feature  that controls access to resorucess from diffrent domain

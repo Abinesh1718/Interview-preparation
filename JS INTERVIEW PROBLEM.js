@@ -459,7 +459,7 @@ console.log(largestword("a abinesh balss"))
   //STRICET MODE 
   //when strice mode is enable development react componats render is twise
 
-  /
+
 //CSS POSITION 
 //property control the placement of elements on a web page
 //1 STATIC : IS default position normal document flow 

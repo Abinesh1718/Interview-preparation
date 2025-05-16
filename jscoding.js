@@ -85,6 +85,19 @@ function duplicatess(arr) {
 }
 
 
+function rotate(arr, k) {
+    let l = arr.length
+    k = k % l
+
+    for (let i = 0; i < k; i++) {
+        arr.unshift(arr.pop())
+    }
+    return arr
+}
+
+console.log(rotate([1, 2, 3, 4, 5], 3))
+
+
 function firstNonRepeating(str) {
 
     let result = {}
@@ -604,3 +617,16 @@ return expect-sum
 }
 
 console.log(findMissingnum([1,2,3,4,6]))
+
+
+function rotate(arr,k){
+  let l=arr.length
+  k=k%l
+  
+  for(let i=0;i<k;i++){
+    arr.unshift(arr.pop())
+  }
+  return arr
+}
+
+console.log(rotate([1,2,3,4,5],3))

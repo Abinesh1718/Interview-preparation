@@ -328,7 +328,7 @@ function mergedArrays(arr1, arr2) {
   let mergedArray = [];
   while (i < arr1.length && j < arr2.length) {
     if (arr1[i] <= arr2[j]) {
-      mergedArray.push(arr1[i])
+      mergedArray.push(arr1[ssi])
       i++
     } else {
       mergedArray.push(arr2[j])
@@ -352,7 +352,7 @@ function mergedArrays(arr1, arr2) {
 
 //MIN ELEMENT FIND FROM ARRAYS 
 
-function minput(arr) {
+function minputsasa(arr) {
   let min = arr[0]
 
 

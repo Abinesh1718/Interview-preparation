@@ -451,6 +451,35 @@ Dispatch : sends an actions to the store
 Selector : function retrive specific state value 
  
 
+1. What is Redux-Saga and why is it used?
+
+Redux saga is a middleware for redux handle side effects like data fetching asynchronus tasks .  it uses 
+
+2. What is the difference between call and put in Redux-Saga?
+
+| Method           | Purpose                                                    |
+| ---------------- | ---------------------------------------------------------- |
+| `call(fn, args)` | Calls a function, usually an API (yields a blocking call). |
+| `put(action)`    | Dispatches an action to the Redux store.                   |
+
+
+3.Generator function?
+
+a generator functoin is a special type of function that introduce in es6 it can pause and resume its excution
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 redux vs Context 
 
@@ -542,6 +571,15 @@ UNMOUNT inthis phase immidiatlly invoked before the componant remove from dom
 
 
 
+REACT 19V Feartures ?
+
+1.Automatic optimization so we dont need to use usememo
+2.useOptimistic hooks for UI Update upadate easier 
+3.Better form actions use help of useActionSatate
+4.Automatic skipping re-renders 
+
+
+
 REACT FRAGMENT
 
 react fragments used to allowing to add multiple child element without adding extra nodes
@@ -549,6 +587,11 @@ react fragments used to allowing to add multiple child element without adding ex
 
 USE REF
 use ref used to utilize to create a refrence of dom element , enabling to access and manipulations
+
+
+Web pack ?
+ webpack is a moduler bundle its take html.css,js and bundle the one or more optmizied output files from the browser
+
 
 
 

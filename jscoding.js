@@ -567,3 +567,40 @@ function repeatedvalue(str) {
 }
 
 //   console.log(repeatedvalue("javascript"))
+
+
+
+// Move Zeroes to End
+
+function MovetoLast(arr){
+    let index=0
+
+    for(let i=0;i<arr.length;i++){
+        if(arr[i] !==0){
+            arr[index ++] =arr[i]
+        }
+    }
+
+    while(index <arr.length){
+        arr[index++]==0
+    }
+
+return arr
+}
+
+console.log(moveZeroes([0,1,0,3,12]))
+
+
+function findMissingnum(arr){
+  
+  let length=arr.length+1
+  
+const sum=arr.reduce((acc,value)=>acc+value,0)
+
+const expect=length*(length+1)/2
+
+return expect-sum
+  
+}
+
+console.log(findMissingnum([1,2,3,4,6]))

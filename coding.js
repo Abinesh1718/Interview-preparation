@@ -85,9 +85,55 @@ function mostlyrepeted(arr) {
 // console.log(mostlyrepeted([4, 8, 2, 4, 8, 1, 7]));
 
 
+const a = [
 
+    { a: '1', b: '2' },
 
+    { c: '2', d: '4' },
 
+    { c: '2', d: '4' },
+
+    { a: '1', b: '2' }
+
+];
+
+let uniqValues=[...new Map(a.map((data)=>[data.a,data])).values()]
+
+console.log(uniqValues)
+ 
+ 
+ function CreateRow(rows,col){
+  let matrix=[]
+  
+  for(let i=0;i<rows;i++){
+    let row=[]
+    for(let j=0;j<col;j++){
+      row.push(Math.floor(Math.random()*10))
+    }
+    matrix.push(row)
+    
+  }
+  
+  return matrix
+}
+
+console.log(CreateRow(3,4))
+
+function CheckTwoArray(a,b){    
+  if (a.length !=b.length)return false
+  
+  for(let i=0;i<a.length;i++){
+    if(a[i] !== b[i]){
+      return false
+    }
+  }
+  return true
+}
+
+// const a = [10, 20, 80];
+// const b = [10, 20, 30];
+
+// console.log("Arrays are equal:", CheckTwoArray(a, b))
 
 
 function sorted(arr) {
@@ -106,6 +152,23 @@ function sorted(arr) {
     return arr
 
 }
+
+function Reverse(str){
+  if(str.length<1 )return str
+  return Reverse(str.slice(1))+str[0]
+}
+
+console.log(Reverse("ABINESH"))
+
+
+function Palindrom(str){
+  if(str.length <1)return true
+  
+  if(str[0] !==str[str.length-1]) return false
+
+  return Palindrom(str.slice(1,-1))
+}
+
 
 
 function insert(array1) {

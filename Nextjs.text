@@ -1,0 +1,33 @@
+How can a custom  errro page define in Next js ?
+
+_error.js has to be defined in the page folder
+
+
+What is SSR ?
+SSR is Server side rendering its enabling rendering on the server a client page app then we can send to that rendred page to that client 
+
+
+How can serverless mode can be implement ?
+we have to config in next.config file to target serverless above 12v no need to config
+
+
+ What is Automatic Code Splitting in Next.js ?
+ automatic code splitting means that Next js only loaded js file for the current page rathan than entire app bundle at once
+
+
+ What is getStaticProps and getServerSideProps?
+
+ getStaticProps fetch data build time 
+ getServerSideProps : fetch data from each request
+
+
+ Exxplain API routes in Next js ?
+ Next js allows api routs inside api folder each files map to endpoint 
+
+
+ What is Image optimization in Next js ?
+
+ Next js provides automatically optmize images ex, resize lazy loading etc 
+ import Image from 'next/Image'
+
+ 

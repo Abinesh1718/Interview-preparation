@@ -1,6 +1,7 @@
 ** DFFRNCE BETWEEN FETCH VS AXIOS**
 
 fetch is built in browser api and axios is third party api 
+
 fetch is to FOLLOWS CORS policy  but axios automaticaly handle CORS policy 
 fetch does not support INTRERCEPTOR BUT axios support INTERSEPTOR
 Axios provides higher level  API FOR HTTP REQUEST
@@ -39,7 +40,7 @@ both are comparison operator. == is used to compare values whereas,=== is used c
 JavaScript is a dynamically typed language, meaning the type of a variable is checked at runtime, 
 	
 
-
+ 
 NULL VS UNDEFINED
 
 Null is a object its reperensets absence of value asigned meanwhile undefined variable  declare but value not asign
@@ -338,15 +339,20 @@ WHAT ARE THE FEATURES OF REACT JS
 one way data flow , componant based architacture, jsx extrensions, virtual DOM
  
 
+What is React strict mode and what are its benefits?
+strict mode is development tool which is used to identify for potensiol problems in an application 
 
-WHAT IS JSX 
+WHAT IS JSX  
 jsx is a javascript extenstion its allow to write html structure in react componants 
+
+Explain server-side rendering of React applications and its benefits? 
 
 
 
 SIGNIFICANTS OF VIRUTUAL DOM
 
-virual dom is light weight of copy of original dom , when change occur in local states to update the perticular Real dom ,the updating process involve is compare to current virutual dom with previos virutual dom
+virual dom is light weight of copy of original dom , when change occur in local states to update the perticular Real dom ,
+the updating process involve is compare to current virutual dom with previos virutual dom
 
 
 CLASS COMPONANTS VS FUNCTIONAL COMPONANTS 
@@ -610,6 +616,9 @@ const interleavedString = interleaveStrings(str1, str2);
 console.log(interleavedString); // Output: a1b2c3456
 
 	
+
+
+
 
 React js 
 that allows to you build user interface and reusable  UI componants . React uses server-side rendering to provide a flexible and performance based solutions .light weight and virtual dom and jsx 

@@ -1,0 +1,151 @@
+JavaScript 
+
+
+
+
+CSS
+
+🔹 1. What is the difference between id and class in CSS?
+ID is used to uniqly identify to apply style for single element
+Class is used to style for group for multiple element
+
+🔹 5. Difference between em, rem, %, px units
+px is absolute pixel size
+em Relative to parent element 
+rm relative to root element
+% relative to parent container 
+
+🔹 7. How to center a div horizontally and vertically?
+
+.parent {
+    display:flex,
+    justify-content:center,
+    align-items:center,
+    height:100vh
+
+}
+
+
+🔹 8. What is the difference between visibility: hidden; and display: none;?
+visibility:hidden its keep space in element
+display:none : its completely removed element from layout
+
+
+🔹 9. Media Queries in CSS?
+
+@media(max-width:768px){
+    .parent{
+        color:red
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+React 
+
+✅What is React ?
+React is JavaScript library created by facebook for creating re-usable componant,primary for single page application.
+React include Componant based Architecure
+
+
+✅What is the difference between React Node, React Element, and a React Component?
+React Node is a renderable unit such as string , number, null
+React Element is a JavaScript object that describes what youu want to render on the screen 
+React Componant is a eithar function or class that return react elment 
+
+✅What is JSX and how does it work?
+JSX is Stands for JavaScript XML its sytext extension for JavaScript that allows html code with in JavaScript
+
+
+✅What is the difference between state and props in React?
+State is a mutable and local data storage it can be change over time 
+Props is A Immutable its read only attribut its passed parent componant to child componant
+
+
+✅What is the purpose of the key prop in React?
+Key which i used to uniqly indentify for updating and remove for the purpose 
+
+
+
+
+
+Node js
+
+✅ 1. What is Node.js?
+Node js is a run time environment its built in chrome v8 JavaScript engine , its allows JavaScript code in server side
+its designed for scalable and fast network application
+
+
+✅ 2. What is the difference between process.nextTick(), setImmediate(), and setTimeout()?
+process.nextTick() its runs before next event loop
+setImmediate() its runs on the next event loop
+setTimeout() runs after some specified delay
+
+✅ 3. What is Event Loop in Node.js?
+event loop is  what alllows in node js non-blocking i/o operation and events asynchronusly on a single thread .
+
+✅ 4. What are streams in Node.js?
+Streams are used to handle  Read , write data in chunks there are four types
+Readable , writable , duplex, transform 
+
+✅ 5. What is middleware in Node.js?
+
+middleware function are function that have access to req,res,next()in the request response cycle . 
+They are commanly used in Express js to handle logging, authendicaton and validation
+
+✅ 6. How does Node.js handle asynchronous code?
+using callback,async and await , promise 
+
+✅ 7. What is the difference between require() and import?
+require () its comman js syntex and used in older node js version
+import() its used n ES6 modern node js
+
+
+
+
+
+
+
+
+Next js 
+
+✅ 1. What is Next.js?
+Next js is a React framwork for building Full stack web application  futures like
+server side rendering 
+static side rendering 
+Api routs 
+file based routing 
+Optmized performence
+
+
+
+
+

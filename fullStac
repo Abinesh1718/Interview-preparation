@@ -165,9 +165,8 @@ Event Loop in js ?
 Js is single thread  it can only excute one by one task at a time .
 event loop manages the excution of multiple task by periotizing and sheduling them efficintly 
 
-
+  
 This KEY WORD IN JS 
-
  its allowes to access the property and methods within the context of the object
  
 

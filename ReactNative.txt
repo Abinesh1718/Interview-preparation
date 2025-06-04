@@ -1,6 +1,6 @@
 1. What is React Native, and how is it different from React.js?
 React Native is a framework that allows developers to build mobile applications using React and JavaScript. Unlike React.js,
- which is used for web applications, React Native compiles to native components, enabling cross-platform mobile development for iOS and Android.
+which is used for web applications, React Native compiles to native components, enabling cross-platform mobile development for iOS and Android.
 
  3. What are the core components of React Native?
  View : view is similer to div in html its uses for layout 
@@ -11,12 +11,11 @@ React Native is a framework that allows developers to build mobile applications 
  TouchableOpacity : its uses for Touch intraction like button,links
 
  5. How do you handle navigation in a React Native app?
-
 import {NavigationContainer} from '@react-navigation/native'
 import {createStackNavigator} from 'react-navigation/stack'
 
-const stack=createStackNavigator()
 
+const stack=createStackNavigator()
 export default funtion App(){
     return(
     <NavigationContainer>
@@ -84,7 +83,6 @@ What is the difference between Animated API and react-native-reanimated?
 Animates api : its runs on JS Thread ,
 reanimated : Its Runs on UI Thread 
 
-
  System Design & Architecture ?
  Seprate UI and Busines Logic
  Implement lazy loading for componants
@@ -141,3 +139,114 @@ const socket=io("http:ajcajk")
     return ()=>socket.disconnect()
 
   },[])
+
+
+Can you explain the purpose of the Metro bundler in React Native?
+Metro is the JavaScript bundler used by React Native to bundle and serve the app's JavaScript code.
+
+OR React Native uses metro ti build js code and assests
+
+How do you handle state management in a React Native app?
+State can be managed using React's built-in useState and useContext hooks for small applications, or libraries like Redux for larger applications
+
+What is a native module, and when would you use one in React Native?
+A native module is a way to integrate native code (Java, Objective-C, Swift) with React Native when certain functionalities
+are not available in JavaScript
+
+2. What are the common performance issues in React Native and how do you fix them?
+
+Unoptimized FlatList → Use keyExtractor, initialNumToRender, windowSize.
+Re-renders → Use React.memo, useCallback, useMemo.
+Large images → Compress and use CDN.
+Avoid anonymous functions in render → Move them outside the render scope.
+
+
+3. How do you handle device-specific UI in React Native?
+
+Platform.OS (ios or android) for conditional logic.
+Platform.select() for styles.
+Dimensions API or react-native-responsive-screen for responsive layout.
+Safe area handling using react-native-safe-area-context
+
+4. What is the difference between ScrollView and FlatList?
+
+ScrollView: Renders all items at once → bad for large lists.
+FlatList: Renders only visible items → performense for long lists
+
+6. Explain how to implement navigation with parameters in React Native.
+
+// Passing params
+navigation.navigate('Details', { userId: 42 });
+
+// Receiving params
+const { userId } = route.params;
+
+10. How would you implement dark mode in a React Native app?
+
+Use Appearance API or useColorScheme() hook.
+Theme-based implementation using context or libraries like react-native-paper or styled-components.
+
+11. How do you handle offline data in React Native apps?
+Use AsyncStorage for local storage.
+Use NetInfo to detect network status.
+Libraries like redux-persist, realm, or WatermelonDB help manage offline state and sync.
+
+12. How do you handle image caching in React Native?
+Use third-party libraries like react-native-fast-image for optimized image loading and caching.
+Avoid reloading images unnecessarily by caching URIs
+
+14. What steps do you follow to release a React Native app?
+iOS: Archive via Xcode and upload to App Store.
+Android: Generate release.apk or aab and upload to Play Console.
+Use react-native-config for managing env variables.
+
+15. How do you handle app crashes or logs in production?
+Use Sentry or BugSnag for real-time crash reporting.
+Use Flipper for debugging during development.
+Firebase Crashlytics for mobile crash analytics.
+
+
+new react native architecture what changes it brings ?
+
+Fabric – New rendering engine for faster and smoother UI.
+
+TurboModules – Loads native modules on-demand, improving startup time.
+
+JSI (JavaScript Interface) – Enables direct, fast JS-to-native communication (no bridge).
+
+Codegen – Auto-generates type-safe native module code.
+
+
+
+how do you handle console.log remove in production whihch tool do you prefer?
+This Babel plugin automatically strips out all console.* statements (like console.log, console.warn, console.error) only in production
+
+module.exports = {
+  presets: ['module:metro-react-native-babel-preset'],
+  env: {
+    production: {
+      plugins: ['transform-remove-console']
+    }
+  }
+};
+How do you implement style based on Platform ?
+We directly import Platform module built from react-native and to make style conditionaly for  the help of Platform
+import { Platform, StyleSheet } from 'react-native';
+const styles = StyleSheet.create({
+  text: {
+    fontSize: Platform.OS === 'ios' ? 18 : 16,
+    color: Platform.OS === 'android' ? 'green' : 'blue',
+  },
+});
+
+how do you optimse least performence in react native  ?
+Use useCallback and useMemo to memoize functions/values.
+Use FlatList for Large list
+
+<FlatList 
+data={data}
+keyExtractor={((data)=>data.id)}
+/>
+to avoid inline style its due to cause slow rendering so use StyleSheet.create()
+remove unse console s , timers 
+use lazy loading

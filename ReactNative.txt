@@ -90,7 +90,7 @@ reanimated : Its Runs on UI Thread
 
  Flatlist
 
- <Flatlist 
+ <FlatList 
 keyExtracter={(item)=>item.id}
 data={Data}
 renderItem={(item)=>(
@@ -206,6 +206,11 @@ Use Flipper for debugging during development.
 Firebase Crashlytics for mobile crash analytics.
 
 
+what is anync storage in react native ?
+async storage is a presistance storage ,key and value storage system for react native its store data in localy 
+
+
+
 new react native architecture what changes it brings ?
 
 Fabric – New rendering engine for faster and smoother UI.
@@ -250,3 +255,20 @@ keyExtractor={((data)=>data.id)}
 to avoid inline style its due to cause slow rendering so use StyleSheet.create()
 remove unse console s , timers 
 use lazy loading
+
+
+
+Shadow DOM and Virtual DOM  ?
+Shadow Dom is for encapsulation , it hides implementation details of a componants
+Virutual Dom is for performance  .  it makes DOM update faser 
+
+
+What is Flexbox ?
+Flex box is one dimentional layout method for arranging rows and column .
+
+what is gesture rsponder system in react native ?
+Gesture responder system is way to manage touch events. it helps decide which componanrt handle touch events' 
+
+
+
+

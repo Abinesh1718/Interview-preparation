@@ -6,10 +6,10 @@ Q2: What is the difference between block-level and inline elements?
  Block level elements are take up the full width of the parent element like example : div,section
  Inline elements are take up the as much width of the parent element like example (span )
  
+
  Q3: What is the difference between id and class in HTML?
 id is the unique indentifier its used only one per page
 class which is used for grouping elements we can be used multiple times in page
-
 
 What is the difference between localStorage, sessionStorage, and cookies
 localStorage : stores data with no expirations time . data remains even  after closing the browser
@@ -51,8 +51,7 @@ sticky : sticky to a defined position when scrolling
 
 
 What is Flexbox ?
-Flexbox is a layout model that arrange elements effectivly  
-
+Flexbox is a layout model that arrange elements effectivly    
 
 What are pseudo-classes and pseudo-elements in CSS
 
@@ -62,7 +61,6 @@ Pseudo-classes : select elemenet based on condition
 }
 
 Pseudo-elements : style specific part of element 
-
 What is the difference between visibility: hidden; and display: none; ?
 
 visibility: hidden : hides the element but keep the space 
@@ -73,7 +71,6 @@ What is z-index in CSS ?
 z-index the controles stacking of elements that overlap .
 which element closer to the users apearson on top of the others
 ex : element with higher z-index value will be positioned in front of the others
-
 
 
 universell selector ?
@@ -136,9 +133,6 @@ One class  properties and method from another class
 
 Polimorphism ?
 Ability to take many forms 
-
-
-
 
 
 
@@ -280,8 +274,7 @@ console.log(reversedNums); // [2, 4, 1, 3]
 
 
 array.toSpliced() used to splice without modify the origanl arrays 
-let newArr = nums.toSpliced(1, 2, 99, 100);
-console.log(newArr); // [3, 99, 100, 2]
+let newArr = nums.toSpliced(1, 2, 99, 100onsole.log(newArr); // [3, 99, 100, 2]
 
 
 arrray.flatMap() used to maps and flattens
@@ -546,7 +539,7 @@ useLayoutEffect → Similar to useEffect, but runs synchronously before browser 
 
 3. Performance Optimization Hooks
 useMemo → Memoizes values to avoid unnecessary recalculations during re-renders.
-useCallback → Memoizes functions to prevent unnecessary re-creations in child components.
+useCallback → Memoizes functions to prevent unnecessary re-creations function in child components.
 
 4. Context & Ref Hooks
 useContext → Provides a way to access context values without prop drilling.
@@ -623,7 +616,6 @@ sharding is the process of spliting data across multiple machine
 
 What is node js ?
 node js is open source ,cross platform js runtime environment that allows to run js in server side , its non=-blocking operations
-
 node js is a single threaded event loop  its managing for multiple request
 
 

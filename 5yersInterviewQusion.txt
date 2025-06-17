@@ -1,4 +1,58 @@
 JavaScript 
+✅what is Hoisting  in javascript ?
+Hoisting is a default behavior of javascript var all the variable and function are moved to top of the current scope during compilation phase
+
+✅what is Closure  in javascript ?
+Closure is Where inner function to access outer function properties even outer function excution completed .inner function cached outer function properties
+
+✅what is Event loop  in javascript ?
+JavaScript is a single thread can excute one task at a time . event loop handle the excution of multiple asynchronous task by perioritize and sheduling the effectivly 
+
+
+✅what is prototype in javascript ?
+In javascript , prototype is a mechanism that enables object into inherit properties
+and methods other object .Each object in js hidden property called prototype
+
+
+✅what is Arrow function in javascript ?
+arrow function to provide shorter more concise syntext and its support implicity return that means we dont need to use return keyword
+
+✅what is Deep Copy and Shallow Copy in javascript ?
+
+Shallow Copy is the copy top level properties only copied .remaing properties stil refrence to the original object.when changes on nested properties still affected to original object
+Deep Copy is the copy of all level properties including nested properties. when changes in nested properties does not affect 
+
+✅what is Call back in javascript ?
+Call back is function that takes anthoer function as a argument to return as therir results
+
+✅what is Promise in javascript ?
+promise is a represenets future results of asynchronous operation whether is succeed or fails
+
+✅what is Async and await in javascript ?
+Async is a sythetic sugar build of top of the promise function .async is always return return promise and await key word is used to pause the excution until promise is resolve
+
+
+TypeScript 
+
+✅ 1. What is TypeScript?
+TypeScript is a superset of JavaScript that adds static typing .it helps catch error at compile time 
+
+
+✅ 4. What is the difference between any, unknown, and never?
+any:Disable type checking and its not safe
+Unkown : you must type check before use its a safer
+never : Represents value never occurs
+
+✅ 5. How do interfaces and types differ in TypeScript?
+interface is used define types in object shaped 
+type : is more flexible (can define unions , primitives)
+
+✅ 8. What is a union type?
+a variable can hold more than one type
+
+✅ 13. What is the difference between interface and class?
+interface is used to define a structure
+class is used for instantiation and logic
 
 
 
@@ -44,31 +98,6 @@ display:none : its completely removed element from layout
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 React 
 
 ✅What is React ?
@@ -92,6 +121,26 @@ Props is A Immutable its read only attribut its passed parent componant to child
 
 ✅What is the purpose of the key prop in React?
 Key which i used to uniqly indentify for updating and remove for the purpose 
+
+✅What are the rules of React hooks?
+Always call hooks in top level of function , never used in inside loops or condiiton and nested functions 
+
+
+✅What is the difference between useEffect and useLayoutEffect in React?
+useEffect  its run asynchronusly after dom has been painted 
+useLayoutEffect its runs after dom mutation but before browser painted
+
+✅What is a Forwared ref in React?
+Forwaredref used to  passed ref from parent componant to child componant
+
+
+✅What is a Interceptor in React?
+interceptor is a function its modifie requ or res before the handle our applcation. and modifing outgoing request eg.authorization
+
+
+✅What is a Pure Componant in React?
+Pure Componant avoid unnecceory render . only render props or state  change
+
 
 
 
@@ -128,7 +177,9 @@ using callback,async and await , promise
 require () its comman js syntex and used in older node js version
 import() its used n ES6 modern node js
 
-
+🔐 What is JWT (JSON Web Token)?
+json web token is a secure way to transmit information its commanly used for authendication
+JWT Structure is 
 
 
 
@@ -144,8 +195,24 @@ static side rendering
 Api routs 
 file based routing 
 Optmized performence
+Middleware support
+Image optimization
+
+✅ 3. What is the difference between SSR, SSG, and CSR in Next.js?
+SSR Server side rendering render on every request getServersideProps()
+SSG static side genarative pre-render built time  getStaticProps()
+CSR Client side rendering on the browser useEffect()
+
+
+✅ 4. What is getStaticProps() and getServerSideProps() in Next.js?
+getStaticprops is used to fetch data at build time for static generation
+getServerSideProps is used for server side rendering  fetch data every request
+
+✅ 10. What is middleware in Next.js?
+Middleware is runs before request is complete . usefull for authendicaton
 
 
 
 
 
+ 

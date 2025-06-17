@@ -1,0 +1,54 @@
+🏢 Who They Are
+
+Clayfin is a prominent provider of Digital Customer Experience solutions tailored for banks and financial institutions. 
+They focus on delivering seamless omnichannel digital interactions—across web,
+mobile, wearables, and APIs—to enhance customer engagement .
+Founded: in 2000 ,
+Headquarters: Chennai, India (also offices in Bengaluru, Hyderabad, Dubai) 
+
+🚀 What They Offer
+1. Omnichannel Digital Banking Platform
+2. Personal Financial Management (PFM)
+3. Digital Onboarding & APIs
+4. Corporate Banking Solutions
+
+
+Clients :
+BRAC Bank, Bandhan Bank, Jana Small Finance, Burgan Bank
+
+
+📊 Revenue
+
+FY 2022–23: Revenue increased from ~₹ 418.6 cr to ~₹ 532.6 cr — a growth of ~27.3% YOY.
+FY 2024: ₹ 947.5 cr — an impressive ~78% YOY growth.
+
+🔥 Top Competitors of Clayfin (India + Global)  :
+🏦 1. Intellect Design Arena (Chennai)
+💼 Offers omnichannel platforms, PFM, corporate banking, and treasury solutions
+
+2. TCS BaNCS
+🧠 3. Temenos (Switzerland)
+💻 4. Backbase (Netherlands)
+🏦 5. Finacle (Infosys)
+
+
+
+✅ Exact technology point of improvement for Clayfin
+Migrate from monolithic modules to microservices
+Use containerization (Docker) and orchestration (Kubernetes)
+Implement event-driven architecture (Kafka, RabbitMQ)
+
+9. Tell me about a time you handled production downtime.
+Once a payment service failed due to an unhandled edge case. I quickly checked logs, hot-fixed the API, and
+deployed it with rollback support. Then we added test cases and monitoring to prevent future issues
+
+
+10. Why do you want to join Clayfin?
+I’m passionate about building secure, scalable financial applications. 
+Clayfin’s focus on customer-centric digital banking and innovation in PFM aligns with my skills and goals. 
+I’m excited to contribute to your product evolution and work with forward-thinking teams.
+
+8. Why should we hire you?
+I bring a solid blend of hands-on technical expertise, ownership mindset, and domain understanding in digital banking
+. I’m not just a coder—I think in terms of customer experience, scalability, and long-term product quality. 
+I’m excited about Clayfin’s mission and would love to contribute to its next growth phase

@@ -120,7 +120,7 @@ console.log(uniqValues)
 console.log(CreateRow(3,4))
 
 function CheckTwoArray(a,b){    
-  if (a.length !=b.length)return false
+  if (a.length != b.length)return false
   
   for(let i=0;i<a.length;i++){
     if(a[i] !== b[i]){
@@ -152,6 +152,15 @@ function sorted(arr) {
     return arr
 
 }
+
+// COMPARE
+const a = { name: "Abi", details: { age: 25 } };
+const b = { name: "Abi", details: { age: 25 } };
+
+
+console.log(JSON.stringify(a) === JSON.stringify(b))
+
+
 
 function Reverse(str){
   if(str.length<1 )return str

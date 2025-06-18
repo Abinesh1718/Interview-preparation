@@ -39,8 +39,10 @@ Use containerization (Docker) and orchestration (Kubernetes)
 Implement event-driven architecture (Kafka, RabbitMQ)
 
 ✅ Tell me about a time you handled production downtime.
-Once a payment service failed due to an unhandled edge case. I quickly checked logs, hot-fixed the API, and
-deployed it with rollback support. Then we added test cases and monitoring to prevent future issues
+Once a payment service failed due to an unhandled edge case. 
+I quickly checked logs, hot-fixed the API, and
+deployed it with rollback support. Then we added test cases 
+and monitoring to prevent future issues
 
 
 ✅. Why do you want to join Clayfin?
@@ -49,17 +51,21 @@ Clayfin’s focus on customer-centric digital banking and innovation in PFM alig
 I’m excited to contribute to your product evolution and work with forward-thinking teams.
 
 ✅ Why should we hire you?
-I bring a solid blend of hands-on technical expertise, ownership mindset, and domain understanding in digital banking
-. I’m not just a coder—I think in terms of customer experience, scalability, and long-term product quality. 
+I bring a solid blend of hands-on technical expertise, ownership mindset, 
+and domain understanding in digital banking
+. I’m not just a coder—I think in terms of customer experience, 
+scalability, and long-term product quality. 
 I’m excited about Clayfin’s mission and would love to contribute to its next growth phase
 
 ✅ Tell me about your current project.
-I'm working on a POS application built on a microservices architecture. Each service handles a core function like billing,
+I'm working on a POS application built on a microservices architecture. 
+Each service handles a core function like billing,
  inventory, and user management. I'm involved in service development, API integration,
 and ensuring secure, scalable communication between services.
 
 ✅ What are your roles and responsibilities?
-I design and develop microservices, handle API integration, write test cases, collaborate with QA/DevOps, and 
+I design and develop microservices, handle API integration, 
+write test cases, collaborate with QA/DevOps, and 
 manage deployments using Docker and CI/CD pipelines.
 
 ✅ How do you manage team coordination?
@@ -67,7 +73,8 @@ We follow Agile/Scrum, with daily standups, sprint planning, and Jira for task t
 I regularly coordinate with frontend, QA, and DevOps teams.
 
 ✅  What is your approach to problem-solving?
-I break down the issue, identify root causes using logs and monitoring tools, discuss solutions with the team, and implement 
+I break down the issue, identify root causes using logs and monitoring tools,
+ discuss solutions with the team, and implement 
 a fix with testing and documentation.
 
 
@@ -75,7 +82,14 @@ a fix with testing and documentation.
 I aim to grow into a technical leadership role, mentoring others, 
 leading architectural decisions, and driving impactful product development.
 
-✅ Suppose there’s a delivery or urgent task on weekends, will you work?
-Yes, I’m open to working on weekends when it's critical — like production issues, urgent deliveries, or client deadlines. 
-I understand project needs come first, and I’m always ready to support the team when required. That said,
- I also believe in planning well to minimize last-minute work.
+✅ Urgent task on weekends, will you work?
+Yes, I’m open to working on weekends when it's critical — like production issues,
+urgent deliveries, or client deadlines. 
+I understand project needs come first, and I’m always ready to support 
+the team when required. That said,
+I also believe in planning well to minimize last-minute work.
+
+ ✅What will you do if the requirement changes at the last moment?
+ I stay calm, quickly analyze the impact, and prioritize tasks.
+ If it's critical, I focus on delivering the change with quality,
+  even if it means extra effort. Flexibility is key in dynamic projects.

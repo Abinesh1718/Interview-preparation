@@ -152,7 +152,8 @@ Non-Primitive : Object , arrays , date
 
 
 Hoisting in js ?
-Hoisting is default behavior of javascript var all the variable and function declaration are move to top of the current scope during compilation phase 
+Hoisting is default behavior of javascript var all the variable and function declaration are move to top of the current scope
+during compilation phase 
 
 
 Event Loop in js ?
@@ -458,17 +459,6 @@ Redux saga is a middleware for redux handle side effects like data fetching asyn
 3.Generator function?
 
 a generator functoin is a special type of function that introduce in es6 it can pause and resume its excution
-
-
-
-
-
-
-
-
-
-
-
 
 
 

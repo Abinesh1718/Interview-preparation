@@ -1,0 +1,50 @@
+✅ SELECT – Read data from a table :
+SELECT *FROM employee ;
+SELECT name,age FROM employee
+SELECT name,salary from employee WHERE salary >=60000
+INSERT INTO employee (name,age) VALUES('ABI',26)
+UPDATE employee set age=15 WHERE name='abi'
+DELETE FROM employee WHERE name='ABI'
+CREATE TABLE users(id int primary key,name varchar(250),age int,role varchar(250))
+DROP TABLE users
+
+DROP
+Removes entire table 
+DELETE 
+DELETE specific roes from table 
+
+TRUNCATE
+delete all rows from table 
+
+
+SELECT * FROM employee ORDER BY age DESC
+
+SELECT* FROM employee LIMIT 10
+
+SELECT order.id,customer.name FROM orders JOIN customer ON customer.id=order.customer_id
+
+SELECT order.id,customer.name FROM orders LEFT JOIN customer ON customer.id=order.customer_id
+
+SELECT name AS Emp_name , salary AS Emp_salary
+SELECT DISTINCT role FROM employee // return uniq values only
+SELECT *FROM employee WHERE salary BETWEEN 50000 AND 60000;
+SELECT * FROM employee WHERE name LIKE 'A%'
+
+
+SELECT name,salary , role
+  CASE 
+  WHEN salary >= 60000 THEN 'High'
+  WHEN salary BETWEEN 50000 AND 55000 THEN 'Medium'
+  ELSE 'LOW'
+  END AS salary_level
+  FROM employee
+
+
+  
+SELECT name, salary, role,
+  CASE role
+    WHEN 'Manager' THEN 'Team Lead'
+    WHEN 'Developer' THEN 'Engineer'
+    ELSE 'Support Staff'
+  END AS custom_title
+FROM employee

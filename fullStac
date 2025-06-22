@@ -643,6 +643,51 @@ posport js a node js middleware authedication used to handle login , register .
 JWT Token ?
 JWT token  is a compact  secure way to transmit our data clints and server  
 
+7. What is the difference between res.send() and res.json()?
+res.send() it can send any type of response(html,text,json)
+res.json() it can send result Json response
+ 
+
+✅ 1. body-parser
+body-parser is a middleware to parse the incomming request body so you can access it as req.body
+
+✅ 2. cors
+CORS allows frontend  to communicate with youre backend API
+
+✅ 3. passport ?
+passport  is a powerfull authendication middleware for Node js .it supports login with username,password
+
+
+why node js is a single thread
+
+Node js is a single thread to keep thigs like fast , simple and scalable for I/O Operation by using event loop 
+
+
+
+MIddleware ?
+Middleware is a function in Express that performs a specific task (like authentication, logging, or validation). If the middleware handles the response, it ends the request-response cycle. Otherwise, it should call next() to pass control to the next middleware or route handler.
+
+
+EXPRES JS VS NODE JS 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 LEFT JOIN QUERY 
 

@@ -160,7 +160,7 @@ Event Loop in js ?
 Js is single thread  it can only excute one by one task at a time .
 event loop manages the excution of multiple task by periotizing and sheduling them efficintly 
 
-  
+
 This KEY WORD IN JS 
  its allowes to access the property and methods within the context of the object
  
@@ -449,7 +449,7 @@ Selector : function retrive specific state value
 Redux saga is a middleware for redux handle side effects like data fetching asynchronus tasks .  it uses 
 
 2. What is the difference between call and put in Redux-Saga?
-
+ 
 | Method           | Purpose                                                    |
 | ---------------- | ---------------------------------------------------------- |
 | `call(fn, args)` | Calls a function, usually an API (yields a blocking call). |
@@ -594,6 +594,10 @@ Reconciliation is the process where React updates the UI efficiently using the V
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 NODE JS 
 
+What is node js ?
+node js is open source ,cross platform js runtime environment that allows to run js in server side , its non=-blocking operations
+node js is a single threaded event loop  its managing for multiple request
+
 Diffrence bw Node js and Javascript ?
 JS : Js used to make website is intractive and used in browser
 NODE JS : which allows js to be used in server . its non-blocking 
@@ -603,10 +607,6 @@ normalization is the process of organizing to reduce redudancy to improve data i
 
 Sharding in Mongodb ?
 sharding is the process of spliting data across multiple machine 
-
-What is node js ?
-node js is open source ,cross platform js runtime environment that allows to run js in server side , its non=-blocking operations
-node js is a single threaded event loop  its managing for multiple request
 
 
 5. What is the difference between process.nextTick(), setImmediate(), and setTimeout()?
@@ -638,7 +638,7 @@ CORS is a browser security feature  that controls access to resorucess from diff
 its prevent un-authorized cross-orgin request 
 
 What is Passport js
-posport js a node js middleware authedication used to handle login , register .
+posport js a node js middleware authedication used to handle login , register.
 
 JWT Token ?
 JWT token  is a compact  secure way to transmit our data clints and server  

@@ -1,20 +1,10 @@
 
-✅ Exact technology point of improvement for Clayfin
-Migrate from monolithic modules to microservices
-Use containerization (Docker) and orchestration (Kubernetes)
-Implement event-driven architecture (Kafka, RabbitMQ)
-
 ✅ Tell me about a time you handled production downtime.
 Once a payment service failed due to an unhandled edge case. 
 I quickly checked logs, hot-fixed the API, and
 deployed it with rollback support. Then we added test cases 
 and monitoring to prevent future issues
 
-
-✅. Why do you want to join Clayfin?
-I’m passionate about building secure, scalable financial applications. 
-Clayfin’s focus on customer-centric digital banking and innovation in PFM aligns with my skills and goals. 
-I’m excited to contribute to your product evolution and work with forward-thinking teams.
 
 ✅ Why should we hire you?
 I bring a solid blend of hands-on technical expertise, ownership mindset, 
@@ -75,3 +65,31 @@ and I’m confident in picking up new tools efficiently to contribute effectivel
 I’ll start by understanding the scope and breaking it into high-priority tasks.
 I’ll work closely with the team to plan sprints, cut non-critical features if needed,
 and ensure clear communication. I’ll focus on delivering a stable core product first, then iterate quickly.
+
+
+layer arch
+
+1.data access layer
+2.logic
+
+
+✅ 2. NuGet Packages (Reusable Libraries)
+Ef core 
+EF tools
+EF design
+
+
+
+Program.cs or Startup.cs.
+
+app.Run();
+app.use()
+
+AddScoped -> one time intilize
+AddSingleton -> create one instantce for whole application for life time
+AddTransit - > its create one instance for each req
+
+
+AutoMapper -> used for map objects from one type to another
+
+controler-service-repo-model-dbcontext

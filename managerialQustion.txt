@@ -112,3 +112,46 @@ controler-service-repo-model-dbcontext
 
 
 Class Library -> used for Maintability and Code Reusability
+
+
+ ✅What is ASP.NET Core Web API?
+ ASP.NET Core Web API is a framework for building RESTful services 
+ using HTTP. It allows you to expose data and business logic 
+ as APIs that can be consumed by clients such as browsers, mobile apps, or other backend systems.
+
+  ✅What is the difference between IActionResult and ActionResult<T> ?
+
+IActionResult: Generic interface for HTTP responses. Can return any result like Ok(), BadRequest(), etc.
+
+ActionResult<T>: Combines a model (T) and HTTP response — useful for returning data with status.
+
+ ✅What are middleware components?
+
+UseRouting()
+UseAuthentication()
+UseAuthorization()
+UseEndpoints(...)
+
+ ✅What are middleware components?
+ ASP.NET Core has built-in DI. It injects services via constructor to avoid tight coupling.
+
+ ✅What is the difference between [FromQuery], [FromBody], [FromRoute]?
+
+ [FromQuery]	URL query string
+[FromBody]	   Request body (JSON)
+[FromRoute]  	URL route values
+
+ ✅8. What is Model Binding?
+ Model binding automatically maps HTTP request data (query, route, body) to method parameters or C# objects.
+
+ ✅ What is the purpose of app.UseRouting() and app.UseEndpoints()
+
+ UseRouting() – Matches the incoming request URL to endpoints.
+
+UseEndpoints() – Executes the matched endpoint (e.g., controller action).
+
+ ✅ 10. How do you handle exceptions globally?
+ Use middleware like UseExceptionHandler() or custom middleware.
+
+
+ 

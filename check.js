@@ -32,13 +32,22 @@ let arr = [
 
 ]
 
+console.log('FIRST');
+setTimeout(() => {
+    console.log('SEC');
+}, 0);
+
+console.log('THIRD');
+
+
+
 function data(arr) {
     arr.forEach(data => {
         let subjectss = data.subject[0]
         // console.log("value", data)
 
-        let subjectavalue = Object.values(subjectss).reduce((sub, value) => {
-            return sub + value
+        let subjectavalue = Object.values(subjectss).reduce((acc, cum) => {
+            return sub + value , 0
         }
         )
 

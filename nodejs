@@ -1,0 +1,147 @@
+NODE JS 
+
+What is node js ?
+node js is open source ,cross platform js runtime
+ environment that allows to run js in server side , its non=-blocking operations
+node js is a single threaded event loop  its managing for multiple request
+
+Diffrence bw Node js and Javascript ?
+JS : Js used to make website is intractive and used in browser
+NODE JS : which allows js to be used in server . its non-blocking 
+
+WHat is normalization ?
+normalization is the process of organizing to reduce redudancy to improve data integrity 
+
+Sharding in Mongodb ?
+sharding is the process of spliting data across multiple machine 
+
+
+5. What is the difference between process.nextTick(), setImmediate(), and setTimeout()?
+process.nextTick : its excute after current task end
+setImmediate : its excute in check phase
+setTimeout : its excutes in after some specified time
+
+
+ What is the difference between require and import in Node.js?
+
+require is support in common js
+import is support in modern js and es 6 syntex
+
+🟢 9. What is middleware in Express.js?
+
+Midleware is a functions its access req,res,next() . 
+they are used for task like logging,authendication and validations
+
+what is cluster in node js ?
+its create a multiple instence of our application that  share the same server port
+
+What is an Event Emitter in Node.js?
+the event emiter class allows to create custom event handler
+
+ What is the Event Loop in Node.js?
+ event loop handling asynchronus operation in nodejs . it keep checking the callback queue and process tasks 
+
+What is Cors ?
+CORS is a browser security feature  that controls access to resorucess from diffrent domain
+its prevent un-authorized cross-orgin request 
+
+What is Passport js
+posport js a node js middleware authedication used to handle login , register.
+
+JWT Token ?
+JWT token  is a compact  secure way to transmit our data clints and server  
+
+7. What is the difference between res.send() and res.json()?
+res.send() it can send any type of response(html,text,json)
+res.json() it can send result Json response
+ 
+
+✅ 1. body-parser
+body-parser is a middleware to parse the incomming request body so you can access it as req.body
+
+✅ 2. cors
+CORS allows frontend  to communicate with youre backend API
+
+✅ 3. passport ?
+passport  is a powerfull authendication middleware for Node js .it supports login with username,password
+
+
+why node js is a single thread
+
+Node js is a single thread to keep thigs like fast , simple and scalable for I/O Operation by using event loop 
+
+
+
+MIddleware ?
+Middleware is a function in Express that performs a specific task (like authentication, logging, or validation). If the middleware handles the response, it ends the request-response cycle. Otherwise, it should call next() to pass control to the next middleware or route handler.
+
+
+EXPRES JS VS NODE JS 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+LEFT JOIN QUERY 
+
+SELECT * FROM customer LEFT JOIN order ON customer.id = order.customer_id
+
+RIGHT JOIN
+
+SELECT * FROM customer RIGHT JOIN order ON customer.id = order.customer_id
+
+
+
+SELCT SECOND SALARY VALUE ?
+
+SELECT MAX(salary) from employee WHERE salary < (SELECT Max(salary) FROM employee)
+
+COUNT EMPLOYEE ?
+SELECT COUNT(*) FROM employee
+
+
+SELECT NAME BASED ON SALARY CONDITION ?
+SELECT name FROM employee where salary <= 60000
+
+SEARCH QUERY ?
+select * from employee where name like 'j%'
+
+
+ALTER QUERY ?
+
+ALTER TABLE employee ADD role VARCHAR(100)
+
+
+UPDATE QUERY ?
+UPDATE employee salary =9000 where id=2
+
+
+INSERT QUERY ?
+INSERT INTO task (id, taskname, completed)
+VALUES
+  (6, 'Finish SQL assignment', 1),
+
+
+
+  CREATE QUERY ?
+  
+CREATE TABLE task (
+id INT PRIMARY KEY,
+taskname VARCHAR(280),
+completed BIT DEFAULT 1,
+) 

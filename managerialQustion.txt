@@ -110,7 +110,6 @@ AutoMapper -> used for map objects from one type to another act liks as a Bridge
 
 controler-service-repo-model-dbcontext
 
-
 Class Library -> used for Maintability and Code Reusability
 
 

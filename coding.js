@@ -12,7 +12,7 @@ function duplicates(arr) {
 }
 
 
-// console.log(duplicates([4, 8, 2, 4, 8,1,7]));
+console.log(duplicates([4, 8, 2, 4, 8,1,7]));
 
 
 function uniqvalue(arr) {

@@ -1,28 +1,58 @@
 NODE JS 
 
-What is node js ?
+🟢What is node js ?
 node js is open source ,cross platform js runtime
  environment that allows to run js in server side , its non=-blocking operations
 node js is a single threaded event loop  its managing for multiple request
 
-Diffrence bw Node js and Javascript ?
+
+🟢. What are some best practices for securing a Node.js application?
+
+Validate input (to prevent injection)
+Use HTTPS
+Use environment variables for sensitive configs
+Implement rate limiting
+Use helmet.js to secure HTTP headers
+Keep dependencies up to date
+
+🟢Diffrence bw Node js and Javascript ?
 JS : Js used to make website is intractive and used in browser
 NODE JS : which allows js to be used in server . its non-blocking 
 
-WHat is normalization ?
+🟢WHat is normalization ?
 normalization is the process of organizing to reduce redudancy to improve data integrity 
 
-Sharding in Mongodb ?
+🟢Sharding in Mongodb ?
 sharding is the process of spliting data across multiple machine 
 
 
-5. What is the difference between process.nextTick(), setImmediate(), and setTimeout()?
+🟢. What is the difference between process.nextTick(), setImmediate(), and setTimeout()?
 process.nextTick : its excute after current task end
 setImmediate : its excute in check phase
 setTimeout : its excutes in after some specified time
 
+19. What’s the difference between synchronous and asynchronous code in Node.js?
 
- What is the difference between require and import in Node.js?
+Synchronous code blocks the execution of subsequent
+ code until it finishes.
+
+Asynchronous code allows execution to continue while
+operations (e.g. I/O) run in the background.
+
+
+🟢. How do you test a Node.js API?
+Mocha or Jest for testing framework
+Supertest for API request testing
+
+
+🟢. How do you handle memory leaks in Node.js?
+Use profiling tools like Chrome DevTools, --inspect, heapdump
+Identify objects in memory not being garbage collected
+Monitor memory usage over time
+Use tools like clinic.js, memwatch-next, leakage
+
+
+ 🟢What is the difference between require and import in Node.js?
 
 require is support in common js
 import is support in modern js and es 6 syntex
@@ -32,26 +62,26 @@ import is support in modern js and es 6 syntex
 Midleware is a functions its access req,res,next() . 
 they are used for task like logging,authendication and validations
 
-what is cluster in node js ?
+🟢what is cluster in node js ?
 its create a multiple instence of our application that  share the same server port
 
-What is an Event Emitter in Node.js?
+🟢What is an Event Emitter in Node.js?
 the event emiter class allows to create custom event handler
 
- What is the Event Loop in Node.js?
+ 🟢What is the Event Loop in Node.js?
  event loop handling asynchronus operation in nodejs . it keep checking the callback queue and process tasks 
 
-What is Cors ?
+🟢What is Cors ?
 CORS is a browser security feature  that controls access to resorucess from diffrent domain
 its prevent un-authorized cross-orgin request 
 
-What is Passport js
+🟢 What is Passport js
 posport js a node js middleware authedication used to handle login , register.
 
-JWT Token ?
+🟢JWT Token ?
 JWT token  is a compact  secure way to transmit our data clints and server  
 
-7. What is the difference between res.send() and res.json()?
+🟢. What is the difference between res.send() and res.json()?
 res.send() it can send any type of response(html,text,json)
 res.json() it can send result Json response
  
@@ -66,48 +96,28 @@ CORS allows frontend  to communicate with youre backend API
 passport  is a powerfull authendication middleware for Node js .it supports login with username,password
 
 
-why node js is a single thread
+🟢why node js is a single thread
 
 Node js is a single thread to keep thigs like fast , simple and scalable for I/O Operation by using event loop 
 
 
 
-MIddleware ?
+🟢MIddleware ?
 Middleware is a function in Express that performs a specific task (like authentication, logging, or validation). If the middleware handles the response, it ends the request-response cycle. Otherwise, it should call next() to pass control to the next middleware or route handler.
 
 
-EXPRES JS VS NODE JS 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-LEFT JOIN QUERY 
+🟢LEFT JOIN QUERY 
 
 SELECT * FROM customer LEFT JOIN order ON customer.id = order.customer_id
 
-RIGHT JOIN
+🟢 RIGHT JOIN
 
 SELECT * FROM customer RIGHT JOIN order ON customer.id = order.customer_id
 
 
 
-SELCT SECOND SALARY VALUE ?
+🟢 SELCT SECOND SALARY VALUE ?
 
 SELECT MAX(salary) from employee WHERE salary < (SELECT Max(salary) FROM employee)
 
@@ -115,30 +125,30 @@ COUNT EMPLOYEE ?
 SELECT COUNT(*) FROM employee
 
 
-SELECT NAME BASED ON SALARY CONDITION ?
+🟢 SELECT NAME BASED ON SALARY CONDITION ?
 SELECT name FROM employee where salary <= 60000
 
-SEARCH QUERY ?
+🟢SEARCH QUERY ?
 select * from employee where name like 'j%'
 
 
-ALTER QUERY ?
+🟢 ALTER QUERY ?
 
 ALTER TABLE employee ADD role VARCHAR(100)
 
 
-UPDATE QUERY ?
+🟢UPDATE QUERY ?
 UPDATE employee salary =9000 where id=2
 
 
-INSERT QUERY ?
+🟢 INSERT QUERY ?
 INSERT INTO task (id, taskname, completed)
 VALUES
   (6, 'Finish SQL assignment', 1),
 
 
 
-  CREATE QUERY ?
+ 🟢 CREATE QUERY ?
   
 CREATE TABLE task (
 id INT PRIMARY KEY,

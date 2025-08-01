@@ -1,0 +1,152 @@
+✅ 1. Difference between .NET and .NET Core
+
+| Feature        | .NET Framework                         | .NET Core / .NET 5+ (Modern .NET)      |
+| -------------- | -------------------------------------- | -------------------------------------- |
+| Platform       | Windows-only                           | Cross-platform (Windows, Linux, macOS) |
+| App Types      | Desktop apps (WinForms, WPF), WebForms | Web APIs, MVC, Console, Cloud-native   |
+| Performance    | Moderate                               | High-performance, lightweight          |
+| Open-source    | Partially                              | Fully open-source                      |
+| Future support | Legacy                                 | Actively developed (.NET 8 is latest)  |
+
+✅ 6. OOPs Concepts
+
+Encapsulation: Protect data using access modifiers.
+Inheritance: Reuse code from base class.
+Polymorphism: Same method behaves differently (overload/override).
+Abstraction: Hide internal details using abstract/interface.
+
+✅ 9. What is Dependency Injection?
+A design pattern that allows injecting dependencies
+(services) into a class, rather than creating them inside the class.
+Promotes loose coupling.
+
+✅ 12. What is LINQ (Language Integrated Query)?
+A way to query collections or databases using C# syntax.
+
+ ✅ DI Lifetimes and Registration in Program.cs ?
+
+ | Lifetime  | Description                            |
+| --------- | -------------------------------------- |
+| Singleton | One instance for the app lifetime      |
+| Scoped    | One instance per HTTP request          |
+| Transient | New instance every time it's requested |
+
+✅ 2. How .NET Works ?
+
+CLR (Common Language Runtime): Executes the code.
+BCL (Base Class Library): Provides core functionality.
+Compilation process:
+Source code → IL (Intermediate Language)
+IL → JIT compiled to native code during execution
+
+✅ 19. What is Entity Framework Core?
+An ORM for .NET Core.
+Allows interacting with databases using C# objects.
+
+
+
+✅ 3. What is Middleware in ASP.NET Core?
+
+Middleware are components in the HTTP pipeline that 
+handle requests/responses.
+Examples: Authentication, Logging, CORS, Static Files.
+
+✅ What are the advantages of using .NET Core?
+Cross-platform (Windows, Linux, macOS)
+High performance
+Modular and lightweight
+Microservices-ready
+Built-in Dependency Injection
+Cloud-optimized
+
+
+✅ Project Architecture ?
+
+Controllers (API layer)
+Services (Business logic)
+Repositories (Data access)
+Models/DTOs
+Often follows Clean Architecture or Onion Architecture
+
+✅ What is the difference between .NET Framework and .NET Core?
+.NET Framework is Windows-only and used for desktop, enterprise apps.
+.NET Core is cross-platform, open-source, lightweight, 
+and built for modern cloud/web apps.
+.NET Core is the future (now unified under .NET 5+).
+
+✅ 5. Filters in .NET Core ?
+Filters allow code to run before or after MVC actions:
+Types: Authorization, Action, Result, Exception
+Example: OnActionExecuting, OnResultExecuted, etc.
+
+✅ 8. What is an Interface?
+A contract that defines what methods/properties
+ a class must implement.
+No implementation inside interface.
+
+
+✅ 15. What are Exceptions in C#?
+Errors that occur during execution.
+Handled using try-catch-finally.
+
+
+✅ 16. If Multiple Catch Blocks Exist, How It Works?
+
+Catch blocks are checked top to bottom.
+First matching type gets executed.
+Use most specific exception types first.
+
+✅ 21. What is a Partial Class?
+A class definition split across multiple .cs files.
+Used to separate auto-generated and user-written code
+
+
+
+
+✅ What is the .NET Core pipelie?
+It's a sequence of middleware components that handle HTTP requests and responses.
+Each middleware can process, modify, or pass the request to the next.
+
+✅ What is the role of the CLR (Common Language Runtime)?
+CLR is the execution engine for .NET apps.
+It handles JIT compilation, memory management, garbage 
+collection, type safety, and exception handling.
+
+
+
+✅  What are Request Delegates?
+RequestDelegate is a delegate that processes HTTP requests.
+Signature: Task Invoke(HttpContext context)
+
+✅  How is routing handled in ASP.NET Core?
+Routes map URLs to controller actions using attribute routing or conventional routing.
+Defined via [HttpGet], [Route], or in Program.cs.
+
+✅  What is attribute routing vs conventional routing?
+Attribute routing: Defined with annotations like [HttpGet("api/products/{id}")]
+Conventional routing: Defined using route templates in Program.cs
+
+✅  What are filters in ASP.NET Core?
+Filters allow logic to run before/after actions or results.
+Used for cross-cutting concerns like logging, error handling, authorization.
+
+✅  Types of filters and when to use them?
+Authorization Filter: Runs before action, checks access
+Action Filter: Runs before/after action method
+Result Filter: Runs before/after action result execution
+Exception Filter: Catches unhandled exceptions
+
+✅  What is model binding in Web API?
+Automatically maps HTTP request data (query, route, body) to
+action method parameters or objects.
+
+✅  What is model validation in ASP.NET Core?
+Uses data annotations ([Required], [Range], etc.)
+ASP.NET automatically checks these before controller logic runs.
+
+
+
+✅Difference between AddScoped, AddSingleton, and AddTransient?
+AddSingleton: One instance reused throughout the app
+AddScoped: New instance per HTTP request
+AddTransient: New instance every time it's requested

@@ -197,7 +197,7 @@ WHAT IS CLOSURES IN JS
  
  ASYNC AWAIT 
  
- asyunc and await is syntatic sugar build top of the promise function . async function to return the promise and await to pause the excution of function until promise is resolve 
+ asyunc and await is syntatic sugar build top of the promise function . async function to return the promise and await to pause the excution of function until promise is resolve  
  
 
 ARRAYS *********************************************************************************************

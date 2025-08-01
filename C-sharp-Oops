@@ -1,0 +1,162 @@
+
+// Encapsulation 
+
+using System;
+
+namespace OOPConcepts
+{
+  
+  
+    public class Person
+    {
+        private string name;
+
+        public string Name 
+        {
+            get { return name; }
+            set { name = value; }
+        }
+
+        public void ShowDetails()
+        {
+            Console.WriteLine("Name is: " + Name);
+        }
+    }
+    
+    public class mainClass{
+      
+    public static void Main (string []args){
+      
+        Person person = new Person();
+        person.Name = "Alice";
+        person.ShowDetails();
+    }
+    }
+}
+
+
+//Abtract 
+
+using System;
+
+class OOPConcepts
+{
+    // Abstract class
+    public abstract class Vehicle
+    {
+        // Abstract method (no body)
+        public abstract void Start();
+
+        // Normal method (optional)
+        public void Fuel()
+        {
+            Console.WriteLine("Vehicle has fuel.");
+        }
+    }
+
+    // Concrete class implementing abstract class
+    public class Car : Vehicle
+    {
+        // Must override the abstract method
+        public override void Start()
+        {
+            Console.WriteLine("Car is starting...");
+        }
+    }
+
+    // Main method inside a class
+    public class MainAbstraction
+    {
+        public static void Main(string[] args)
+        {
+            Vehicle vehicle = new Car();  // abstraction in action
+            vehicle.Start();              // Output: Car is starting...
+            vehicle.Fuel();               // Output: Vehicle has fuel.
+        }
+    }
+}
+
+
+
+
+
+// Inheritance
+
+using System;
+
+namespace OOPConcepts
+{
+    public class Animal
+    {
+        public void Eat()
+        {
+            Console.WriteLine("Animal is eating...");
+        }
+    }
+
+    public class Dog : Animal
+    {
+        public void Bark()
+        {
+            Console.WriteLine("Dog is barking...");
+        }
+    }
+        public class MainInheritance
+    {
+    static void Main(string[] args)
+    {
+        Dog dog = new Dog();
+        dog.Eat();   
+        dog.Bark(); 
+    }
+    }
+}
+
+
+
+//Polymorphism
+
+// Overloading
+// Same method name, different params
+
+// Overriding 
+// Base method overridden in child
+
+
+
+
+
+
+
+using System;
+
+namespace OOPConcepts
+{
+    public class Shape
+    {
+        public virtual void Draw()
+        {
+            Console.WriteLine("Drawing Shape...");
+        }
+    }
+
+    public class Circle : Shape
+    {
+        public override void Draw()
+        {
+            Console.WriteLine("Drawing Circle...");
+        }
+    }
+    
+    
+    public class mainClass{
+      
+      public static void Main (string [] args){
+        
+        Shape shape=new Circle ();
+        shape.Draw();
+        
+        
+      }
+    }
+}

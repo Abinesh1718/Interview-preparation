@@ -8,22 +8,29 @@
 | Open-source    | Partially                              | Fully open-source                      |
 | Future support | Legacy                                 | Actively developed (.NET 8 is latest)  |
 
+
+✅ 8. What is an Interface?
+A contract that defines what methods/properties
+ a class must implement.
+No implementation inside interface.
+
+✅ What is a Constructor in C#?
+A constructor is a special method in a class that is automatically called when an object is created.
+It is used to initialize the object with default or custom values.
+
 ✅ 6. OOPs Concepts
 
-Encapsulation: Protect data using access modifiers.
-Inheritance: Reuse code from base class.
+Encapsulation: Wrapping data and methods into a single unit (class) and restricting direct access using access modifiers.
+Inheritance: One class (child) inherits the properties and methods of another (parent), allowing code reuse.
 Polymorphism: Same method behaves differently (overload/override).
 🔹 Method Overloading :Same method name with different parameter types or counts.
 🔹 Method Overriding : Child class provides a new implementation of a virtual method from the parent class.
-Abstraction: Hide internal details using abstract/interface.
+Abstraction: Hiding complex logic and showing only essentials using abstract classes or interfaces.
 
 ✅ 9. What is Dependency Injection?
 A design pattern that allows injecting dependencies
 (services) into a class, rather than creating them inside the class.
 Promotes loose coupling.
-
-✅ 12. What is LINQ (Language Integrated Query)?
-A way to query collections or databases using C# syntax.
 
  ✅ DI Lifetimes and Registration in Program.cs ?
 
@@ -33,8 +40,15 @@ A way to query collections or databases using C# syntax.
 | Scoped    | One instance per HTTP request          |
 | Transient | New instance every time it's requested |
 
-✅ 2. How .NET Works ?
+✅ 12. What is LINQ (Language Integrated Query)?
+A way to query collections or databases using C# syntax.
 
+✅ What is a Delegate in C#?
+A delegate is a type-safe function pointer — it allows you to store
+ references to methods and call them dynamically at runtime.
+Delegates are often used for callbacks, event handling, and passing methods as parameters.
+
+✅ 2. How .NET Works ?
 CLR (Common Language Runtime): Executes the code.
 BCL (Base Class Library): Provides core functionality.
 Compilation process:
@@ -86,10 +100,6 @@ Filters allow code to run before or after MVC actions:
 Types: Authorization, Action, Result, Exception
 Example: OnActionExecuting, OnResultExecuted, etc.
 
-✅ 8. What is an Interface?
-A contract that defines what methods/properties
- a class must implement.
-No implementation inside interface.
 
 
 ✅ 15. What are Exceptions in C#?

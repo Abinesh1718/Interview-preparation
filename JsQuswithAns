@@ -52,59 +52,6 @@ typeOf of NaN it return numbe
 
 
 
-CALL,BIND,APPLY ?
-
-CALL: Calls a function specific this value passed arguments individually (" calls function with arguments immediatly")
-
-const obj={
-  name:"abi",
-  display:function (thing){
-    console.log(this.name+" "+thing)
-  }
-}
-
-const obj1={
-  name:"Bala"
-}
-
-obj.display.call(obj1,"How are you")
-
-
-
-APPLY :function specific this value passed argfments individually with arry ("its same call but argumants arrays")
-
-const obj={
-  name:"abi",
-  display:function (thing){
-    console.log(this.name+" "+thing)
-  }
-}
-
-const obj1={
-  name:"Bala"
-}
-
-obj.display.apply(obj1,["How are you"])
-
-
-
-BIND : its create new function with bound context 
-
-const obj={
-  name:"abi",
-  display:function (thing){
-    console.log(this.name+" "+thing)
-  }
-}
-
-const obj1={
-  name:"Bala"
-}
-
-const resultData=obj.display.bind(obj1)
-
-resultData("How are you")
-
 7.PIMITIVE NON PRIMITIVE 
 
 PRIMITIVE IS string , number ,boolon, undeifned ,null

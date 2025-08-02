@@ -13,6 +13,8 @@
 Encapsulation: Protect data using access modifiers.
 Inheritance: Reuse code from base class.
 Polymorphism: Same method behaves differently (overload/override).
+🔹 Method Overloading :Same method name with different parameter types or counts.
+🔹 Method Overriding : Child class provides a new implementation of a virtual method from the parent class.
 Abstraction: Hide internal details using abstract/interface.
 
 ✅ 9. What is Dependency Injection?
@@ -39,10 +41,21 @@ Compilation process:
 Source code → IL (Intermediate Language)
 IL → JIT compiled to native code during execution
 
+
+✅ What is the role of the CLR (Common Language Runtime)?
+CLR is the execution engine for .NET apps.
+It handles JIT compilation, memory management, garbage 
+collection, type safety, and exception handling.
+
+
 ✅ 19. What is Entity Framework Core?
 An ORM for .NET Core.
 Allows interacting with databases using C# objects.
 
+✅ How Do You Handle Global Exceptions in ASP.NET Core?
+n ASP.NET Core, global exception handling ensures all 
+unhandled exceptions are caught in one place — usually
+ via middleware — so you don’t need try-catch in every controller
 
 
 ✅ 3. What is Middleware in ASP.NET Core?
@@ -67,12 +80,6 @@ Services (Business logic)
 Repositories (Data access)
 Models/DTOs
 Often follows Clean Architecture or Onion Architecture
-
-✅ What is the difference between .NET Framework and .NET Core?
-.NET Framework is Windows-only and used for desktop, enterprise apps.
-.NET Core is cross-platform, open-source, lightweight, 
-and built for modern cloud/web apps.
-.NET Core is the future (now unified under .NET 5+).
 
 ✅ 5. Filters in .NET Core ?
 Filters allow code to run before or after MVC actions:
@@ -101,16 +108,9 @@ A class definition split across multiple .cs files.
 Used to separate auto-generated and user-written code
 
 
-
-
 ✅ What is the .NET Core pipelie?
 It's a sequence of middleware components that handle HTTP requests and responses.
 Each middleware can process, modify, or pass the request to the next.
-
-✅ What is the role of the CLR (Common Language Runtime)?
-CLR is the execution engine for .NET apps.
-It handles JIT compilation, memory management, garbage 
-collection, type safety, and exception handling.
 
 
 
@@ -150,3 +150,8 @@ ASP.NET automatically checks these before controller logic runs.
 AddSingleton: One instance reused throughout the app
 AddScoped: New instance per HTTP request
 AddTransient: New instance every time it's requested
+
+✅ How Does a Multiple catch Block Work in C#?
+n C#, when you have multiple catch blocks, only the first 
+matching block is executed. The catch blocks are evaluated 
+top to bottom, and once a match is found, the rest are ignored.

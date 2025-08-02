@@ -1,0 +1,135 @@
+
+Javascript
+
+Data types in js 
+
+Primitive datatypes : string , num , boolen, bigint , undefind, null
+Non-Primitive : Object , arrays , date
+
+✅ var vs let vs const in JavaScript
+var
+Function scoped
+Can be redeclared and reassigned
+
+ 2. let
+Block scoped (e.g., inside { })
+Cannot be redeclared in the same scope
+Can be reassigned
+
+🔹const
+Block scoped
+Cannot be redeclared or reassigned
+Must be initialized at declaration
+
+
+✅ What is a Prototype in JavaScript?
+In JavaScript, every object has a prototype, which is another object 
+it inherits properties and methods from. This is part of the prototype chain, the basis for inheritance in JS.
+
+Hoisting in js ?
+Hoisting is default behavior of javascript var all the variable 
+And function declaration are move to top of the current scope
+during compilation phase 
+
+
+Event Loop in js ?
+Js is single thread  it can only excute one by one task at a time .
+event loop manages the excution of multiple task by periotizing and sheduling them efficintly 
+
+
+This KEY WORD IN JS 
+ its allowes to access the property and methods within the context of the object
+ 
+
+WHAT IS CLOSURES IN JS 
+
+ closure is a function in js where inner function to 
+access the property outer function even outer function excuting finished
+
+ Arrow Functions
+
+ Arrow function to provide a shorter and more concise syntex.and
+its support implict return that means you can omit the return keyword .
+ its support rest parameter.and perticularly used for inline functions
+
+
+ Shallow copy 
+
+ Shallow copy is the copy of an object where the top level of properties are copied ,
+but nested object or arrays are still refrence to the orginal orrays . when changes in copied object's in nested properties 
+ will affect the orgial object
+ 
+ 
+ Deep copy
+ 
+ Deep Copy is the copy of an object where all  level of properties are copied ,including nested properties arrays and objects are fully copied . changes in copied objects, including nested properties do not affect the orginal object
+
+	
+ CALL BACK 
+
+ callback function take another function as a arguments to return as their results 
+ 
+ 
+ PROMISS
+ promise is represents the future results of asynchronus operations ,whether succesed or fails 
+     
+ 
+ ASYNC AWAIT 
+ 
+ asyunc and await is syntatic sugar build top of the promise function 
+ async function to return the promise and await to pause the excution of function until promise is resolve  
+ 
+
+ 
+CALL,BIND,APPLY ?
+
+CALL: Calls a function specific this value passed arguments individually (" calls function with arguments immediatly")
+
+const obj={
+  name:"abi",
+  display:function (thing){
+    console.log(this.name+" "+thing)
+  }
+}
+
+const obj1={
+  name:"Bala"
+}
+
+obj.display.call(obj1,"How are you")
+
+
+
+APPLY :function specific this value passed argfments individually with arry ("its same call but argumants arrays")
+
+const obj={
+  name:"abi",
+  display:function (thing){
+    console.log(this.name+" "+thing)
+  }
+}
+
+const obj1={
+  name:"Bala"
+}
+
+obj.display.apply(obj1,["How are you"])
+
+
+
+BIND : its create new function with bound context 
+
+const obj={
+  name:"abi",
+  display:function (thing){
+    console.log(this.name+" "+thing)
+  }
+}
+
+const obj1={
+  name:"Bala"
+}
+
+const resultData=obj.display.bind(obj1)
+
+resultData("How are you")

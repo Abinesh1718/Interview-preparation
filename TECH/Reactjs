@@ -1,0 +1,151 @@
+✅ What is an Interceptor in React.js?
+an interceptor is a middleware-like function that lets you:
+Automatically modify requests (e.g., add auth tokens)
+Globally handle responses (e.g., show error messages, refresh token on 401)
+
+✅ Difference Between Element and Component in React
+🔹 1. React Element
+A plain object describing what you want to render (like a DOM node).
+Created using JSX or React.createElement.
+Immutable — once created, it doesn’t change.
+
+🔹 2. React Component
+A function or class that returns elements (JSX).
+Can accept props, maintain state, and manage lifecycle methods.
+Reusable, interactive, and dynamic.
+
+✅ What is Debouncing in JavaScript (React)?
+Debouncing is a technique used to limit how often a 
+function is executed, especially in response to frequent
+
+ events like:
+Typing in a search box
+Window resizing
+Scrolling
+Button clicks
+
+✅ What is Prop Drilling in React?
+Prop drilling is the process of passing data from a parent component to deeply nested child components
+
+Hooks 
+
+State Management Hooks 
+useState → Manages state in functional components. 
+Returns a state variable and a function to update it.
+
+2. Side Effect & Lifecycle Hooks
+useEffect → Runs side effects (e.g., API calls, event listeners) after render. Can run on mount, update, or unmount.
+
+useLayoutEffect → Similar to useEffect, but runs 
+synchronously before browser painting, useful for layout adjustments.
+
+3. Performance Optimization Hooks
+useMemo → Memoizes values to avoid unnecessary recalculations during re-renders.
+useCallback → Memoizes functions to prevent unnecessary re-creations function in child components.
+
+4. Context & Ref Hooks
+useContext → Provides a way to access context values without prop drilling.
+useRef → Creates a mutable reference that persists across renders, often used for DOM manipulation.
+useImperativeHandle → Customizes the ref object when using forwardRef,
+allowing parent components to control child components' functions.
+
+5. Reducer Hook
+useReducer → Alternative to useState for complex state logic,
+ useful when state transitions depend on previous state values.
+
+6. Custom Hooks
+Custom Hooks → Created u
+
+
+✅ What is a Pure Component in React?
+A Pure Component in React is a component that renders 
+the same output for the same props and state, and automatically prevents unnecessary re-renders.
+
+
+✅ What is forwardRef in React?
+forwardRef is a React utility that allows you to pass a ref through a component to one of its child DOM elements.
+To let parent components access the child component's DOM node.
+Useful for input focus, scrolling, animations, etc.
+
+
+
+
+
+Redux
+
+
+
+
+
+what is redux ?
+redux is which is used to centralize the state entire aplication its gloabal state management
+
+
+Main Componants in redux ?
+
+Actions  : Javascript object its describe changes in state
+Reducers : Pure functions that take current state and action to return new states
+Store : its holds applications states,
+Dispatch : sends an actions to the store 
+Selector : function retrive specific state value 
+ 
+
+1. What is Redux-Saga and why is it used?
+
+Redux saga is a middleware for redux handle side effects like data fetching asynchronus tasks .  it uses 
+
+2. What is the difference between call and put in Redux-Saga?
+ 
+| Method           | Purpose                                                    |
+| ---------------- | ---------------------------------------------------------- |
+| `call(fn, args)` | Calls a function, usually an API (yields a blocking call). |
+| `put(action)`    | Dispatches an action to the Redux store.                   |
+
+
+3.Generator function?
+
+a generator functoin is a special type of function that introduce in es6 it can pause and resume its excution
+
+
+LIFE CYCLE METHODS
+there are three phases life cycle in class componants 1 mountiing,updating,unmounting 
+
+MOUNT inthis phase initialse the constructor after immideitly invoked componant didmount
+UPDATING inthis phase immidiatly invoked after the updating dom
+UNMOUNT inthis phase immidiatlly invoked before the componant remove from dom
+
+
+
+REACT 19V Feartures ?
+
+1.Automatic optimization so we dont need to use usememo
+2.useOptimistic hooks for UI Update upadate easier 
+3.Better form actions use help of useActionSatate
+4.Automatic skipping re-renders 
+
+
+
+REACT FRAGMENT
+
+react fragments used to allowing to add multiple child element without adding extra nodes
+
+
+USE REF
+use ref used to utilize to create a refrence of dom element , enabling to access and manipulations
+
+  
+Web pack ?
+ webpack is a moduler bundle its take html.css,js and bundle the one or more optmizied output files from the browser
+
+
+controled componants and uncontroled componants 
+
+controled componants :
+form data controled by react componants 
+the state of the form element is kept in the state property
+
+Uncontrolled Components: Form data is handled by the DOM.
+
+
+How does reconciliation work in React, and how does it impact performance?
+Reconciliation is the process where React updates the UI efficiently using the Virtual DOM.

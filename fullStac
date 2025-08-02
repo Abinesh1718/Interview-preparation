@@ -138,66 +138,6 @@ Ability to take many forms
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++==============================================================================================================================================================++++++++++++++++++++++++++==
 
-
-
-
-
-Javascript
-
-Data types in js 
-
-Primitive datatypes : string , num , boolen, bigint , undefind, null
-Non-Primitive : Object , arrays , date
-
-
-
-Hoisting in js ?
-Hoisting is default behavior of javascript var all the variable and function declaration are move to top of the current scope
-during compilation phase 
-
-
-Event Loop in js ?
-Js is single thread  it can only excute one by one task at a time .
-event loop manages the excution of multiple task by periotizing and sheduling them efficintly 
-
-
-This KEY WORD IN JS 
- its allowes to access the property and methods within the context of the object
- 
-
-WHAT IS CLOSURES IN JS 
-
- closure is a function in js where inner function to access the property outer function even outer function excuting finished
-
- Arrow Functions
-
- Arrow function to provide a shorter and more concise syntex.and its support implict return that means you can omit the return keyword .
- its support rest parameter.and perticularly used for inline functions
-
-
- Shallow copy 
-
- Shallow copy is the copy of an object where the top level of properties are copied , but nested object or arrays are still refrence to the orginal orrays . when changes in copied object's in nested properties 
- will affect the orgial object
- 
- 
- Deep copy
- 
- Deep Copy is the copy of an object where all  level of properties are copied ,including nested properties arrays and objects are fully copied . changes in copied objects, including nested properties do not affect the orginal object
-
-	
- CALL BACK 
-
- callback function take another function as a arguments to return as their results 
- 
- 
- PROMISS
- promise is represents the future results of asynchronus operations ,whether succesed or fails 
-     
- 
- ASYNC AWAIT 
- 
- asyunc and await is syntatic sugar build top of the promise function . async function to return the promise and await to pause the excution of function until promise is resolve  
  
 
 ARRAYS *********************************************************************************************
@@ -429,51 +369,7 @@ console.log(Object.is(25, 25)); // true
 
  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++===================================================================================================================================================++++++++++++++++++++++++++==
 
-Redux
 
-
-what is redux ?
-redux is which is used to centralize the state entire aplication its gloabal state management
-
-
-Main Componants in redux ?
-
-Actions  : Javascript object its describe changes in state
-Reducers : Pure functions that take current state and action to return new states
-Store : its holds applications states,
-Dispatch : sends an actions to the store 
-Selector : function retrive specific state value 
- 
-
-1. What is Redux-Saga and why is it used?
-
-Redux saga is a middleware for redux handle side effects like data fetching asynchronus tasks .  it uses 
-
-2. What is the difference between call and put in Redux-Saga?
- 
-| Method           | Purpose                                                    |
-| ---------------- | ---------------------------------------------------------- |
-| `call(fn, args)` | Calls a function, usually an API (yields a blocking call). |
-| `put(action)`    | Dispatches an action to the Redux store.                   |
-
-
-3.Generator function?
-
-a generator functoin is a special type of function that introduce in es6 it can pause and resume its excution
-
-
-
-
-redux vs Context 
-
-resux is a centrlized store 
-context is a componant based 
-
-
-
-
-
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++==============================================================================================================================================================++++++++++++++++++++++++++==
 
 SQL Joins
 
@@ -519,76 +415,9 @@ package.json: A configuration file in a Node.js project that stores metadata, de
 
  node_modules: A folder where all installed dependencies (from package.json) are stored. It contains the actual code of installed npm packages.
 
+sing built-in hooks to encapsulate and reuse logic across multiple components.
+These hooks help manage
 
-State Management Hooks 
-useState → Manages state in functional components. Returns a state variable and a function to update it.
-
-2. Side Effect & Lifecycle Hooks
-useEffect → Runs side effects (e.g., API calls, event listeners) after render. Can run on mount, update, or unmount.
-
-useLayoutEffect → Similar to useEffect, but runs synchronously before browser painting, useful for layout adjustments.
-
-3. Performance Optimization Hooks
-useMemo → Memoizes values to avoid unnecessary recalculations during re-renders.
-useCallback → Memoizes functions to prevent unnecessary re-creations function in child components.
-
-4. Context & Ref Hooks
-useContext → Provides a way to access context values without prop drilling.
-useRef → Creates a mutable reference that persists across renders, often used for DOM manipulation.
-useImperativeHandle → Customizes the ref object when using forwardRef, allowing parent components to control child components' functions.
-
-5. Reducer Hook
-useReducer → Alternative to useState for complex state logic, useful when state transitions depend on previous state values.
-
-6. Custom Hooks
-Custom Hooks → Created using built-in hooks to encapsulate and reuse logic across multiple components.
-These hooks help mana
-
-
-LIFE CYCLE METHODS
-there are three phases life cycle in class componants 1 mountiing,updating,unmounting 
-
-MOUNT inthis phase initialse the constructor after immideitly invoked componant didmount
-UPDATING inthis phase immidiatly invoked after the updating dom
-UNMOUNT inthis phase immidiatlly invoked before the componant remove from dom
-
-
-
-REACT 19V Feartures ?
-
-1.Automatic optimization so we dont need to use usememo
-2.useOptimistic hooks for UI Update upadate easier 
-3.Better form actions use help of useActionSatate
-4.Automatic skipping re-renders 
-
-
-
-REACT FRAGMENT
-
-react fragments used to allowing to add multiple child element without adding extra nodes
-
-
-USE REF
-use ref used to utilize to create a refrence of dom element , enabling to access and manipulations
-
-  
-Web pack ?
- webpack is a moduler bundle its take html.css,js and bundle the one or more optmizied output files from the browser
-
-
-
-
-controled componants and uncontroled componants 
-
-controled componants :
-form data controled by react componants 
-the state of the form element is kept in the state property
-
-Uncontrolled Components: Form data is handled by the DOM.
-
-
-How does reconciliation work in React, and how does it impact performance?
-Reconciliation is the process where React updates the UI efficiently using the Virtual DOM.
 
 
 

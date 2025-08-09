@@ -29,6 +29,10 @@ Hoisting is default behavior of javascript var all the variable
 And function declaration are move to top of the current scope
 during compilation phase 
 
+✅Event Bubbling js ? 
+Event Bubbling in JavaScript is the process where an event that 
+occurs on a child element automatically propagates upward to
+ its parent elements in the DOM hierarchy.
 
 ✅Event Loop in js ?
 Js is single thread  it can only excute one by one task at a time .
@@ -48,7 +52,7 @@ access the property outer function even outer function excuting finished
 
  Arrow function to provide a shorter and more concise syntex.and
 its support implict return that means you can omit the return keyword .
- its support rest parameter.and perticularly used for inline functions
+its support rest parameter.and perticularly used for inline functions
 
 
 ✅ Shallow copy 

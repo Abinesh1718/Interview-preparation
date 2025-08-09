@@ -1,0 +1,174 @@
+
+## **1. What is TypeScript?**
+
+**Answer:**
+TypeScript is a superset of JavaScript developed by
+ Microsoft that adds **static typing** and other features like 
+ interfaces, enums, and generics. It compiles down to plain 
+ JavaScript, which can run anywhere JavaScript runs.
+
+
+## **2. What are the main advantages of using TypeScript?**
+
+**Answer:**
+
+* **Type Safety** – catches errors at compile time.
+* **Better Tooling** – autocompletion, navigation, and refactoring in IDEs.
+* **Improved Readability** – explicit types make the code easier to understand.
+* **Supports Modern JS** – allows using ES6+ features while compiling to older JS.
+
+---
+
+## **3. Difference between `any`, `unknown`, and `never`?**
+
+**Answer:**
+
+* **`any`** → Disables type checking (use with caution).
+* **`unknown`** → Like `any`, but requires type checks before use (safer).
+* **`never`** → Represents values that never occur (e.g., a function that always throws an error).
+
+```ts
+let a: any = 5;         // can be anything, unsafe
+let b: unknown = 5;     // need to check before use
+function fail(): never { throw new Error("Error"); }
+```
+
+---
+
+## **4. What is the difference between `interface` and `type`?**
+
+**Answer:**
+
+* **interface**: Used mainly for object shapes and can be extended.
+* **type**: More flexible, can represent unions, intersections, primitives, etc.
+
+```ts
+interface Person { name: string; }
+type User = { name: string; } & { age: number };
+```
+
+---
+
+## **5. What are Generics in TypeScript?**
+
+**Answer:**
+Generics let you create reusable components that work
+with **any type** while still maintaining type safety.
+
+
+function identity<T>(value: T): T {
+  return value;
+}
+let num = identity<number>(5); // type: number
+
+## **6. How is `readonly` different from `const`?**
+
+**Answer:**
+
+* `const` applies to **variables** → variable reference cannot change.
+* `readonly` applies to **properties** → property cannot be reassigned after initialization.
+
+```ts
+const x = 10; // cannot reassign x
+interface User { readonly id: number; }
+```
+
+---
+
+## **7. Explain Type Assertion in TypeScript.**
+
+**Answer:**
+Type assertion tells the compiler “trust me, I know the type.” It doesn't change the runtime type.
+
+```ts
+let someValue: unknown = "Hello";
+let strLength = (someValue as string).length;
+```
+
+---
+
+## **8. Difference between `abstract class` and `interface`?**
+
+**Answer:**
+
+* **Abstract class**: Can have method implementations and abstract methods; supports inheritance.
+* **Interface**: Only defines the structure; cannot contain implementation.
+
+---
+
+## **9. What is `enum` in TypeScript?**
+
+**Answer:**
+Enums define a set of named constants.
+
+```ts
+enum Direction { Up, Down, Left, Right }
+let move: Direction = Direction.Up;
+```
+
+---
+
+## **10. How does TypeScript handle null and undefined?**
+
+**Answer:**
+With `"strictNullChecks": true`, null and undefined are 
+not assignable to other types unless explicitly allowed.
+
+```ts
+let name: string = null; // ❌ error
+let name2: string | null = null; // ✅ allowed
+```
+
+---
+
+## **11. What is the difference between `public`, `private`, and `protected`?**
+
+**Answer:**
+
+* **public** → Accessible everywhere (default).
+* **private** → Accessible only within the same class.
+* **protected** → Accessible in the same class and subclasses.
+
+---
+
+## **12. What is `Partial<T>` in TypeScript?**
+
+**Answer:**
+`Partial<T>` is a built-in utility type that makes all properties optional.
+
+```ts
+interface User { id: number; name: string; }
+let u: Partial<User> = { name: "Abi" }; // id not required
+```
+
+---
+
+## **13. How do you create a union and intersection type?**
+
+**Answer:**
+
+* **Union (`|`)**: Value can be one of many types.
+* **Intersection (`&`)**: Combines multiple types.
+
+```ts
+type A = { name: string };
+type B = { age: number };
+type C = A & B; // Intersection: has both name and age
+```
+
+---
+
+## **14. What is the difference between `==` and `===` in TypeScript?**
+
+**Answer:**
+
+* `==` → Equality with type coercion.
+* `===` → Strict equality (checks value + type).
+
+---
+
+## **15. What are declaration files (`.d.ts`) in TypeScript?**
+
+**Answer:**
+Declaration files contain type information for JavaScript code,
+allowing TypeScript to understand the shapes of variables, functions, and classes from JS libraries

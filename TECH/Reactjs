@@ -54,7 +54,8 @@ useReducer → Alternative to useState for complex state logic,
  useful when state transitions depend on previous state values.
 
 6. Custom Hooks
-Custom Hooks → Created u
+A custom hook in React is a reusable function (name starts with use) 
+that contains stateful logic, allowing you to share functionality between components without repeating code.
 
 
 ✅ What is a Pure Component in React?

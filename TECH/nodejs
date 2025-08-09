@@ -17,7 +17,6 @@ Keep dependencies up to date
 
 
 
-
 🟢Diffrence bw Node js and Javascript ?
 JS : Js used to make website is intractive and used in browser
 NODE JS : which allows js to be used in server . its non-blocking 
@@ -34,10 +33,10 @@ process.nextTick : its excute after current task end
 setImmediate : its excute in check phase
 setTimeout : its excutes in after some specified time
 
-19. What’s the difference between synchronous and asynchronous code in Node.js?
+🟢. What’s the difference between synchronous and asynchronous code in Node.js?
 
 Synchronous code blocks the execution of subsequent
- code until it finishes.
+code until it finishes.
 
 Asynchronous code allows execution to continue while
 operations (e.g. I/O) run in the background.

@@ -125,6 +125,14 @@ REACT 19V Feartures ?
 4.Automatic skipping re-renders 
 
 
+✅ Thunk vs Saga ?
+Thunk → Middleware that lets you write action creators returning 
+functions instead of objects, mainly for simple async logic (e.g., API calls).
+
+Saga → Middleware using generator functions for more complex 
+async workflows, handling side effects in a more testable and controllable way.
+
+
 
 REACT FRAGMENT
 

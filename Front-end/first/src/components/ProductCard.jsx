@@ -13,6 +13,8 @@ const ProductCard = ({ product, addCart }) => {
   );
 };
 
+
+
 const styles = { 
   card: {
     border: '1px solid #ddd',

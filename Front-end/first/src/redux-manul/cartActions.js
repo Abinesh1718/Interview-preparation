@@ -1,6 +1,8 @@
+import { ADD_TO_CART } from "./action_type";
+
 // actions/cartActions.js
 export const addToCart = (product) => ({
-  type: 'ADD_TO_CART',
+  type: ADD_TO_CART,
   payload: product,
 });
 

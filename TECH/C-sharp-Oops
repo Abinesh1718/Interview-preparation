@@ -123,35 +123,48 @@ namespace OOPConcepts
 // Base method overridden in child
 
 
-using System;
+   using System;
 
-namespace OOPConcepts
+public class Program1
 {
-    public class Shape
+	public static void Main()
     {
-        public virtual void Draw()
-        {
-            Console.WriteLine("Drawing Shape...");
-        }
+        Circle obj = new Circle();
+        obj.add();
+        obj.add(4);
+        obj.Draw();
+        obj.Display();
+    }
+}
+
+abstract class AbstractPoly
+{
+    public abstract void Draw(); //no implementation    #Abstract
+    public virtual void Display() //runtime polymorphisim 
+    {
+        Console.WriteLine("Displaying the shape.");
+    }
+}
+
+
+class Circle : AbstractPoly
+{
+    public override void Draw()
+    {
+        Console.WriteLine("Drawing a shape..");
     }
 
-    public class Circle : Shape
+    public override void Display()
     {
-        public override void Draw()
-        {
-            Console.WriteLine("Drawing Circle...");
-        }
+        // base.Display();
+              Console.WriteLine("Display");
     }
     
+    public void add(){
+      Console.WriteLine("Add func");
+    }
     
-    public class mainClass{
-      
-      public static void Main (string [] args){
-        
-        Shape shape=new Circle ();
-        shape.Draw();
-        
-        
-      }
+    public void add(int a){
+      Console.WriteLine(a);
     }
 }

@@ -1,0 +1,61 @@
+How to improve API Performence in .net
+
+1️⃣ Optimize Database Access
+Use async EF Core calls (await dbContext.Users.ToListAsync()).
+Select only needed columns (.Select(x => new { x.Id, x.Name })).
+Use AsNoTracking() for read-only queries to skip EF Core change tracking.
+Add indexes to frequently searched columns in SQL.
+Avoid N+1 queries by using Include() or projections.
+Use stored procedures for heavy operations.
+Cache frequent DB calls with IMemoryCache or Redis.
+
+2️⃣ Reduce Payload Size
+Use pagination for large result sets.
+Compress responses (app.UseResponseCompression()).
+Remove unnecessary properties from DTOs.
+Return 204 No Content instead of an empty array.
+
+3️⃣ Use Caching
+In-memory cache for small, frequent reads.
+Distributed cache (Redis, SQL Server) for multi-server setups.
+Cache static data (dropdowns, configs, metadata).
+Implement ETag / If-None-Match for conditional GET requests.
+
+4️⃣ Middleware & Pipeline Optimization
+Keep the middleware pipeline short.
+Move expensive logging to background jobs.
+Use UseRouting() → UseAuthentication() → UseAuthorization() → MapControllers() order.
+Avoid unnecessary exception catching in global middleware (throw only when needed).
+
+5️⃣ Use Asynchronous Processing
+
+Async controllers & EF Core calls.
+Background tasks for slow operations (IHostedService, Hangfire, Azure Functions).
+Use message queues (RabbitMQ, Kafka) for heavy processing.
+
+6️⃣ Minimize Serialization Cost
+
+Use System.Text.Json instead of Newtonsoft.Json (faster).
+Ignore null properties:
+builder.Services.Configure<JsonOptions>(options =>
+{
+    options.SerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull;
+});
+
+7️⃣ Connection & Resource Management
+
+Use connection pooling (enabled by default).
+Dispose DbContext, HttpClient, and streams properly.
+Use IHttpClientFactory to avoid socket exhaustion.
+
+8️⃣ Profiling & Monitoring
+
+Use tools like dotMemory, dotTrace, Application Insights.
+Find slow SQL with EF Core logging:
+optionsBuilder.LogTo(Console.WriteLine, LogLevel.Information);
+
+9️⃣ Scaling Strategies
+
+Use Load Balancers & horizontal scaling.
+Deploy behind CDN for static files.
+Split monolith into microservices for high-load APIs.

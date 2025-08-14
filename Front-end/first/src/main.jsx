@@ -10,7 +10,7 @@ import storess from '../src/redux-manul/Store'
 import CountryProblem from './CountryProblem';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <Provider store={storess}>
+  <Provider store={storess} >
     <Router>
       <App />
     </Router>

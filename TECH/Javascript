@@ -60,12 +60,12 @@ its support rest parameter.and perticularly used for inline functions
  Shallow copy is the copy of an object where the top level of properties are copied ,
 but nested object or arrays are still refrence to the orginal orrays . when changes in copied object's in nested properties 
  will affect the orgial object
- 
- 
+
 ✅ Deep copy
  
  Deep Copy is the copy of an object where all  level of properties are copied
-  ,including nested properties arrays and objects are fully copied . changes in copied objects, including nested properties do not affect the orginal object
+  ,including nested properties arrays and objects are fully copied . changes in 
+  copied objects, including nested properties do not affect the orginal object
 
 	
  ✅CALL BACK 
@@ -83,7 +83,6 @@ but nested object or arrays are still refrence to the orginal orrays . when chan
  async function to return the promise and await to pause the excution of function until promise is resolve  
  
 
- 
 CALL,BIND,APPLY ?
 
 CALL: Calls a function specific this value passed arguments individually (" calls function with arguments immediatly")

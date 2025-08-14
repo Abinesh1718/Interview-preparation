@@ -1,0 +1,149 @@
+✅ Routing .net 8 ?
+Routing is refers to matching the incoming HTTP request to the 
+correct controller and action in the application. It takes URL as input and destruct it to the
+determine controller and action to route request.
+
+🔹 Two types
+1.Attribute Routing (we want to explisit URL ,  Ambiguous match occurs when two endpoints have
+ identical precedence → fix with constraints or explicit Order. )
+
+[ApiController]
+[Route("api/[controller]")] // token replaces with 'products', controller name w/o 'Controller'
+public class ProductsController : ControllerBase
+{
+    [HttpGet]                // GET /api/products
+    public async Task<IActionResult> Get() { ... }
+
+    [HttpGet("{id:int}")]    // GET /api/products/5 (int constraint)
+    public async Task<IActionResult> GetById(int id) { ... }
+
+    [HttpPost]               // POST /api/products
+    public async Task<IActionResult> Create(ProductDto dto) { ... }
+
+    [HttpPut("{id:int}")]    // PUT /api/products/5
+    public async Task<IActionResult> Update(int id, ProductDto dto) { ... }
+
+    [HttpDelete("{id:int}")] // DELETE /api/products/5
+    public async Task<IActionResult> Delete(int id) { ... }
+}
+
+2.conventional Routing (Its standerd Structure)
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
+
+// Matches: /Products/Details/5 → ProductsController.Details(5)
+
+
+
+✅ Binding Source Attributes ?
+, Binding Source Attributes tell the model
+ binder where to get data from in an HTTP request — body, query string, route, headers, form
+
+| Attribute        | Data Source                             | Example                                                                |
+| ---------------- | --------------------------------------- | ---------------------------------------------------------------------- |
+| `[FromBody]`     | HTTP **request body** (JSON, XML, etc.) | `public IActionResult Post([FromBody] Product p)`                      |
+| `[FromQuery]`    | Query string parameters                 | `public IActionResult Get([FromQuery] int id)`                         |
+| `[FromRoute]`    | Route parameters (URL segments)         | `public IActionResult Get([FromRoute] int id)`                         |
+| `[FromHeader]`   | HTTP request headers                    | `public IActionResult Get([FromHeader(Name="X-Custom")] string value)` |
+| `[FromForm]`     | Form fields (POST form data)            | `public IActionResult Upload([FromForm] IFormFile file)`               |
+| `[FromServices]` | Dependency injection                    | `public IActionResult Get([FromServices] IMyService service)`          |
+
+✅ Middleware .net ?
+Middleware is a component in asp.net core that handles the incoming http request, 
+modifies it and passes to the next middleware piece in the pipeline
+
+✅Middleware Methods ?
+Invoke , Invoke async 
+
+✅ Built-in Middlewares in .NET 8 ?
+
+UseRouting() – Matches request to route handlers.
+UseAuthentication() – Validates user identity.
+UseAuthorization() – Checks user permissions.
+UseCors() – Enables cross-origin requests.
+UseStaticFiles() – Serves static HTML, CSS, JS.
+UseExceptionHandler() – Handles global exceptions.
+UseHttpsRedirection() – Redirects HTTP → HTTPS.
+UseResponseCaching() – Caches HTTP responses.
+
+✅ How Writing Custom Middleware ?
+A. Inline Middleware
+B. Middleware Class
+C. Extension Method for Cleaner Code
+ Request delegates
+ 	It takes httpcontext objects which has all http request/reponse data
+ 	it is used to pass the control to one middleware to next one in the request pipeline.\
+app.Use(...) → accepts a Request Delegate(the next delegate).
+app.Run(...) → accepts a terminal Request Delegate (no next, ends the pipeline).
+
+
+✅ How does middleware differ from filters?
+A: Middleware runs before MVC routing and works at a global application level, while filters run inside MVC after routing.
+
+✅: How do you write custom middleware?
+A: By creating a class with a constructor accepting RequestDelegate and an InvokeAsync(HttpContext)
+ method, then registering it using app.UseMiddleware<>().
+
+✅ What happens if you don’t call next()?
+A: The request stops at the current middleware, and no further middleware or endpoint is executed.
+
+✅ 9. What is Dependency Injection?
+
+DI is a design pattern that allows us to automatically creates objects that class needs instead of creating them manually.
+ creating loosely coupled and testable applications. Services are registered in the DI container 
+ and injected wherever needed, often via constructors. It supports multiple lifetimes, 
+ and the framework handles the object creation and disposal automatically
+
+ 
+ ✅ DI Lifetimes and Registration in Program.cs ?
+
+ | Lifetime  | Description                            |
+| --------- | -------------------------------------- |
+| Singleton | One instance for the app lifetime                      |
+| Scoped    | One instance per HTTP request   ex: transaction        |
+| Transient | New instance every time it's requested ex: mail service |
+
+
+✅Difference between AddScoped, AddSingleton, and AddTransient?
+AddSingleton: One instance reused throughout the app ()
+AddScoped: New instance per HTTP request
+AddTransient: New instance every time it's requested
+
+Singleton Ex : 
+You have a Web API for an e-commerce site.
+Some settings (like GST %, shipping charges, site name) are constant during runtime.
+Instead of reading from a database every time, you want them loaded once and reused everywhere.
+
+
+✅ SOLID principles ?
+The SOLID principles are five core object-oriented design principles that help make software more maintainable, scalable, and testable. 
+
+1.S — Single Responsibility Principle (SRP)
+Definition: A class should have only one reason to change.
+
+2. O — Open/Closed Principle (OCP)
+Definition: Software entities should be open for extension but closed for modification.
+Meaning: Add new features without changing existing code.
+
+3. L — Liskov Substitution Principle (LSP)
+Definition: Subtypes must be substitutable for their base types without breaking functionality.
+
+4. I — Interface Segregation Principle (ISP)
+Definition: No client should be forced to depend on methods it doesn’t use.
+Meaning: Use small, specific interfaces instead of one big interface.
+
+5. D — Dependency Inversion Principle (DIP)
+Definition: High-level modules should not depend on low-level modules — both should depend on abstractions.
+Meaning: Depend on interfaces, not concrete classes.
+
+
+✅ LINQ FirstOrDefault()  vs SingleOrDefault()
+
+| Feature              | FirstOrDefault()                   | SingleOrDefault()                     |
+| -------------------- | ---------------------------------- | ------------------------------------- |
+| **No match**         | Returns default value              | Returns default value                 |
+| **Multiple matches** | Returns first match                | Throws `InvalidOperationException`    |
+| **When to use**      | When you just need the first match | When you expect exactly one (or none) |
+
+

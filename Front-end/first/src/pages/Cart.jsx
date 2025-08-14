@@ -30,6 +30,8 @@ const Cart = () => {
                   <button onClick={() => dispatch(incrementQuantity(item.id))}>
                     +
                   </button>
+
+                  <ProductCard product={item} />
                 </div>
               </div>
             </li>

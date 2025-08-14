@@ -6,7 +6,7 @@ import products from '../data/products';
 
 const ProductList = () => {
   const dispatch = useDispatch();
-  const cart = useSelector(state => state.cart);
+  const cart = useSelector(state => state.payment);
 
   const getQuantity = (productId) => {
     const item = cart?.find(item => item.id === productId);

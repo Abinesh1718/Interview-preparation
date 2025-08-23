@@ -44,7 +44,6 @@ function febinociseries(num) {
 
 
 function findLorgesWords(name) {
-
     let large = ""
     let words = name.split(" ")
     for (let i = 0; i < words.length; i++) {

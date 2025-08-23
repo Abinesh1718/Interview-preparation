@@ -210,7 +210,6 @@ what is anync storage in react native ?
 async storage is a presistance storage ,key and value storage system for react native its store data in localy 
 
 
-
 new react native architecture what changes it brings ?
 
 Fabric – New rendering engine for faster and smoother UI.

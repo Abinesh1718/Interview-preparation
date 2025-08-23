@@ -152,3 +152,14 @@ Use windowing/virtualization (e.g., react-window or react-virtualized) to render
 
 ✅ Preventing Unnecessary Re-renders ?
 Wrap children in React.memo() and ensure props are stable using useCallback or useMemo
+
+
+✅ Client-Side Rendering (CSR)
+Rendering in browser using JS.
+First load slower, navigation fast.
+Bad SEO, good for apps (e.g., Gmail).
+
+✅  Server-Side Rendering (SSR) ?
+Rendering on server, sends ready HTML.
+First load fast, navigation slower.
+Good SEO, best for e-commerce, blogs.

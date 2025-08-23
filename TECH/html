@@ -1,0 +1,19 @@
+🔹 1. What are semantic HTML tags?
+Semantic tags describe meaning of content, improving SEO & accessibility.
+<header>, <nav>, <article>, <section>, <footer>, <aside
+🔹 2. Difference between id and class ?
+id: unique, used for a single element (#idSelector in CSS).
+class: reusable, multiple elements can share it (.classSelector in CSS).
+
+🔹 5. What are meta tags in HTML? 
+Provide metadata (data about data) for web pages.
+Not displayed directly, but used by browsers/search engines.
+
+🔹 6. Difference between <div> and <span> ?
+<div>: block-level container.
+<span>: inline-level container.
+
+🔹 12. What is difference between localStorage, sessionStorage, and cookies in HTML5?
+localStorage: stores data with no expiration (until cleared).
+sessionStorage: stores data for a session (cleared on tab close).
+cookies: small pieces of data sent with HTTP requests, can expire.

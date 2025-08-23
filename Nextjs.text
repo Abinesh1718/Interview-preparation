@@ -30,4 +30,6 @@ we have to config in next.config file to target serverless above 12v no need to 
  Next js provides automatically optmize images ex, resize lazy loading etc 
  import Image from 'next/Image'
 
+
+
  

@@ -10,8 +10,6 @@ function duplicates(arr) {
     }
     return dupli
 }
-
-
 console.log(duplicates([4, 8, 2, 4, 8,1,7]));
 
 
@@ -24,7 +22,6 @@ function uniqvalue(arr) {
         }
     }
     return uniq
-
 }
 
 // console.log(uniqvalue([4, 8, 2, 4, 8, 1, 7]));
@@ -43,8 +40,6 @@ function febinosi(arr) {
     }
     return next
 }
-
-
 console.log(febinosi(10));
 
 function Missingnum(arr) {
@@ -60,10 +55,7 @@ function Missingnum(arr) {
 // console.log(Missingnum([7, 8, 1, 2, 3, 5, 6]));
 
 
-
-
 function mostlyrepeted(arr) {
-
     let maxcount = 0;
     let value = 0;
 
@@ -81,9 +73,7 @@ function mostlyrepeted(arr) {
     }
     return { maxcount: maxcount, value: value }
 }
-
 // console.log(mostlyrepeted([4, 8, 2, 4, 8, 1, 7]));
-
 
 const a = [
 

@@ -13,10 +13,9 @@ Can be redeclared and reassigned
 Block scoped (e.g., inside { })
 Cannot be redeclared in the same scope
 Can be reassigned
-
+ 
 🔹const
-Block scoped
-Cannot be redeclared or reassigned
+Block scopedCannot be redeclared or reassigned
 Must be initialized at declaration
 
 
@@ -45,44 +44,40 @@ event loop manages the excution of multiple task by periotizing and sheduling th
 
 ✅WHAT IS CLOSURES IN JS 
 
- closure is a function in js where inner function to 
+closure is a function in js where inner function to 
 access the property outer function even outer function excuting finished
 
  ✅Arrow Functions
 
- Arrow function to provide a shorter and more concise syntex.and
+Arrow function to provide a shorter and more concise syntex.and
 its support implict return that means you can omit the return keyword .
 its support rest parameter.and perticularly used for inline functions
 
 
 ✅ Shallow copy 
 
- Shallow copy is the copy of an object where the top level of properties are copied ,
+Shallow copy is the copy of an object where the top level of properties are copied ,
 but nested object or arrays are still refrence to the orginal orrays . when changes in copied object's in nested properties 
- will affect the orgial object
+will affect the orgial object
 
 ✅ Deep copy
  
- Deep Copy is the copy of an object where all  level of properties are copied
-  ,including nested properties arrays and objects are fully copied . changes in 
-  copied objects, including nested properties do not affect the orginal object
+Deep Copy is the copy of an object where all  level of properties are copied
+including nested properties arrays and objects are fully copied . changes in 
+copied objects, including nested properties do not affect the orginal object
 
-	
- ✅CALL BACK 
+✅CALL BACK 
 
  callback function take another function as a arguments to return as their results 
- 
  
  PROMISS
  promise is represents the future results of asynchronus operations ,whether succesed or fails 
      
- 
  ASYNC AWAIT 
  
  asyunc and await is syntatic sugar build top of the promise function 
  async function to return the promise and await to pause the excution of function until promise is resolve  
  
-
 CALL,BIND,APPLY ?
 
 CALL: Calls a function specific this value passed arguments individually (" calls function with arguments immediatly")

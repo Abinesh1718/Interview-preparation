@@ -1,0 +1,30 @@
+🔹 1. Difference between relative, absolute, fixed, sticky positioning ?
+relative: positioned relative to its normal position.
+absolute: positioned relative to the nearest positioned ancestor (not static).
+fixed: positioned relative to the viewport, doesn’t move on scroll.
+sticky: behaves like relative until a scroll threshold, then sticks like fixed.
+
+🔹 2. Difference between inline, block, and inline-block
+inline: no line break, only occupies content width (e.g., <span>).
+block: takes full width, starts on a new line (e.g., <div>).
+inline-block: behaves inline but allows setting width/height.
+
+🔹 4. Difference between relative units (em, rem, %, vh/vw) ?
+em: relative to parent element’s font-size.
+rem: relative to root (html) font-size.
+%: relative to parent’s dimensions.
+vh, vw: relative to viewport height/width.
+
+🔹5. Explain Flexbox vs Grid ?
+Flexbox → one-dimensional layout (row or column). Best for navbars, buttons, aligning items.
+Grid → two-dimensional layout (rows + columns). Best for page layouts, dashboards.
+
+🔹 9. Responsive Design (Media Queries) ?
+@media (max-width: 768px) {
+  body { background-color: lightblue; }
+}
+
+🔹 10. Difference between inline CSS, internal CSS, external CSS    
+Inline → inside HTML element (<div style="color:red">).
+Internal → inside <style> tag in HTML head.
+External → separate .css file linked with <link>.

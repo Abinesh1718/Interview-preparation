@@ -23,6 +23,19 @@ Window resizing
 Scrolling
 Button clicks
 
+what is redux ?
+redux is which is used to centralize the state entire aplication its gloabal state management
+
+
+Main Componants in redux ?
+
+Actions  : Javascript object its describe changes in state
+Reducers : Pure functions that take current state and action to return new states
+Store : its holds applications states,
+Dispatch : sends an actions to the store 
+Selector : function retrive specific state value 
+
+
 ✅ What is Prop Drilling in React?
 Prop drilling is the process of passing data from a parent component to deeply nested child components
 
@@ -67,17 +80,7 @@ forwardRef is a React utility that allows you to pass a ref through a component 
 To let parent components access the child component's DOM node.
 Useful for input focus, scrolling, animations, etc.
 
-what is redux ?
-redux is which is used to centralize the state entire aplication its gloabal state management
 
-
-Main Componants in redux ?
-
-Actions  : Javascript object its describe changes in state
-Reducers : Pure functions that take current state and action to return new states
-Store : its holds applications states,
-Dispatch : sends an actions to the store 
-Selector : function retrive specific state value 
  
 
 1. What is Redux-Saga and why is it used?

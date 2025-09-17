@@ -31,7 +31,7 @@ during compilation phase
 ✅Event Bubbling js ? 
 Event Bubbling in JavaScript is the process where an event that 
 occurs on a child element automatically propagates upward to
- its parent elements in the DOM hierarchy.
+its parent elements in the DOM hierarchy.
 
 ✅Event Loop in js ?
 Js is single thread  it can only excute one by one task at a time .

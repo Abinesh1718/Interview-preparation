@@ -1,9 +1,10 @@
-✅ Tell me about a Innoblitz Company .
-Innoblitz is a Chennai-based, mid-sized IT firm offering 
-end-to-end digital services—from strategy and design to development 
-and support—backed by a global clientele and a strong commitment to 
-innovation, quality, and client-first relationships
 
+✅  How do you manage a team
+When starting a project, I first gather and analyze requirements from stakeholders.
+Then, I break them into clear deliverables, create a high-level architecture,
+and define timelines. Next, I allocate tasks to the team based on strengths, 
+set up communication and tracking processes, and ensure we follow Agile sprints
+with regular reviews. I also identify risks early and plan mitigation to keep the project on track
 
 
 ✅ Tell me about a time you handled production downtime.
@@ -82,75 +83,3 @@ I’ll start by understanding the scope and breaking it into high-priority tasks
 I’ll work closely with the team to plan sprints, cut non-critical features if needed,
 and ensure clear communication. I’ll focus on delivering a stable core product first, then iterate quickly.
 
-
-layer arch
-
-1.data access layer
-2.logic
-
-
-✅ 2. NuGet Packages (Reusable Libraries)
-Ef core 
-EF tools
-EF design
-
-
-
-Program.cs or Startup.cs.
-
-app.Run();
-app.use()
-
-AddScoped -> one time intilize
-AddSingleton -> create one instantce for whole application for life time
-AddTransit - > its create one instance for each req
-
-
-AutoMapper -> used for map objects from one type to another act liks as a Bridge
-
-controler-service-repo-model-dbcontext
-
-Class Library -> used for Maintability and Code Reusability
-
-
- ✅What is ASP.NET Core Web API?
- ASP.NET Core Web API is a framework for building RESTful services 
- using HTTP. It allows you to expose data and business logic 
- as APIs that can be consumed by clients such as browsers, mobile apps, or other backend systems.
-
-  ✅What is the difference between IActionResult and ActionResult<T> ?
-
-IActionResult: Generic interface for HTTP responses. Can return any result like Ok(), BadRequest(), etc.
-
-ActionResult<T>: Combines a model (T) and HTTP response — useful for returning data with status.
-
- ✅What are middleware components?
-
-UseRouting()
-UseAuthentication()
-UseAuthorization()
-UseEndpoints(...)
-
- ✅What are middleware components?
- ASP.NET Core has built-in DI. It injects services via constructor to avoid tight coupling.
-
- ✅What is the difference between [FromQuery], [FromBody], [FromRoute]?
-
- [FromQuery]	URL query string
-[FromBody]	   Request body (JSON)
-[FromRoute]  	URL route values
-
- ✅8. What is Model Binding?
- Model binding automatically maps HTTP request data (query, route, body) to method parameters or C# objects.
-
- ✅ What is the purpose of app.UseRouting() and app.UseEndpoints()
-
- UseRouting() – Matches the incoming request URL to endpoints.
-
-UseEndpoints() – Executes the matched endpoint (e.g., controller action).
-
- ✅ 10. How do you handle exceptions globally?
- Use middleware like UseExceptionHandler() or custom middleware.
-
-
- 

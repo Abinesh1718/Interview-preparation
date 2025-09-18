@@ -15,7 +15,20 @@ Implement rate limiting
 Use helmet.js to secure HTTP headers
 Keep dependencies up to date
 
+🟢.Node.js Optimization Techniques ?
+Asynchronous & Non-blocking Code
+ Efficient Database Queries
+   .Use indexing in MongoDB/PostgreSQL.
+   .Avoid N+1 queries.
+   .Use connection pooling.
+Caching
+Use Redis for frequently accessed data (sessions, API responses).
+Load Balancing & Scaling
 
+Security & Optimization
+Use Helmet for security headers.
+Avoid memory leaks → close DB connections properly.
+Monitor performance using Node.js built-in profiler or tools like New Relic.
 
 🟢Diffrence bw Node js and Javascript ?
 JS : Js used to make website is intractive and used in browser

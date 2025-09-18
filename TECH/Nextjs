@@ -1,0 +1,29 @@
+🔹 What is Next.js and why use it?
+Next.js is a React framework for building server-side rendered (SSR) and statically generated (SSG) applications.
+Better SEO due to SSR
+Built-in API routes (no need for separate backend for small apps)
+Image optimization (next/image)
+Automatic code splitting and file-based routing
+Supports TypeScript, Tailwind, middleware, and app route
+
+🔹What are the different rendering methods in Next.js
+SSR (Server-Side Rendering):
+Page is rendered on every request (getServerSideProps).
+SSG (Static Site Generation):
+Page is pre-rendered at build time (getStaticProps).
+ISR (Incremental Static Regeneration):
+Static pages can be updated after build using revalidation.
+CSR (Client-Side Rendering):
+Data fetched with useEffect or SWR on client side.
+
+🔹Difference between getStaticProps, getServerSideProps, and getStaticPaths?
+getStaticProps: Fetch data at build time → used for static generation.
+getServerSideProps: Fetch data on each request → used for dynamic pages.
+getStaticPaths: Used with dynamic routes ([id].js) to pre-render specific paths at build time.
+
+🔹How do you optimize performance in Next.js?
+Use code splitting & dynamic imports (next/dynamic).
+Use Image optimization.
+Use ISR for fresh content without overloading the server.
+Cache responses using SWR or React Query.
+Use Middleware for lightweight auth checks.

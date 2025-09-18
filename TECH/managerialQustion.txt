@@ -11,7 +11,6 @@ and define timelines. Next, I allocate tasks to the team based on strengths,
 set up communication and tracking processes, and ensure we follow Agile sprints
 with regular reviews. I also identify risks early and plan mitigation to keep the project on track
 
-
 ✅ Tell me about a time you handled production downtime.
 Once a payment service failed due to an unhandled edge case. 
 I quickly checked logs, hot-fixed the API, and

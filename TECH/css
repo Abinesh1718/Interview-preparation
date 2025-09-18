@@ -28,3 +28,27 @@ Grid → two-dimensional layout (rows + columns). Best for page layouts, dashboa
 Inline → inside HTML element (<div style="color:red">).
 Internal → inside <style> tag in HTML head.
 External → separate .css file linked with <link>.
+
+🔹How do you achieve responsiveness in CSS?
+
+Media queries (@media)
+Relative units (em, rem, %, vh, vw)
+Flexbox/Grid
+Mobile-first design
+
+
+🔹How would you center a div horizontally and vertically?
+
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+🔹How do you optimize CSS performance?
+Minify CSS files.
+Remove unused CSS (PurgeCSS, Tailwind purge).
+Use shorthand properties.
+Avoid deep selectors.
+Use efficient selectors (.class > div div ul li).

@@ -1,3 +1,35 @@
+✅ What is the difference between SQL and NoSQL databases?
+SQL (Relational): Structured schema, uses tables, rows, and 
+columns (e.g., MySQL, PostgreSQL). Best for complex queries and transactions.
+NoSQL (Non-relational): Flexible schema, stores data as JSON, documents,
+key-value, or graphs (e.g., MongoDB, Cassandra). Best for scalability and unstructured data
+
+✅  What’s the difference between Primary Key and Foreign Key?
+Primary Key: Uniquely identifies a row in a table. Cannot be null.
+Foreign Key: References a primary key in another table, establishing a relationship.
+
+✅ . What is indexing in databases?
+An index improves query performance by allowing faster data retrieval.
+Works like a book index → points to rows without scanning the entire table.
+Downsides: Extra storage, slower writes (insert/update/delete)
+
+✅  What is normalization?
+Process of organizing data to reduce redundancy and improve consistency.
+
+✅. What is denormalization?
+Opposite of normalization: intentionally adding redundancy for faster reads.
+Example: Storing customer name in Orders table instead of joining with Customers
+
+✅Difference between find() and aggregate() in MongoDB?
+find() → Simple queries with filters.
+aggregate() → Complex pipelines (filter → group → sort → project).
+
+
+✅ What is sharding in MongoDB ?
+Horizontal scaling method: splitting data across multiple servers.
+Uses shard key to distribute documents
+
+
 ✅ SELECT – Read data from a table :
 SELECT *FROM employee ;
 SELECT name,age FROM employee

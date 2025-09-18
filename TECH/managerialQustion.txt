@@ -1,3 +1,8 @@
+✅  1. How to Prioritize Projects
+I prioritize projects based on business value,
+urgency, and dependencies. For example, if a feature directly impacts customers,
+I prioritize it over internal improvements. I also break down work into smaller 
+milestones so progress is visible, and I keep stakeholders informed if priorities need adjustment.
 
 ✅  How do you manage a team
 When starting a project, I first gather and analyze requirements from stakeholders.
@@ -33,7 +38,7 @@ but continue to improve and adapt as your company evolves.
 ✅ Tell me about your current project.
 I'm working on a POS application built on a microservices architecture. 
 Each service handles a core function like billing,
- inventory, and user management. I'm involved in service development, API integration,
+inventory, and user management. I'm involved in service development, API integration,
 and ensuring secure, scalable communication between services.
 
 ✅ What are your roles and responsibilities?
@@ -50,7 +55,6 @@ I break down the issue, identify root causes using logs and monitoring tools,
  discuss solutions with the team, and implement 
 a fix with testing and documentation.
 
-
 ✅ Where do you see yourself in 5 years?
 I aim to grow into a technical leadership role, mentoring others, 
 leading architectural decisions, and driving impactful product development.
@@ -62,7 +66,7 @@ I understand project needs come first, and I’m always ready to support
 the team when required. That said,
 I also believe in planning well to minimize last-minute work.
 
- ✅What will you do if the requirement changes at the last moment?
+✅What will you do if the requirement changes at the last moment?
  I stay calm, quickly analyze the impact, and prioritize tasks.
  If it's critical, I focus on delivering the change with quality,
   even if it means extra effort. Flexibility is key in dynamic projects.
@@ -73,13 +77,30 @@ I also believe in planning well to minimize last-minute work.
  Meanwhile, I’ll communicate with management for replacement plans and
 ensure project timelines are realistic and quality isn’t compromised .
 
- ✅ new technology for a new project ?
+✅ new technology for a new project ?
  I’ll take it as a great opportunity to learn and grow. I’ll quickly upskill through documentation,
 hands-on practice, and team collaboration. I believe adaptability is key in tech, 
 and I’m confident in picking up new tools efficiently to contribute effectively.
 
- ✅You’re introduced to a project with a tight deadline ?
+✅You’re introduced to a project with a tight deadline ?
 I’ll start by understanding the scope and breaking it into high-priority tasks.
 I’ll work closely with the team to plan sprints, cut non-critical features if needed,
 and ensure clear communication. I’ll focus on delivering a stable core product first, then iterate quickly.
 
+✅ How do you ensure quality in your code and projects? 
+Following coding standards & best practices (ESLint, Prettier).
+Writing unit/integration tests (Jest, Mocha, React Testing Library).
+Regular code reviews.
+Monitoring logs and errors in production.
+Automating CI/CD pipelines for faster feedback.
+
+✅ How do you ensure security in a Full Stack app?
+Backend: JWT authentication, input validation, parameterized queries (SQL injection prevention).
+Frontend: Sanitizing user inputs, avoiding XSS, CSRF protection.
+Infrastructure: HTTPS, environment variables, secret management.
+Code reviews & security audits.
+
+✅What was your biggest challenge in a project and how did you overcome it?
+In one app, real-time updates were causing performance bottlenecks. Instead
+of pushing updates to all clients, I implemented WebSockets with room-based 
+subscriptions, so only relevant users got updates. This cut server load by 40%.

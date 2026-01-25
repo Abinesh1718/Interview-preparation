@@ -1,0 +1,97 @@
+Phase 1: Foundation & Security Fundamentals (Months 1-2)
+ Goal: Build the security mindset and core knowledge.
+
+ 1. Networking - Deep Dive
+Key Concepts: TCP/IP handshake, DNS lifecycle, HTTP/HTTPS headers, subnetting, firewalls, proxies, VPNs.
+Your Advantage: You've likely dealt with APIs and web protocols. Now focus on the metadata and network-level aspects.
+
+Practical:
+
+Use Wireshark to capture and analyze your own web traffic.
+Explain what happens when you visit a website, from the packet level up.
+
+2. Operating Systems & Systems Administration
+Windows: Learn the key log sources (Windows Event Logs - Security, Sysmon). Understand processes, services, the registry, and authentication (Kerberos/NTLM).
+Linux: Become comfortable with the command line. Understand file permissions, process management, and common log locations (/var/log).
+Practical: Set up a Windows VM and a Linux VM. Intentionally generate logs (e.g., failed logins, creating a user, changing a file).
+
+3. Core Security Concepts
+The CIA Triad: Confidentiality, Integrity, Availability.
+Common Vulnerability Types: OWASP Top 10 (especially relevant to you!). Understand SQLi, XSS, CSRF from a detection perspective.
+Cyber Kill Chain / MITRE ATT&CK Framework: This is critical. MITRE ATT&CK is the language of modern SOCs. Learn the tactics and techniques (e.g., Persistence, Privilege Escalation, Defense Evasion)
+ 
+
+Phase 2: Core SOC Skills & Tools (Months 3-4)
+Goal: Learn the daily tools and procedures of a SOC analyst.
+
+1. SIEM (Security Information and Event Management)
+What it is: The central brain of the SOC. It aggregates all logs.
+To Learn: Splunk is the market leader and has a free version. Elastic Stack (ELK) is also very popular.
+Practical (The #1 thing you can do):
+Download and install Splunk Free.
+Forward logs from your Windows/Linux VMs to it.
+Learn to write SPL (Splunk Processing Language) queries to hunt for specific events.
+Example Query: "Find all failed login attempts from a single IP address in the last 24 hours."
+
+2. Intrusion Detection & Network Analysis
+Tools: Wireshark and Zeek (formerly Bro).
+
+Practical:
+Analyze PCAP (packet capture) files from a site like Malware-Traffic-Analysis.net. This is one of the best hands-on exercises.
+Identify command-and-control (C2) traffic, DNS exfiltration, etc.
+
+
+3. Endpoint Security :
+
+Understand what EDR (Endpoint Detection and Response) tools like CrowdStrike, SentinelOne, and Microsoft Defender for Endpoint do.
+They provide deep visibility into processes, file modifications, and network connections on a host.
+
+
+Phase 3: Practical Application & Building Your Profile (Months 5-6)
+Goal: Translate your learning into demonstrable skills.
+
+1. Build a Home Lab
+This is your portfolio. Use your developer skills to automate this!
+Option A (TryHackMe): Follow the "SOC Level 1" learning path. It's guided and excellent.
+Option B (Build Your Own):
+Use VirtualBox or VMware.
+Create a "Victim" VM (Windows 10).
+Install and configure Wazuh (a free, open-source EDR and SIEM) on it.
+Create an "Attacker" VM (Kali Linux).
+Simulate attacks from the Attacker VM against the Victim VM and see the alerts pop up in Wazuh/Splunk.
+Simulate a brute-force attack with hydra.
+Use nmap for port scanning.
+Try a basic Metasploit exploit.
+
+2. Earn an Entry-Level Certification
+Certifications get you past HR filters.
+CompTIA Security+: The gold standard for foundational knowledge.
+CompTIA CySA+ (Cybersecurity Analyst): More directly aligned with SOC work. This is the one I'd recommend you target.
+
+3. Document Your Journey
+Create a GitHub. Post your Splunk queries, your home lab setup scripts, and write-ups of your PCAP analyses.
+Start a blog/LinkedIn. Write a short post analyzing a malware sample or a recent attack technique. This shows passion and communication skills.
+
+Phase 4: The Job Hunt & Leveraging Your Edge
+Goal: Tailor your resume and interview strategy.
+
+Your Unique Value Proposition (Your "Secret Weapon")
+You are not a generic career-changer. You are a Developer transitioning into Security. This is a huge strength. Frame it this way:
+
+Automation: "I can use Python/Bash/JavaScript to automate repetitive SOC tasks, like enriching alerts with threat intelligence or parsing complex logs, making the entire team more efficient."
+
+Application Security Insight: "I understand how the applications that our SOC is defending are actually built. I can look at an alert for an SQL injection attempt and understand not just the attack, but also the likely flaw in the application code and how to advise the developers on fixing it."
+
+Tool Building: "I can build small internal tools for the SOC that don't exist out-of-the-box."
+
+Tailoring Your Resume & Interview
+Resume: Have a "Security Projects" section showcasing your home lab, GitHub, and any write-ups.
+
+Interview: When asked "Why SOC?", say: "I've spent 4 years building applications. I understand how they work and, consequently, how they break. I want to transition from building to defending, and I believe my developer background will allow me to understand the root cause of alerts more deeply and contribute to automation from day one.
+
+
+Month	Focus Area	    Key Activities
+1-2	     Foundation	     Complete Security+ syllabus. Set up VMs. Learn Wireshark basics. Study MITRE ATT&CK.
+3-4	     SOC Tools	     Install Splunk & forward logs. Do 5+ PCAP analyses from Malware-Traffic-Analysis. Start TryHackMe SOC path.
+5	     Home Lab	     Build your own lab with Wazuh. Simulate attacks. Document everything on GitHub.
+6	   Cert & Job Prep	 Take and pass CySA+ exam. Polish your resume and GitHub. Start applying and practicing interview scenarios.

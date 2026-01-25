@@ -15,8 +15,8 @@ Can accept props, maintain state, and manage lifecycle methods.
 Reusable, interactive, and dynamic.
 
 ✅ What is Debouncing in JavaScript (React)?
-Debouncing is a technique used to limit how often a 
-function is executed, especially in response to frequent
+Debouncing means delaying the execution of a function until 
+a certain amount of time has passed since the last time it was invoked
  events like:
 Typing in a search box
 Window resizing
@@ -82,7 +82,6 @@ Useful for input focus, scrolling, animations, etc.
 
 
  
-
 1. What is Redux-Saga and why is it used?
 
 Redux saga is a middleware for redux handle side effects like data fetching asynchronus tasks .  it uses 
@@ -106,7 +105,7 @@ there are three phases life cycle in class componants 1 mountiing,updating,unmou
 MOUNT inthis phase initialse the constructor after immideitly invoked componant didmount
 UPDATING inthis phase immidiatly invoked after the updating dom
 UNMOUNT inthis phase immidiatlly invoked before the componant remove from dom
-
+ 
 
 REACT 19V Feartures ?
 

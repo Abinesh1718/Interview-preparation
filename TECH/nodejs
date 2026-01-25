@@ -7,7 +7,6 @@ node js is a single threaded event loop  its managing for multiple request
 
 
 🟢. What are some best practices for securing a Node.js application?
-
 Validate input (to prevent injection)
 Use HTTPS
 Use environment variables for sensitive configs

@@ -21,7 +21,8 @@ Must be initialized at declaration
 
 ✅ What is a Prototype in JavaScript?
 In JavaScript, every object has a prototype, which is another object 
-it inherits properties and methods from. This is part of the prototype chain, the basis for inheritance in JS.
+it inherits properties and methods from. This is part of the prototype chain, 
+the basis for inheritance in JS.
 
 ✅Hoisting in js ?
 Hoisting is default behavior of javascript var all the variable 
@@ -70,10 +71,10 @@ copied objects, including nested properties do not affect the orginal object
 
  callback function take another function as a arguments to return as their results 
  
- PROMISS
+ ✅PROMISS
  promise is represents the future results of asynchronus operations ,whether succesed or fails 
      
- ASYNC AWAIT 
+✅ ASYNC AWAIT 
  
  asyunc and await is syntatic sugar build top of the promise function 
  async function to return the promise and await to pause the excution of function until promise is resolve  
